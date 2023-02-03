@@ -25,12 +25,20 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/images"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/theme.css",
+              "src/assets/css/vendor.bundle.css",
+              "src/assets/css/style-lobelia.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.bundle.js",
+              "src/assets/js/vendors/jquery.magnific-popup.min.js",
+              "src/assets/js/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
