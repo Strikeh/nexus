@@ -78,7 +78,7 @@ blockquote::after, blockquote::before, q::after, q::before { content: none; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color: #0a1992; font-weight: 600; font-family: "Poppins", sans-serif; line-height: 1.45; margin-bottom: 0.5rem; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { color: #012235 ; font-weight: 600; font-family: "Poppins", sans-serif; line-height: 1.45; margin-bottom: 0.5rem; }
 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child { margin-bottom: 0; }
 
@@ -511,7 +511,7 @@ h6, .h6, .fz-6 { font-size: 0.94rem; }
 
 .tc-theme, .tc-theme a { color: #2b56f5 !important; }
 
-.tc-theme-alt, .tc-theme-alt a { color: #0a1992 !important; }
+.tc-theme-alt, .tc-theme-alt a { color: #012235  !important; }
 
 .tc-white { color: #fff !important; }
 

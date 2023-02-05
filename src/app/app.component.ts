@@ -1,45 +1,21 @@
-import {
-  AfterViewInit,
-  Component,
-  OnInit,
-  SecurityContext,
-} from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'nexus';
-  safeSrc: SafeResourceUrl;
+  showBannerAndFooter = false;
 
-  constructor(private sanitizer: DomSanitizer) {
-    this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(
-      'https://www.youtube.com/embed/8VZfrwLfwRo'
-    );
+  constructor(router: Router) {
+    router.events.subscribe((event) => {
+      if (router.url === 'landing' || router.url === '/') {
+        return (this.showBannerAndFooter = true);
+      }
+      this.showBannerAndFooter = false;
+    });
   }
-
-  ngAfterViewInit = (): void => {
-    const safeUrl = this.safeSrc;
-    const cachedSanitizer = this.sanitizer;
-    const myModal = document.getElementById('staticBackdropLabel');
-    const iframe = document.getElementById('nexus-video');
-
-    const sanitizedUrl = cachedSanitizer.sanitize(
-      SecurityContext.RESOURCE_URL,
-      safeUrl
-    );
-
-    $(document).on('show.bs.modal', myModal, function () {
-      iframe.setAttribute('src', sanitizedUrl);
-    });
-
-    /* Assign empty url value to the iframe src attribute when
-    // modal hide, which stop the video playing */
-    $(document).on('hidden.bs.modal', myModal, function () {
-      iframe.setAttribute('src', '');
-    });
-  };
 }
