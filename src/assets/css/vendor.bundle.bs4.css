@@ -6337,6 +6337,8 @@ readers do not read off random characters that represent icons */
 
 .fa-house-user:before { content: "\e065"; }
 
+.fa-house-lock:before { content: "\e510";}
+
 .fa-houzz:before { content: "\f27c"; }
 
 .fa-hryvnia:before { content: "\f6f2"; }
@@ -6838,6 +6840,8 @@ readers do not read off random characters that represent icons */
 .fa-periscope:before { content: "\f3da"; }
 
 .fa-person-booth:before { content: "\f756"; }
+
+.fa-person:before { content: "\f183"; }
 
 .fa-phabricator:before { content: "\f3db"; }
 

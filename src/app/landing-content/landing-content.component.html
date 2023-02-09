@@ -196,107 +196,79 @@
       </div>
     </div>
   </section>
+
   <!-- // -->
-  <section class="section pdt-0">
-    <div class="ui-mask-right ui-mask-s12"></div>
+  <section class="section bg-theme tc-light">
     <div class="container">
-      <!-- Section Head @s -->
-      <div
-        class="section-head text-center wide-sm animated"
-        data-animate="fadeInUp"
-        data-delay=".1"
-      >
-        <h2 class="title title-dark title-regular">Yada Yada</h2>
+      <div class="section-head section-head-s7 text-center wide-auto-md">
+        <h2 class="title title-thin">Nexus Today</h2>
+        <p class="lead">
+          The first NXS block was mined on September 23rd of 2014 at 16:20:00
+          GMT – 7. <br />
+        </p>
       </div>
-      <!-- Section Head @s -->
-      <div class="nk-block">
-        <div class="row">
-          <div class="col-lg-4 col-xl-2 col-sm-4 col-6">
-            <div
-              class="feature feature-center card animated"
-              data-animate="fadeInUp"
-              data-delay=".2"
-            >
-              <div class="feature-icon feature-icon-btc mb-1">
-                <em class="icon icon-md ikon ikon-btc"></em>
-              </div>
-              <div class="feature-text feature-currency">
-                <h3 class="title title-sm">BitCoin</h3>
+
+      <!-- .section-head @e -->
+      <div class="nk-block" *ngIf="metricsLoaded; else stillLoading">
+        <div class="token-box-top">
+          <div class="row gutter-vr-30px">
+            <div class="col-lg-4 col-md-6">
+              <div class="token-sale-box">
+                <span class="token-sale-info">
+                  <em class="fas fa-user-shield"></em>
+                  {{ sigchains }}</span
+                >
+                <span class="token-sale-title">SIGCHAINS</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-2 col-sm-4 col-6">
-            <div
-              class="feature feature-center card animated"
-              data-animate="fadeInUp"
-              data-delay=".3"
-            >
-              <div class="feature-icon feature-icon-eth mb-1">
-                <em class="icon icon-md ikon ikon-eth"></em>
-              </div>
-              <div class="feature-text feature-currency">
-                <h3 class="title title-sm">Ethereum</h3>
+            <div class="col-lg-4 col-md-6">
+              <div class="token-sale-box">
+                <span class="token-sale-info">
+                  <em class="fas fa-coins"></em>
+                  {{ coinsInCirculation }}</span
+                >
+                <span class="token-sale-title">Coins in circulation</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-2 col-sm-4 col-6">
-            <div
-              class="feature feature-center card animated"
-              data-animate="fadeInUp"
-              data-delay=".4"
-            >
-              <div class="feature-icon feature-icon-ltc mb-1">
-                <em class="icon icon-md ikon ikon-ltc"></em>
-              </div>
-              <div class="feature-text feature-currency">
-                <h3 class="title title-sm">Ethereum</h3>
+            <div class="col-lg-4 col-md-6">
+              <div class="token-sale-box">
+                <span class="token-sale-info">
+                  <em class="fas fa-coins"></em>
+                  78,000,000</span
+                >
+                <span class="token-sale-title">Initial distribution</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-2 col-sm-4 col-6">
-            <div
-              class="feature feature-center card animated"
-              data-animate="fadeInUp"
-              data-delay=".5"
-            >
-              <div class="feature-icon feature-icon-xrp mb-1">
-                <em class="icon icon-md ikon ikon-xrp"></em>
-              </div>
-              <div class="feature-text feature-currency">
-                <h3 class="title title-sm">Ripple</h3>
+            <div class="col-lg-4 col-md-6">
+              <div class="token-sale-box">
+                <span class="token-sale-info">
+                  <em class="fas fa-lock"></em>
+                  {{ stakedCoins }}</span
+                >
+                <span class="token-sale-title">Total staked</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-2 col-sm-4 col-6">
-            <div
-              class="feature feature-center card animated"
-              data-animate="fadeInUp"
-              data-delay=".6"
-            >
-              <div class="feature-icon feature-icon-dash mb-1">
-                <em class="icon icon-md ikon ikon-dash"></em>
-              </div>
-              <div class="feature-text feature-currency">
-                <h3 class="title title-sm">Dash Coin</h3>
+            <div class="col-lg-4 col-md-6">
+              <div class="token-sale-box">
+                <span class="token-sale-info"> {{ stakingPercentage }}</span>
+                <span class="token-sale-title">Staked Percentage</span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-2 col-sm-4 col-6">
-            <div
-              class="feature feature-center card animated"
-              data-animate="fadeInUp"
-              data-delay=".7"
-            >
-              <div class="feature-icon feature-icon-monero mb-1">
-                <em class="icon icon-md ikon ikon-monero"></em>
-              </div>
-              <div class="feature-text feature-currency">
-                <h3 class="title title-sm">Morero</h3>
+            <div class="col-lg-4 col-md-6">
+              <div class="token-sale-box">
+                <span class="token-sale-info">
+                  <em class="fas fa-person"></em>
+                  {{ stakingAccounts }}</span
+                >
+                <span class="token-sale-title">Staking Accounts</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="bg-image" data-overlay="theme" data-opacity="85">
+      <img src="../../images/bg/bg-b.jpg" alt="background" />
     </div>
   </section>
   <!-- // -->
@@ -776,3 +748,11 @@
     </div>
   </section>
 </main>
+
+<ng-template #stillLoading>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</ng-template>

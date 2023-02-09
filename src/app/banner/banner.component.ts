@@ -6,4 +6,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./banner.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BannerComponent {}
+export class BannerComponent {
+  navigateToWiki(): void {
+    (window as any).open('https://wiki.nexus.io/en/tritium++', '_blank');
+  }
+}

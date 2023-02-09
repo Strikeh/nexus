@@ -13,10 +13,21 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingContentComponent } from './landing-content/landing-content.component';
 import { BannerComponent } from './banner/banner.component';
+import { WhitepapersComponent } from './whitepapers/whitepapers.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, TeamComponent, LandingComponent, FooterComponent, HeaderComponent, LandingContentComponent, BannerComponent],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  declarations: [
+    AppComponent,
+    TeamComponent,
+    LandingComponent,
+    FooterComponent,
+    HeaderComponent,
+    LandingContentComponent,
+    BannerComponent,
+    WhitepapersComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
