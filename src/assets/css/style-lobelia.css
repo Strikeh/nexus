@@ -629,6 +629,8 @@ h6, .h6, .fz-6 { font-size: 0.94rem; }
 
 .bg-theme-accent-alt { background-color: #46bdf4 !important; }
 
+.bg-theme-accent-alt-transparent { background-color: #46bdf41f !important; }
+
 .bg-theme-accent-alt.current { background-color: rgba(70, 189, 244, 0.7) !important; }
 
 .bg-blend:before { background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #0a1992); }

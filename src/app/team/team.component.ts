@@ -49,7 +49,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Barak (B12)',
-        image: 'barak',
+        image: 'silhouette',
         popup: 'barak-juror',
         position: 'Juror',
         description1: `I’m a nomad pianist decided to live in South America many years ago. Introduced to nexus back in 2017 and sadly watching the shit market evolving and taken over by Moon boys and banksters. I have hope that one day nexus will shine and unfold the original satoshi vision to free the planet from the modern slavery system.`,
