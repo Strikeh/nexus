@@ -15,6 +15,9 @@ import { LandingContentComponent } from './landing-content/landing-content.compo
 import { BannerComponent } from './banner/banner.component';
 import { WhitepapersComponent } from './whitepapers/whitepapers.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RoadmapComponent } from './roadmap/roadmap.component';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -26,8 +29,17 @@ import { HttpClientModule } from '@angular/common/http';
     LandingContentComponent,
     BannerComponent,
     WhitepapersComponent,
+    RoadmapComponent,
+    ScrollTopComponent,
+    ScrollTopComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    AppRoutingModule,
+    RouterModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

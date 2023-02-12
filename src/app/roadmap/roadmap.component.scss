@@ -1,0 +1,46 @@
+.roadmap.roadmap-logo {
+    .roadmap-head {
+        padding-right: 0px;
+    }
+
+    .roadmap-step {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #203846;
+        box-shadow:0px 2px 10px 2px rgb(39 131 161 / 62%);
+    }
+
+    img 
+    {
+        margin-left: 10px;
+    }
+
+    &.amine, &.obsidian {
+        margin-top: 80px;
+    }
+}
+
+.roadmap-year {
+    background-color:#025e93;
+    color:#0ca4fb;
+}
+
+.roadmap-header {
+    display:flex;
+    align-items: center;
+
+}
+
+.taocoin{
+    width: 150px;
+    display:block;
+}
+
+.banner-caption {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.section-roadmap {
+    padding-top: 50px;
+}
