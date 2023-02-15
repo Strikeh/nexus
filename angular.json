@@ -31,7 +31,7 @@
               "src/styles.scss",
               "src/assets/css/theme.css",
               "src/assets/css/vendor.bundle.css",
-              "src/assets/css/style-lobelia.css"
+              "src/assets/css/style-nexus.css"
             ],
             "scripts": [
               "src/assets/js/jquery.bundle.js",
