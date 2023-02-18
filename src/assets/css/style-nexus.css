@@ -4167,7 +4167,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .tc-light .cpn-text { color: #8ca2e5; }
 
-.cpn-text p { color: inherit !important; font-size: inherit !important; }
+.cpn-text p { color: #6dcefe !important; font-size: inherit !important; }
 
 .cpn-text-center { margin-left: auto; margin-right: auto; }
 
@@ -4204,7 +4204,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 @media (min-width: 576px) { .banner-gap-b3 { padding-bottom: 120px; }
   .has-mask .banner-gap-b3 { padding-bottom: 160px; }
   .banner-screen { bottom: -40px; width: 100%; }
-  .banner-screen-right { bottom: -70px; width: 360px; }
+  .banner-screen-right { bottom: 130px; width: 360px; padding-top:0px; margin-top: 0px; }
   .banner-fs .banner-wrap { padding-top: 70px; padding-bottom: 70px; } }
 
 @media (min-width: 768px) { .banner-gfx-re-s2 { margin: -50px 0 0; }
@@ -4242,7 +4242,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
   .has-mask .banner-gap-b3 { padding-bottom: 220px; }
   .banner-gap-b4 { padding-bottom: 60px; }
   .has-mask .banner-gap-b4 { padding-bottom: 80px; }
-  .banner-screen-right { bottom: -45px; width: 100%; }
+  .banner-screen-right { bottom: 0px; width: 100%; }
   .has-mask .banner-pd-lg { padding-bottom: 225px; padding-top: 65px; }
   .banner-inner { min-height: 600px; }
   .cpn { max-width: 90%; }
@@ -4269,7 +4269,8 @@ ul.progress-info { display: flex; justify-content: space-between; }
   .cpn-social { margin-top: 50px; }
   .cpn-s2 { margin-top: -122px !important; padding-top: 0; } }
 
-@media (min-width: 1200px) { .banner-gfx-re-s1 { margin: 0 -380px 0 -180px; }
+@media (min-width: 1200px) { 
+  .banner-gfx-re-s1 { margin: 0 -380px 0 -180px; }
   .banner-gfx-re-s2 { margin: 0 -330px 0 -110px; }
   .banner-gfx-re-s5 { margin: 0 -515px 0 0; }
   .banner-gfx-re-s6 { margin: 0 0 -160px -70px; }
@@ -4277,7 +4278,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
   .banner-gfx-re-s7 + .abs-center { right: 15px; transform: translateY(-50%); left: auto; }
   .banner-gap-b3 { padding-bottom: 290px; }
   .has-mask .banner-gap-b3 { padding-bottom: 320px; }
-  .banner-screen-right { bottom: -90px; }
+  .banner-screen-right { bottom: 0px; }
   .banner-fs .banner-wrap { padding-top: 40px; padding-bottom: 40px; } }
 
 @media (min-width: 1600px) { .banner-caption:not([class*=wide]) { max-width: 1080px; }
