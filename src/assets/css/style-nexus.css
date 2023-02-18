@@ -611,7 +611,7 @@ h6, .h6, .fz-6 { font-size: 0.94rem; }
 
 .bg-theme-dark.current { background-color: rgba(0, 5, 55, 0.7) !important; }
 
-.bg-theme-dark-alt { background-color: #08157a !important; }
+.bg-theme-dark-alt { background-color: #012235  !important; }
 
 .bg-theme-dark-alt.current { background-color: rgba(8, 21, 122, 0.7) !important; }
 
@@ -1529,7 +1529,7 @@ hr { position: relative; z-index: 5; }
 
 .ui-mask-s5 { width: 440px; height: 1000px; transform: translateY(12%); }
 
-.ui-mask-s5:after { height: 600px; width: 350px; right: 45%; background-image: linear-gradient(135deg, rgba(0, 5, 55, 0) 15%, #1b5ed1 50%, rgba(0, 5, 55, 0) 80%); }
+.ui-mask-s5:after { height: 600px; width: 350px; right: 45%; background-image: linear-gradient(135deg, rgba(0, 5, 55, 0) 15%, #1b5ed1 50%, rgba(5, 37, 92, 0) 80%); }
 
 .ui-mask-s5:before { display: block; background-image: url(../images/mask-line-c.png); }
 

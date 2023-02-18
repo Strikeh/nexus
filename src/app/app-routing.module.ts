@@ -1,3 +1,4 @@
+import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
 import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { WhitepapersComponent } from './whitepapers/whitepapers.component';
@@ -10,8 +11,9 @@ const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
   { path: 'team', component: TeamComponent },
   { path: 'roadmap', component: RoadmapComponent },
-  { path: 'buy-nxs', component: BuyNexusComponent },
+  { path: 'buynexus', component: BuyNexusComponent },
   { path: 'whitepapers', component: WhitepapersComponent },
+  { path: 'decentralizedinternet', component: DecentralizedInternetComponent },
 ];
 
 @NgModule({
