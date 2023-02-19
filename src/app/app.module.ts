@@ -20,6 +20,7 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { CommonModule } from '@angular/common';
 import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
+import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
     ScrollTopComponent,
     ScrollTopComponent,
     BuyNexusComponent,
+    DecentralizedInternetComponent,
   ],
   imports: [
     BrowserModule,
