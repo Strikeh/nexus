@@ -1,3 +1,4 @@
+import { BlockchainComponent } from './blockchain/blockchain.component';
 import { ScriptService } from './script-service';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -34,9 +35,9 @@ import { DecentralizedInternetComponent } from './decentralized-internet/decentr
     WhitepapersComponent,
     RoadmapComponent,
     ScrollTopComponent,
-    ScrollTopComponent,
     BuyNexusComponent,
     DecentralizedInternetComponent,
+    BlockchainComponent,
   ],
   imports: [
     BrowserModule,
