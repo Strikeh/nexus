@@ -7,11 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
+    "build-prod": "ng build --configuration production --base-href /myUrl/",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.2.14",
+    "@angular/cli": "^15.2.0",
     "@angular/common": "~11.2.14",
     "@angular/compiler": "~11.2.14",
     "@angular/core": "~11.2.14",
@@ -26,8 +28,7 @@
     "jquery-migrate": "^3.4.0",
     "rxjs": "^7.8.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3",
-    "angular-cli": "^1.0.0-beta.28.3"
+    "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.4",
@@ -44,6 +45,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
