@@ -22,6 +22,8 @@ import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { CommonModule } from '@angular/common';
 import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
 import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
+import { BlogComponent } from './blog/blog.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { DecentralizedInternetComponent } from './decentralized-internet/decentr
     BuyNexusComponent,
     DecentralizedInternetComponent,
     BlockchainComponent,
+    BlogComponent,
+    PageHeaderComponent,
   ],
   imports: [
     BrowserModule,

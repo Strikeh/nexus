@@ -1,3 +1,4 @@
+import { BlogComponent } from './blog/blog.component';
 import { BlockchainComponent } from './blockchain/blockchain.component';
 import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
 import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'whitepapers', component: WhitepapersComponent },
   { path: 'decentralizedinternet', component: DecentralizedInternetComponent },
   { path: 'blockchain', component: BlockchainComponent },
+  { path: 'blog', component: BlogComponent },
 ];
 
 @NgModule({
