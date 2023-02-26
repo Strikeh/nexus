@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "build-prod": "ng build --configuration production --base-href /myUrl/",
+    "build-prod": "ng build --configuration production",
     "e2e": "ng e2e"
   },
   "private": true,

@@ -1,0 +1,50 @@
+<header
+  class="nk-header page-header is-transparent is-sticky is-shrink"
+  id="header"
+>
+  <!-- Banner @s -->
+  <div class="header-banner bg-theme-grad">
+    <div class="nk-banner">
+      <div class="banner banner-page" [class.small]="isSmall">
+        <div class="banner-wrap">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-6 col-lg-9">
+                <div class="banner-caption cpn tc-light text-center">
+                  <div class="cpn-head">
+                    <div
+                      class="section-head section-head-sm text-center wide-auto-sm"
+                    >
+                      <h2
+                        class="title title-s4 animated"
+                        data-animate="fadeInUp"
+                        data-delay=".1"
+                        title="{{ title }}"
+                        style="visibility: visible; animation-delay: 0.1s"
+                      >
+                        {{ title }}
+                      </h2>
+                      <p
+                        class="animated"
+                        data-animate="fadeInUp"
+                        data-delay=".2"
+                        style="visibility: visible; animation-delay: 0.2s"
+                      >
+                        {{ headerText }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .nk-banner -->
+    <!-- <div class="nk-ovm shape-a-sm"></div> -->
+    <div class="nk-ovm mask-g-bg shape-h"></div>
+  </div>
+
+  <!-- .header-banner @e -->
+</header>
