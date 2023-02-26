@@ -441,8 +441,8 @@ NioApp = function (NioApp, $, window, document) {
 				if (!$menu_toggle.is(e.target) && $menu_toggle.has(e.target).length===0 && !$header.is(e.target) && $header.has(e.target).length===0 && $win.width() < _navBreak)  {
 					$navbar_toggle.removeClass(_active_nav);
 					$main_navbar_classic.find(_main_menu).slideUp();
-                    $main_navbar.removeClass(_open_menu);
-                    $body.removeClass('overlay-'+_open_menu);
+                    // $main_navbar.removeClass(_open_menu);
+                    // $body.removeClass('overlay-'+_open_menu);
 				}
 			});
 

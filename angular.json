@@ -22,6 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "sourceMap": true,
             "aot": true,
             "assets": [
               "src/assets",
@@ -36,6 +37,7 @@
             "scripts": [
               "src/assets/js/jquery.bundle.js",
               "src/assets/js/vendors/jquery.magnific-popup.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
               "src/assets/js/scripts.js"
             ]
           },
