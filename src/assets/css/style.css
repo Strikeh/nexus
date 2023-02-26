@@ -3354,7 +3354,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .nk-circle-animation { height: 300px; width: 300px; z-index: 1; }
 
-.nk-circle-animation + * { position: relative; z-index: 1; }
+/* .nk-circle-animation + * { position: relative; z-index: 1; } */
 
 .nk-circle-animation:before, .nk-circle-animation:after { position: absolute; content: ''; border: 4px solid rgba(185, 210, 244, 0.3); border-radius: 50%; }
 
