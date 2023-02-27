@@ -1,5 +1,5 @@
 import { BlockchainComponent } from './blockchain/blockchain.component';
-import { ScriptService } from './script-service';
+import { ScriptService } from './services/script-service';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
