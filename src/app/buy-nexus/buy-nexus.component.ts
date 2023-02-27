@@ -7,7 +7,7 @@ import {
   ViewChild,
   ElementRef,
 } from '@angular/core';
-import { ScriptService } from '../script-service';
+import { ScriptService } from '../services/script-service';
 
 declare const TradingView: any;
 
