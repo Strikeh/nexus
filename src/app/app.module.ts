@@ -24,6 +24,8 @@ import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
 import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
 import { BlogComponent } from './blog/blog.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { OperatingSystemComponent } from './operating-system/operating-system.component';
+import { TokenizationComponent } from './tokenization/tokenization.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     BlockchainComponent,
     BlogComponent,
     PageHeaderComponent,
+    OperatingSystemComponent,
+    TokenizationComponent,
   ],
   imports: [
     BrowserModule,
