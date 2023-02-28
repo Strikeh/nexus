@@ -1,3 +1,5 @@
+import { TokenizationComponent } from './tokenization/tokenization.component';
+import { OperatingSystemComponent } from './operating-system/operating-system.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlockchainComponent } from './blockchain/blockchain.component';
 import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'decentralizedinternet', component: DecentralizedInternetComponent },
   { path: 'blockchain', component: BlockchainComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'operatingsystem', component: OperatingSystemComponent },
+  { path: 'tokenization', component: TokenizationComponent },
 ];
 
 @NgModule({

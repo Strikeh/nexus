@@ -1,0 +1,88 @@
+<body class="nk-body body-wider bg-light">
+  <div class="nk-wrap">
+    <nexus-page-header
+      [title]="'Operating System'"
+      headerText="There is no neat distinction between operating system software and the software that runs on top of it."
+      [isSmall]="true"
+    >
+    </nexus-page-header>
+  </div>
+
+  <section class="section protocol pdt-1 ov-v">
+    <div class="ui-mask-left ui-mask-s8"></div>
+    <div class="container">
+      <!-- Block @s -->
+      <div class="nk-block nk-block-text-wrap">
+        <div
+          class="row align-items-center gutter-vr-30px justify-content-between"
+        >
+          <div class="col-lg-7 col-mb-8 m-auto order-first order-lg-last">
+            <div
+              class="nk-block-img"
+              data-animate="fadeInUp"
+              data-delay=".1"
+              title="OSImage"
+              style="visibility: visible; animation-delay: 0.1s"
+            >
+              <img src="images/floatingcubes.png" alt="app" />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="nk-block-text">
+              <div class="nk-block-shade"></div>
+              <h3
+                class="title title-s2 title-s2-alt animated"
+                data-animate="fadeInUp"
+                data-delay=".2"
+                title="OSTitle"
+                style="visibility: visible; animation-delay: 0.2s"
+              >
+                Operating System
+              </h3>
+              <p
+                class="animated"
+                data-animate="fadeInUp"
+                data-delay=".3"
+                title="OSPart1"
+                style="visibility: visible; animation-delay: 0.3s"
+              >
+                LX-OS, the Nexus Operating System (OS) will initially run on
+                micro-satellites and IoT (Internet of Things) devices, which
+                generally have weak security models. LX-OS uses Signature Chains
+                to authenticate the runtime memory, file systems, and other
+                system servers. It will operate on a distributed filesystem,
+                solving the problem of moving the entire App & OS state from one
+                device to another. LX-OS is built on the seL4 micro-kernel,
+                which when combined with Nexus, can resist attacks from malware,
+                backdoors, and other common vulnerabilities. seL4 is part of an
+                ecosystem supporting active use in various domains including
+                automotive, aviation, infrastructure, medical and defence.
+              </p>
+              <p
+                class="animated"
+                data-animate="fadeInUp"
+                data-delay=".4"
+                title="OSPart2"
+                style="visibility: visible; animation-delay: 0.4s"
+              >
+                The Lower-Level Library (LLL) is the backbone of LX-OS. The LLL
+                contains three main components: Cryptography (LLC), Database
+                (LLD), and Protocol (LLP). The LLC is a collection of useful
+                cryptographic functions including Quantum Resistant algorithms,
+                the LLD runs in constant time O(1) handling large datasets
+                without losing performance, while the LLP allows the rapid
+                development and deployment of high performance binary or
+                hyper-text protocols.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .block @e -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <nexus-footer></nexus-footer>
+</body>
