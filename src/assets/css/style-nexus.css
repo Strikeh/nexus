@@ -990,6 +990,8 @@ h6, .h6, .fz-6 { font-size: 0.94rem; }
 
 .nk-df-shape-z4, .shape-z4:after, .shape-z4-bg { background-image: url(../images/shape-z4.png); }
 
+.nk-df-shape-z5, .shape-z5:after, .shape-z5-bg { background-image: url(../images/shape-z5.png); }
+
 .nk-df-shape-z6, .shape-z6:after, .shape-z6-bg { background-image: url(../images/shape-z6.png); }
 
 .nk-df-shape-z6-sm, .shape-z6-sm:after, .shape-z6-sm-bg { background-image: url(../images/shape-z6-sm.png); }
@@ -1871,27 +1873,27 @@ hr { position: relative; z-index: 5; }
 
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus { background-color: #e6604a !important; border-color: #e6604a; }
 
-.btn-dark { background-color: #415076; border-color: #415076; }
+.btn-dark { background-color: #012235; border-color: #012235; }
 
 .btn-dark:not(:hover), .btn-dark:not(:focus) { color: #fff; }
 
 .btn-dark:hover, .btn-dark:focus { background-color: #1d2334; border-color: #1d2334; }
 
-.btn-dark.btn-outline { color: #415076; }
+.btn-dark.btn-outline { color: #012235; }
 
-.btn-dark.btn-outline:hover, .btn-dark.btn-outline:focus { background-color: #415076 !important; border-color: #415076; }
+.btn-dark.btn-outline:hover, .btn-dark.btn-outline:focus { background-color: #012235  !important; border-color: #012235 ; }
 
 .btn-theme-dark { background-color: rgba(0, 0, 0, 0.2); border-color: rgba(0, 0, 0, 0); }
 
 .btn-theme-dark:hover, .btn-theme-dark:focus { background-color: #000537; border-color: #000537; }
 
-.btn-light { background-color: #f5f7fe; border-color: #f5f7fe; color: #415076 !important; }
+.btn-light { background-color: #f5f7fe; border-color: #f5f7fe; color: #012235  !important; }
 
-.btn-light:hover, .btn-light:focus { background-color: #c7d2f9; border-color: #c7d2f9; color: #415076 !important; }
+.btn-light:hover, .btn-light:focus { background-color: #c7d2f9; border-color: #c7d2f9; color: #012235  !important; }
 
 .btn-light.btn-outline { background-color: #f5f7fe; border-color: #f5f7fe; }
 
-.btn-light.btn-outline:hover, .btn-light.btn-outline:focus { background-color: #f5f7fe !important; border-color: #f5f7fe; color: #415076 !important; }
+.btn-light.btn-outline:hover, .btn-light.btn-outline:focus { background-color: #f5f7fe !important; border-color: #f5f7fe; color: #012235  !important; }
 
 .tc-light .btn-light.btn-outline { color: #fff !important; }
 

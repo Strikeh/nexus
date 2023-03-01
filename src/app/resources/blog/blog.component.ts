@@ -1,4 +1,4 @@
-import { PagerService } from './../services/pager.service';
+import { PagerService } from '../../services/pager.service';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 

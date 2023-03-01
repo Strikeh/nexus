@@ -1,15 +1,17 @@
+import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+
 import { TokenizationComponent } from './tokenization/tokenization.component';
-import { OperatingSystemComponent } from './operating-system/operating-system.component';
-import { BlogComponent } from './blog/blog.component';
-import { BlockchainComponent } from './blockchain/blockchain.component';
-import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
-import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
-import { RoadmapComponent } from './roadmap/roadmap.component';
+import { OperatingSystemComponent } from './technology/operating-system/operating-system.component';
+import { BlogComponent } from './resources/blog/blog.component';
+import { BlockchainComponent } from './technology/blockchain/blockchain.component';
+import { DecentralizedInternetComponent } from './technology/decentralized-internet/decentralized-internet.component';
+import { BuyNexusComponent } from './develop/buy-nexus/buy-nexus.component';
+import { RoadmapComponent } from './technology/roadmap/roadmap.component';
 import { WhitepapersComponent } from './whitepapers/whitepapers.component';
 import { LandingComponent } from './landing/landing.component';
 import { TeamComponent } from './team/team.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { WalletComponent } from './develop/wallet/wallet.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'operatingsystem', component: OperatingSystemComponent },
   { path: 'tokenization', component: TokenizationComponent },
+  { path: 'wallet', component: WalletComponent },
 ];
 
 @NgModule({
