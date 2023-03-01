@@ -1,4 +1,4 @@
-import { BlockchainComponent } from './blockchain/blockchain.component';
+import { BlockchainComponent } from './technology/blockchain/blockchain.component';
 import { ScriptService } from './services/script-service';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,15 +17,16 @@ import { LandingContentComponent } from './landing-content/landing-content.compo
 import { BannerComponent } from './banner/banner.component';
 import { WhitepapersComponent } from './whitepapers/whitepapers.component';
 import { HttpClientModule } from '@angular/common/http';
-import { RoadmapComponent } from './roadmap/roadmap.component';
+import { RoadmapComponent } from './technology/roadmap/roadmap.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { CommonModule } from '@angular/common';
-import { BuyNexusComponent } from './buy-nexus/buy-nexus.component';
-import { DecentralizedInternetComponent } from './decentralized-internet/decentralized-internet.component';
-import { BlogComponent } from './blog/blog.component';
+import { BuyNexusComponent } from './develop/buy-nexus/buy-nexus.component';
+import { DecentralizedInternetComponent } from './technology/decentralized-internet/decentralized-internet.component';
+import { BlogComponent } from './resources/blog/blog.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
-import { OperatingSystemComponent } from './operating-system/operating-system.component';
+import { OperatingSystemComponent } from './technology/operating-system/operating-system.component';
 import { TokenizationComponent } from './tokenization/tokenization.component';
+import { WalletComponent } from './develop/wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TokenizationComponent } from './tokenization/tokenization.component';
     PageHeaderComponent,
     OperatingSystemComponent,
     TokenizationComponent,
+    WalletComponent,
   ],
   imports: [
     BrowserModule,
