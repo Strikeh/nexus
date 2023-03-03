@@ -1,6 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  AfterViewInit,
+  AfterViewChecked,
+  ElementRef,
+} from '@angular/core';
 import { PagerService } from 'src/app/services/pager.service';
+import 'magnific-popup';
 
 @Component({
   selector: 'app-videos',
@@ -8,11 +16,33 @@ import { PagerService } from 'src/app/services/pager.service';
   styleUrls: ['./videos.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class VideosComponent implements OnInit {
+export class VideosComponent implements OnInit, AfterViewChecked {
   constructor(
     private http: HttpClient,
     private readonly pagerService: PagerService
   ) {}
+
+  ngAfterViewChecked(): void {
+    const popups = document.querySelectorAll('a.video-popup');
+
+    popups.forEach((popup) => {
+      (<any>$(popup)).magnificPopup({
+        type: 'iframe',
+        removalDelay: 160,
+        preloader: true,
+        fixedContentPos: false,
+        callbacks: {
+          beforeOpen: function () {
+            this.st.image.markup = this.st.image.markup.replace(
+              'mfp-figure',
+              'mfp-figure mfp-with-anim'
+            );
+            this.st.mainClass = this.st.el.attr('data-effect');
+          },
+        },
+      });
+    });
+  }
 
   // array of all items to be paged
   private videos: any[];
@@ -33,11 +63,11 @@ export class VideosComponent implements OnInit {
         this.videos = data;
 
         // initialize to page 1
-        this.setPage(1);
+        this.setPage(1, null);
       });
   }
 
-  setPage(page: number) {
+  setPage = (page: number, event: any) => {
     // get pager object from service
     this.pager = this.pagerService.getPager(this.videos.length, page);
 
@@ -46,5 +76,9 @@ export class VideosComponent implements OnInit {
       this.pager.startIndex,
       this.pager.endIndex + 1
     );
-  }
+
+    if (event) {
+      event.preventDefault();
+    }
+  };
 }

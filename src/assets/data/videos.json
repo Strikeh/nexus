@@ -26,5 +26,75 @@
     "category": "Nexus Developers",
     "image": "episode4.jpg",
     "tags": [{ "name": "WEB3" }, { "name": "Authentication" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=xpLZhHmgWKY",
+    "title": "Ep5: Module Store",
+    "category": "Nexus Developers",
+    "image": "episode5.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=DmESBYwrwEE&",
+    "title": "Ep6: P2P Marketplace",
+    "category": "Nexus Developers",
+    "image": "episode6.jpg",
+    "tags": [{ "name": "DEX" }, { "name": "P2P" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Y9sKgWRfBvY",
+    "title": "Ep7: Signature Chain Access",
+    "category": "Nexus Developers",
+    "image": "episode7.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Lrx3QhSH9sc",
+    "title": "Ep8: Decentralized GitHub",
+    "category": "Nexus Developers",
+    "image": "episode8.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Tw9gtwpB39s",
+    "title": "Ep9: LISP",
+    "category": "Nexus Developers",
+    "image": "episode9.jpg",
+    "tags": [{ "name": "LISP" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=YzK4NinDjDo",
+    "title": "Ep10: TAO Framework",
+    "category": "Nexus Developers",
+    "image": "episode10.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=m_uMmhCIvso",
+    "title": "Ep11: Ticketing with Assets",
+    "category": "Nexus Developers",
+    "image": "episode11.jpg",
+    "tags": [{ "name": "Assets" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=rqWOfuSaYmo",
+    "title": "Ep12: Nexus Virtual Machine",
+    "category": "Nexus Developers",
+    "image": "episode12.jpg",
+    "tags": [{ "name": "EVM" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=1nEQBscO9LQ",
+    "title": "Ep13: Mobile Wallet",
+    "category": "Nexus Developers",
+    "image": "episode13.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=J0yIxjPLkXs",
+    "title": "Ep14: Satellite Routing Services",
+    "category": "Nexus Developers",
+    "image": "episode14.jpg",
+    "tags": []
   }
 ]

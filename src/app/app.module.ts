@@ -10,6 +10,7 @@ import { TeamComponent } from './team/team.component';
 import { LandingComponent } from './landing/landing.component';
 
 import * as $ from 'jquery';
+import 'magnific-popup';
 
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';

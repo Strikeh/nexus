@@ -6431,7 +6431,9 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .pagination li a .icon { line-height: 20px; padding: 0 5px; }
 
-.pagination li a.active, .pagination li a:hover { background: #025e93; color: #fff; }
+.pagination li a.active { background: #025e93; color: #fff; }
+
+.pagination li a:hover { background: #0f4768; color: #fff; }
 
 .pagination li a.active .icon, .pagination li a:hover .icon { color: #fff; }
 

@@ -18,10 +18,11 @@
                   <div *ngFor="let video of pagedItems" class="col-sm-6">
                     <div class="blog">
                       <div class="blog-photo">
-                        <img
-                          src="images/video/{{ video.image }}"
-                          alt="video-thumb"
-                        />
+                        <a href="{{ video.url }}" class="video-popup">
+                          <img
+                            src="images/video/{{ video.image }}"
+                            alt="video-thumb"
+                        /></a>
                       </div>
                       <div class="blog-text">
                         <ul class="blog-meta">
@@ -51,17 +52,12 @@
                     class="pagination"
                   >
                     <li [ngClass]="{ disabled: pager.currentPage === 1 }">
-                      <a href="#" (click)="setPage(1); $event.preventDefault()"
-                        >First</a
-                      >
+                      <a href="#" (click)="setPage(1, $event)">First</a>
                     </li>
                     <li [ngClass]="{ disabled: pager.currentPage === 1 }">
                       <a
                         href="#"
-                        (click)="
-                          setPage(pager.currentPage - 1);
-                          $event.preventDefault()
-                        "
+                        (click)="setPage(pager.currentPage - 1, $event)"
                         >Previous</a
                       >
                     </li>
@@ -69,7 +65,7 @@
                       <a
                         [ngClass]="{ active: pager.currentPage === page }"
                         href="#"
-                        (click)="setPage(page); $event.preventDefault()"
+                        (click)="setPage(page, $event)"
                         >{{ page }}</a
                       >
                     </li>
@@ -123,8 +119,6 @@
                     <div class="wgs-body">
                       <ul class="wgs-links wgs-links-category">
                         <li><a href="#">Nexus Developers</a></li>
-                        <!-- <li><a href="#">Cryptocurrency</a></li>
-                        <li><a href="#">Technology</a></li> -->
                       </ul>
                     </div>
                   </div>
