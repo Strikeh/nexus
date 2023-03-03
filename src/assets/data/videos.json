@@ -1,0 +1,30 @@
+[
+  {
+    "url": "//www.youtube.com/watch?v=P-B_q2bxldI",
+    "title": "Ep1: Hybrid blockchain",
+    "category": "Nexus Developers",
+    "image": "episode1.jpg",
+    "tags": [{ "name": "Hybrid" }, { "name": "Blockchain" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=70KfDhr0c_4",
+    "title": "Ep2: Contract DSL",
+    "category": "Nexus Developers",
+    "image": "episode2.jpg",
+    "tags": [{ "name": "Smart Contract" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=GGE3gBBYLM4",
+    "title": "Ep3: Register Layer",
+    "category": "Nexus Developers",
+    "image": "episode3.jpg",
+    "tags": [{ "name": "Register" }, { "name": "Smart Contract" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=CGuwE__-tI4",
+    "title": "Ep4: Dapp Reverse Proxy Authentication",
+    "category": "Nexus Developers",
+    "image": "episode4.jpg",
+    "tags": [{ "name": "WEB3" }, { "name": "Authentication" }]
+  }
+]

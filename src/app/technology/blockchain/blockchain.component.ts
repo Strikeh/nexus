@@ -1,3 +1,4 @@
+import { BaseComponent } from 'src/app/utils/base-component/base-component.component';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
@@ -5,4 +6,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./blockchain.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BlockchainComponent {}
+export class BlockchainComponent extends BaseComponent {}

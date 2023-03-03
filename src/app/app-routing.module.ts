@@ -12,6 +12,7 @@ import { WhitepapersComponent } from './whitepapers/whitepapers.component';
 import { LandingComponent } from './landing/landing.component';
 import { TeamComponent } from './team/team.component';
 import { WalletComponent } from './develop/wallet/wallet.component';
+import { VideosComponent } from './resources/videos/videos.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'operatingsystem', component: OperatingSystemComponent },
   { path: 'tokenization', component: TokenizationComponent },
   { path: 'wallet', component: WalletComponent },
+  { path: 'videos', component: VideosComponent },
 ];
 
 @NgModule({

@@ -1,8 +1,8 @@
 <body class="nk-body body-wider bg-light">
   <div class="nk-wrap">
     <nexus-page-header
-      [title]="'Blog'"
-      [headerText]="'Blogging is a conversation, not a code.'"
+      [title]="'Videos'"
+      [headerText]="'Perfection isn’t the end goal. Connection is.'"
       [isSmall]="true"
     >
     </nexus-page-header>
@@ -15,29 +15,28 @@
             <div class="row">
               <div class="col-lg-8">
                 <div class="row">
-                  <div *ngFor="let article of pagedItems" class="col-sm-6">
+                  <div *ngFor="let video of pagedItems" class="col-sm-6">
                     <div class="blog">
                       <div class="blog-photo">
                         <img
-                          src="images/blog/{{ article.image }}"
-                          alt="blog-thumb"
+                          src="images/video/{{ video.image }}"
+                          alt="video-thumb"
                         />
                       </div>
                       <div class="blog-text">
                         <ul class="blog-meta">
-                          <li>
-                            <a href="#">{{ article.publishDate }}</a>
-                          </li>
-                          <li *ngFor="let tag of article.tags">
+                          <li *ngFor="let tag of video.tags">
                             <a href="#">{{ tag.name }}</a>
                           </li>
                         </ul>
-                        <h4 class="title title-sm">
-                          <a href="{{ article.url }}">{{ article.title }}</a>
+                        <h4 class="title title-sm nk-block-video">
+                          <a href="{{ video.url }}" class="video-popup">{{
+                            video.title
+                          }}</a>
                         </h4>
-                        <p>
+                        <!-- <p>
                           {{ article.description }}
-                        </p>
+                        </p> -->
                       </div>
                     </div>
                     <!-- .blog -->
@@ -119,16 +118,16 @@
                       </button>
                     </form>
                   </div>
-                  <!-- <div class="wgs wgs-category">
+                  <div class="wgs wgs-category">
                     <h6 class="wgs-title">Category</h6>
                     <div class="wgs-body">
                       <ul class="wgs-links wgs-links-category">
-                        <li><a href="#">Blockchain</a></li>
-                        <li><a href="#">Cryptocurrency</a></li>
-                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Nexus Developers</a></li>
+                        <!-- <li><a href="#">Cryptocurrency</a></li>
+                        <li><a href="#">Technology</a></li> -->
                       </ul>
                     </div>
-                  </div> -->
+                  </div>
                   <div class="wgs wgs-tags">
                     <h6 class="wgs-title">Tags</h6>
                     <div class="wgs-body">
@@ -140,28 +139,6 @@
                         <li><a href="#">roadmap</a></li>
                         <li><a href="#">crypto</a></li>
                       </ul>
-                    </div>
-                  </div>
-                  <div class="wgs wgs-archive">
-                    <h6 class="wgs-title">Archive</h6>
-                    <div class="wgs-body">
-                      <select
-                        name="post-archive"
-                        class="select"
-                        data-select2-placehold="Select Month"
-                      >
-                        <option label="placeholder"></option>
-                        <option value="All">All</option>
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                      </select>
                     </div>
                   </div>
                 </div>

@@ -27,6 +27,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { OperatingSystemComponent } from './technology/operating-system/operating-system.component';
 import { TokenizationComponent } from './tokenization/tokenization.component';
 import { WalletComponent } from './develop/wallet/wallet.component';
+import { VideosComponent } from './resources/videos/videos.component';
+import { BaseComponent } from './utils/base-component/base-component.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { WalletComponent } from './develop/wallet/wallet.component';
     OperatingSystemComponent,
     TokenizationComponent,
     WalletComponent,
+    VideosComponent,
+    BaseComponent,
   ],
   imports: [
     BrowserModule,
