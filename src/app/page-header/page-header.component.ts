@@ -15,14 +15,13 @@ import {
 })
 export class PageHeaderComponent implements AfterViewInit {
   @Input() title: string;
+  @Input() titleBackground: string;
   @Input() headerText: string;
   @Input() isSmall: boolean = false;
 
   url = './../../assets/js/particles.js';
 
-  constructor() {
-    // this.loadScript();
-  }
+  constructor() {}
 
   ngAfterViewInit(): void {
     this.loadScript();
@@ -35,8 +34,6 @@ export class PageHeaderComponent implements AfterViewInit {
     node.async = true;
     document.getElementsByTagName('head')[0].appendChild(node);
   }
-
-  //     var $particles_bg = $('.particles-bg');
   //     if ($particles_bg.exists()) {
   //         $particles_bg.each(function(){
   //             var $self = $(this), $self_id = $self.attr('id'),

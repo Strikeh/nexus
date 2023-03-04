@@ -6,6 +6,7 @@ import {
   AfterViewInit,
   AfterViewChecked,
   ElementRef,
+  ViewChild,
 } from '@angular/core';
 import { PagerService } from 'src/app/services/pager.service';
 import 'magnific-popup';
@@ -17,6 +18,8 @@ import 'magnific-popup';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class VideosComponent implements OnInit, AfterViewChecked {
+  @ViewChild('videos') videosDiv: ElementRef;
+
   constructor(
     private http: HttpClient,
     private readonly pagerService: PagerService
@@ -78,6 +81,19 @@ export class VideosComponent implements OnInit, AfterViewChecked {
     );
 
     if (event) {
+      const id = 'videos';
+      const yOffset = -100;
+      const element = document.getElementById(id);
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      // this.videosDiv.nativeElement.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      //   inline: 'nearest',
+      // });
+
       event.preventDefault();
     }
   };

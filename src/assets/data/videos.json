@@ -1,98 +1,98 @@
 [
   {
     "url": "//www.youtube.com/watch?v=P-B_q2bxldI",
-    "title": "Ep1: Hybrid blockchain",
+    "title": "Episode 1: Hybrid blockchain",
     "category": "Nexus Developers",
     "image": "episode1.jpg",
     "tags": [{ "name": "Hybrid" }, { "name": "Blockchain" }]
   },
   {
     "url": "//www.youtube.com/watch?v=70KfDhr0c_4",
-    "title": "Ep2: Contract DSL",
+    "title": "Episode 2: Contract DSL",
     "category": "Nexus Developers",
     "image": "episode2.jpg",
     "tags": [{ "name": "Smart Contract" }]
   },
   {
     "url": "//www.youtube.com/watch?v=GGE3gBBYLM4",
-    "title": "Ep3: Register Layer",
+    "title": "Episode 3: Register Layer",
     "category": "Nexus Developers",
     "image": "episode3.jpg",
     "tags": [{ "name": "Register" }, { "name": "Smart Contract" }]
   },
   {
     "url": "//www.youtube.com/watch?v=CGuwE__-tI4",
-    "title": "Ep4: Dapp Reverse Proxy Authentication",
+    "title": "Episode 4: Dapp Reverse Proxy Authentication",
     "category": "Nexus Developers",
     "image": "episode4.jpg",
     "tags": [{ "name": "WEB3" }, { "name": "Authentication" }]
   },
   {
     "url": "//www.youtube.com/watch?v=xpLZhHmgWKY",
-    "title": "Ep5: Module Store",
+    "title": "Episode 5: Module Store",
     "category": "Nexus Developers",
     "image": "episode5.jpg",
     "tags": [{ "name": "WEB3" }]
   },
   {
     "url": "//www.youtube.com/watch?v=DmESBYwrwEE&",
-    "title": "Ep6: P2P Marketplace",
+    "title": "Episode 6: P2P Marketplace",
     "category": "Nexus Developers",
     "image": "episode6.jpg",
     "tags": [{ "name": "DEX" }, { "name": "P2P" }]
   },
   {
     "url": "//www.youtube.com/watch?v=Y9sKgWRfBvY",
-    "title": "Ep7: Signature Chain Access",
+    "title": "Episode 7: Signature Chain Access",
     "category": "Nexus Developers",
     "image": "episode7.jpg",
     "tags": [{ "name": "WEB3" }]
   },
   {
     "url": "//www.youtube.com/watch?v=Lrx3QhSH9sc",
-    "title": "Ep8: Decentralized GitHub",
+    "title": "Episode 8: Decentralized GitHub",
     "category": "Nexus Developers",
     "image": "episode8.jpg",
     "tags": [{ "name": "WEB3" }]
   },
   {
     "url": "//www.youtube.com/watch?v=Tw9gtwpB39s",
-    "title": "Ep9: LISP",
+    "title": "Episode 9: LISP",
     "category": "Nexus Developers",
     "image": "episode9.jpg",
     "tags": [{ "name": "LISP" }]
   },
   {
     "url": "//www.youtube.com/watch?v=YzK4NinDjDo",
-    "title": "Ep10: TAO Framework",
+    "title": "Episode 10: TAO Framework",
     "category": "Nexus Developers",
     "image": "episode10.jpg",
     "tags": [{ "name": "WEB3" }]
   },
   {
     "url": "//www.youtube.com/watch?v=m_uMmhCIvso",
-    "title": "Ep11: Ticketing with Assets",
+    "title": "Episode 11: Ticketing with Assets",
     "category": "Nexus Developers",
     "image": "episode11.jpg",
     "tags": [{ "name": "Assets" }]
   },
   {
     "url": "//www.youtube.com/watch?v=rqWOfuSaYmo",
-    "title": "Ep12: Nexus Virtual Machine",
+    "title": "Episode 12: Nexus Virtual Machine",
     "category": "Nexus Developers",
     "image": "episode12.jpg",
     "tags": [{ "name": "EVM" }, { "name": "WEB3" }]
   },
   {
     "url": "//www.youtube.com/watch?v=1nEQBscO9LQ",
-    "title": "Ep13: Mobile Wallet",
+    "title": "Episode 13: Mobile Wallet",
     "category": "Nexus Developers",
     "image": "episode13.jpg",
     "tags": [{ "name": "WEB3" }]
   },
   {
     "url": "//www.youtube.com/watch?v=J0yIxjPLkXs",
-    "title": "Ep14: Satellite Routing Services",
+    "title": "Episode 14: Satellite Routing Services",
     "category": "Nexus Developers",
     "image": "episode14.jpg",
     "tags": []
