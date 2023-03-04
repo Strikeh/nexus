@@ -96,5 +96,89 @@
     "category": "Nexus Developers",
     "image": "episode14.jpg",
     "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ehthZ8J4ppM",
+    "title": "Episode 15: Satellites SDR",
+    "category": "Nexus Developers",
+    "image": "episode15.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ehthZ8J4ppM",
+    "title": "Episode 15: Satellites SDR",
+    "category": "Nexus Developers",
+    "image": "episode15.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Vq3sJe5AP9c",
+    "title": "Episode 16: Satellite Support",
+    "category": "Nexus Developers",
+    "image": "episode16.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=qTAqNF1qCzQ",
+    "title": "Episode 17: Identity Arbitration",
+    "category": "Nexus Developers",
+    "image": "episode17.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=GpUHGHExAOs",
+    "title": "Episode 18: Internet, What's Next",
+    "category": "Nexus Developers",
+    "image": "episode18.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Iyk-lDkctow",
+    "title": "Episode 19: Decentralized Systems & Global Law",
+    "category": "Nexus Developers",
+    "image": "episode19.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=R5uoz5ZeKjY",
+    "title": "Episode 20: Starfish Base Voting Layer",
+    "category": "Nexus Developers",
+    "image": "episode20.jpg",
+    "tags": [{ "name": "WEB3" }, { "name": "DAO" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=I4Bvs_lpHZI",
+    "title": "Episode 21: Scaling Bitcoin",
+    "category": "Nexus Developers",
+    "image": "episode21.jpg",
+    "tags": [{ "name": "BTC" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=wkecEA2gtRI",
+    "title": "Episode 22: Internet of Things",
+    "category": "Nexus Developers",
+    "image": "episode22.jpg",
+    "tags": [{ "name": "IOT" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ABvyQBG0KJk",
+    "title": "Episode 23: Supply Chain, Collateralized Transport",
+    "category": "Nexus Developers",
+    "image": "episode23.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=oPprRtuzXHw",
+    "title": "Episode 24: Decentralized ATM Network",
+    "category": "Nexus Developers",
+    "image": "episode24.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=dEU3h2SqOwc",
+    "title": "Episode 25: Tokens",
+    "category": "Nexus Developers",
+    "image": "episode25.jpg",
+    "tags": [{ "name": "Tokens" }]
   }
 ]

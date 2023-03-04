@@ -88,11 +88,6 @@ export class VideosComponent implements OnInit, AfterViewChecked {
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
       window.scrollTo({ top: y, behavior: 'smooth' });
-      // this.videosDiv.nativeElement.scrollIntoView({
-      //   behavior: 'smooth',
-      //   block: 'start',
-      //   inline: 'nearest',
-      // });
 
       event.preventDefault();
     }

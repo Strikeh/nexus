@@ -105,7 +105,7 @@ export class TeamComponent implements AfterViewInit {
         name: 'Sohaan',
         image: 'sohaan',
         popup: 'sohaan-member',
-        position: 'Relationships Chair - No-Code &amp; Tokenomics Support',
+        position: 'Relationships Chair - No-Code & Tokenomics Support',
         description1: `Sohaan is one of the 100 influential people in noCode
         movement. He graduated in Game design & whilst doing
         so he got into bitcoin mining back in 2011 & got
@@ -297,7 +297,7 @@ export class TeamComponent implements AfterViewInit {
         name: 'Christophe Verheyen',
         image: 'christophe',
         popup: 'christophe-member',
-        position: 'Impressions Chair &amp; Frontend Developer',
+        position: 'Impressions Chair & Frontend Developer',
         description1: ``,
       },
       {
@@ -393,30 +393,23 @@ export class TeamComponent implements AfterViewInit {
     this.communicationMembers = [
       {
         name: 'Tomas Gaia',
-        image: 'silhouette',
+        image: 'tomas',
         popup: 'tomas-member',
         position: 'Communications Chair',
         description1: ``,
       },
       {
-        name: 'Jules',
-        image: 'silhouette',
-        popup: 'jules-member',
-        position: 'Writing &amp; Outreach',
+        name: 'Arielle Friedman',
+        image: 'arielle',
+        popup: 'arielle-member',
+        position: 'Communicator',
         description1: ``,
       },
       {
-        name: 'Ani Utah',
-        image: 'silhouette',
-        popup: 'ani-member',
-        position: 'Writer',
-        description1: ``,
-      },
-      {
-        name: 'Anish Dave',
-        image: 'silhouette',
-        popup: 'anish-member',
-        position: 'Project Manager',
+        name: 'Karl Don',
+        image: 'karl',
+        popup: 'karl-member',
+        position: 'Communicator',
         description1: ``,
       },
     ];
