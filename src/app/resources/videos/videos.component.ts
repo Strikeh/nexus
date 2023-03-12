@@ -3,13 +3,13 @@ import {
   ChangeDetectionStrategy,
   Component,
   OnInit,
-  AfterViewInit,
   AfterViewChecked,
   ElementRef,
   ViewChild,
 } from '@angular/core';
 import { PagerService } from 'src/app/services/pager.service';
 import 'magnific-popup';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-videos',
@@ -19,6 +19,8 @@ import 'magnific-popup';
 })
 export class VideosComponent implements OnInit, AfterViewChecked {
   @ViewChild('videos') videosDiv: ElementRef;
+
+  activeCategory = '';
 
   constructor(
     private http: HttpClient,
@@ -57,10 +59,26 @@ export class VideosComponent implements OnInit, AfterViewChecked {
   pagedItems: any[];
 
   ngOnInit() {
-    // get dummy data
+    // get videos
+    this.http.get('/assets/data/videos.json').subscribe((data: any) => {
+      // set items to json response
+      this.videos = data;
+
+      // initialize to page 1
+      this.setPage(1, null);
+    });
+  }
+
+  filterCategory(category: string, event: any): void {
+    this.activeCategory = category;
+
     this.http
       .get('/assets/data/videos.json')
-      // .pipe(map((response: Response) => response.json()))
+      .pipe(
+        map((videos: Object[]) =>
+          videos.filter((video) => video['category'] === category)
+        )
+      )
       .subscribe((data: any) => {
         // set items to json response
         this.videos = data;
@@ -68,6 +86,8 @@ export class VideosComponent implements OnInit, AfterViewChecked {
         // initialize to page 1
         this.setPage(1, null);
       });
+
+    event.preventDefault();
   }
 
   setPage = (page: number, event: any) => {

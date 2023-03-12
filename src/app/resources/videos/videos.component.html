@@ -26,6 +26,9 @@
                       </div>
                       <div class="blog-text">
                         <ul class="blog-meta">
+                          <li *ngIf="!video.tags.length">
+                            <span>-</span>
+                          </li>
                           <li *ngFor="let tag of video.tags">
                             <a href="#">{{ tag.name }}</a>
                           </li>
@@ -45,7 +48,7 @@
                   <!-- .col -->
                 </div>
                 <!-- .row -->
-                <nav class="w-100 d-flex">
+                <nav class="w-100 d-flex" *ngIf="pager.totalPages > 1">
                   <!-- pager -->
                   <ul
                     *ngIf="pager.pages && pager.pages.length"
@@ -118,7 +121,28 @@
                     <h6 class="wgs-title">Category</h6>
                     <div class="wgs-body">
                       <ul class="wgs-links wgs-links-category">
-                        <li><a href="#">Nexus Developers</a></li>
+                        <li>
+                          <a
+                            href="#"
+                            [class.active-category]="
+                              activeCategory === 'Nexus Developers'
+                            "
+                            (click)="filterCategory('Nexus Developers', $event)"
+                            >Nexus Developers</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            [class.active-category]="
+                              activeCategory === 'Architect Of Nexus'
+                            "
+                            (click)="
+                              filterCategory('Architect Of Nexus', $event)
+                            "
+                            >Architect Of Nexus</a
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>

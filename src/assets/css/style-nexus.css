@@ -599,6 +599,8 @@ h6, .h6, .fz-6 { font-size: 0.94rem; }
 
 .bg-theme-grad { background-image: linear-gradient(to right, rgb(2,94,147) 0%, rgb(1,34,53) 100%) !important; }
 
+.bg-theme-grad-nxs { background-image: linear-gradient(to right, #81c7f3 0%, #053652 100%) !important; }
+
 .bg-theme-grad-alt { background-image: linear-gradient(to right, rgb(1,34,53) 0%, rgb(2,94,147) 100%) !important; }
 
 .bg-theme-grad-s2 { background-image: linear-gradient(135deg, #012235  0%, #000537 100%) !important; }
@@ -6431,11 +6433,11 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .pagination li a .icon { line-height: 20px; padding: 0 5px; }
 
-.pagination li a.active { background: #025e93; color: #fff; }
+.pagination li a.active { background: #025e93; color: #0ca4fb; }
 
 .pagination li a:hover { background: #0f4768; color: #fff; }
 
-.pagination li a.active .icon, .pagination li a:hover .icon { color: #fff; }
+.pagination li a.active .icon, .pagination li a:hover .icon { color: #0ca4fb; }
 
 .pagination li:first-child a { border-radius: 6px 0 0 6px; }
 

@@ -1,0 +1,234 @@
+<body class="nk-body body-wider bg-light">
+  <div class="nk-wrap">
+    <nexus-page-header
+      [title]="'Contracts'"
+      headerText="A verbal contract isn't worth the paper it's written on."
+      [isSmall]="true"
+    >
+    </nexus-page-header>
+  </div>
+
+  <section class="section pdt-1 ov-v bg-theme-accent-alt">
+    <div class="ui-mask-left ui-mask-s8"></div>
+    <div class="container">
+      <!-- Block @s -->
+      <div class="nk-block nk-block-text-wrap">
+        <div
+          class="row align-items-center gutter-vr-30px justify-content-between"
+        >
+          <div class="col-lg-7 col-mb-8 m-auto order-first">
+            <div
+              class="nk-block-img"
+              data-animate="fadeInUp"
+              data-delay=".1"
+              style="visibility: visible; animation-delay: 0.1s"
+            >
+              <img class="bubble" src="images/contracts-light.png" alt="app" />
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="nk-block-text">
+              <h3
+                class="title title-s2 title-s2-alt animated"
+                data-animate="fadeInUp"
+                data-delay=".2"
+                style="visibility: visible; animation-delay: 0.2s"
+              >
+                Contracts
+              </h3>
+              <p
+                class="animated"
+                data-animate="fadeInUp"
+                data-delay=".3"
+                style="visibility: visible; animation-delay: 0.3s"
+              >
+                The contract domain-specific language (DSL) is designed for
+                users who are familiar with the command interface. It enables
+                conditional contracts to be written directly into the API with
+                the use of english words. This approach also allows people to be
+                able to read or interpret contracts.
+              </p>
+
+              <p
+                class="animated"
+                data-animate="fadeInUp"
+                data-delay=".4"
+                style="visibility: visible; animation-delay: 0.4s"
+              >
+                Users pay the known cost of contract execution, which depends on
+                the number of operations involved in the contract. The fee is
+                calculated before the transaction is broadcast. This is a very
+                different approach to Ethereum, where users are required to set
+                a Gas limit, resulting in higher fees in times of increased
+                network demand. This sometimes causes Ethereum contracts to
+                fail, while the user still has to pay the contract costs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .block @e -->
+    </div>
+  </section>
+
+  <section class="section ov-v pdt-s pdb-s">
+    <div class="ui-mask-right ui-mask-s8"></div>
+    <div class="container">
+      <div class="nk-block">
+        <div class="row">
+          <div class="col-lg-12 m-auto">
+            <div class="nk-block-text">
+              <h3 class="title title-s6">Fees</h3>
+              <table class="table table-s1">
+                <thead>
+                  <th class="table-head">Action</th>
+                  <th class="table-head">Cost</th>
+                  <th class="table-head">Note</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-des">Receiving NXS or other tokens</td>
+                    <td class="table-des">0</td>
+                    <td class="table-des">
+                      If the debit being credited has contract conditions, a fee
+                      may apply for executing those conditions depending on
+                      their complexity. A fee-free threshold for conditions
+                      means that simple contract conditions such as adding an
+                      expiry to a debit will mean crediting them will be free
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">
+                      Transferring assets (NFTs) and other registers
+                    </td>
+                    <td class="table-des">0</td>
+                    <td class="table-des"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">
+                      Claiming ownership of assets or other registers
+                    </td>
+                    <td class="table-des">0</td>
+                    <td class="table-des">
+                      <p>
+                        If the register being claimed is a named register, i.e.
+                        there exists a local name for it in the previous owners
+                        signature chain, then a corresponding local name is
+                        created for it when claiming. This name creation
+                        attracts a 1 NXS fee.
+                      </p>
+                      <p>
+                        If the transfer being claimed has contract conditions, a
+                        fee may apply for executing those conditions depending
+                        on their complexity. A fee-free threshold for conditions
+                        means that simple contract conditions such as adding an
+                        expiry to a transfer will mean claiming them will be
+                        free
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">Creating a NXS or token account</td>
+                    <td class="table-des">0</td>
+                    <td class="table-des">
+                      If the account is given a name, there is a 1 NXS fee
+                      applied for the creation of the name register.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">
+                      Creating an asset or other register
+                    </td>
+                    <td class="table-des">1+</td>
+                    <td class="table-des">
+                      The fee is calculated based on the size of data stored in
+                      the register at 0.001 NXS per byte. However there is a
+                      minimum fee of 1 NXS and (at the time of writing) a
+                      maximum register size of 1Kb, meaning the fee will vary
+                      between 1 an 1.024 NXS.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">
+                      Updating an asset or other register
+                    </td>
+                    <td class="table-des">0</td>
+                    <td class="table-des"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">Creating a local name</td>
+                    <td class="table-des">1</td>
+                    <td class="table-des"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">Creating a global name</td>
+                    <td class="table-des">2000</td>
+                    <td class="table-des"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">Creating a namespace</td>
+                    <td class="table-des">1000</td>
+                    <td class="table-des"></td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">Creating a token</td>
+                    <td class="table-des">1+</td>
+                    <td class="table-des">
+                      <p>
+                        The fee calculation for creating a token is based on the
+                        number of total supply of token divisible units, which
+                        in turn is calculated from the token supply and the
+                        number of decimals in the token definition. For example,
+                        a token with supply 1,000,000 and 2 decimals has a total
+                        of 100,000,000 divisible units. The actual fee
+                        calculation is a logarithmic scale based on this number,
+                        using the formula:
+                      </p>
+                      <p>Fee = (log10(divisible units) – 2) * 100</p>
+                      <p>
+                        A minimum fee of 1 NXS always applies. This yields the
+                        following fees based on number of divisible units
+                      </p>
+                      <p>
+                        100 = 1 NXS<br />1,000 = 100 NXS<br />100,000 = 300
+                        NXS<br />1,000,000 = 400 NXS<br />1,000,000,000 = 700
+                        NXS<br />1,000,000,000,000 = 1000 NXS
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-des">Transaction Fee</td>
+                    <td class="table-des">0-1</td>
+
+                    <td class="table-des">
+                      <p>
+                        A transaction fee is applied whenever a transaction is
+                        created within 10 seconds of the last transaction within
+                        a signature chain. The fee is calculated based on the
+                        number of contracts within the transaction at a rate of
+                        0.01 NXS
+                      </p>
+
+                      <p>
+                        per contract, of which there can be a maximum of 100 (at
+                        the time of writing). Therefore the transaction fee will
+                        be between 0 and 1 NXS. The transaction fee is applied
+                        in addition to any of the other fees described in this
+                        table.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <nexus-footer></nexus-footer>
+</body>
