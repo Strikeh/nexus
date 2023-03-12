@@ -96,5 +96,369 @@
     "category": "Nexus Developers",
     "image": "episode14.jpg",
     "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ehthZ8J4ppM",
+    "title": "Episode 15: Satellites SDR",
+    "category": "Nexus Developers",
+    "image": "episode15.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ehthZ8J4ppM",
+    "title": "Episode 15: Satellites SDR",
+    "category": "Nexus Developers",
+    "image": "episode15.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Vq3sJe5AP9c",
+    "title": "Episode 16: Satellite Support",
+    "category": "Nexus Developers",
+    "image": "episode16.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=qTAqNF1qCzQ",
+    "title": "Episode 17: Identity Arbitration",
+    "category": "Nexus Developers",
+    "image": "episode17.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=GpUHGHExAOs",
+    "title": "Episode 18: Internet, What's Next",
+    "category": "Nexus Developers",
+    "image": "episode18.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Iyk-lDkctow",
+    "title": "Episode 19: Decentralized Systems & Global Law",
+    "category": "Nexus Developers",
+    "image": "episode19.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=R5uoz5ZeKjY",
+    "title": "Episode 20: Starfish Base Voting Layer",
+    "category": "Nexus Developers",
+    "image": "episode20.jpg",
+    "tags": [{ "name": "WEB3" }, { "name": "DAO" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=I4Bvs_lpHZI",
+    "title": "Episode 21: Scaling Bitcoin",
+    "category": "Nexus Developers",
+    "image": "episode21.jpg",
+    "tags": [{ "name": "BTC" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=wkecEA2gtRI",
+    "title": "Episode 22: Internet of Things",
+    "category": "Nexus Developers",
+    "image": "episode22.jpg",
+    "tags": [{ "name": "IOT" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ABvyQBG0KJk",
+    "title": "Episode 23: Supply Chain, Collateralized Transport",
+    "category": "Nexus Developers",
+    "image": "episode23.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=oPprRtuzXHw",
+    "title": "Episode 24: Decentralized ATM Network",
+    "category": "Nexus Developers",
+    "image": "episode24.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=dEU3h2SqOwc",
+    "title": "Episode 25: Tokens",
+    "category": "Nexus Developers",
+    "image": "episode25.jpg",
+    "tags": [{ "name": "Tokens" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=UIvwyA6ptJg",
+    "title": "Episode 1: Decentralized Architectures",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode1.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=MEbeDx8Y8hk",
+    "title": "Episode 2: A History of Global Government",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode2.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=nUVJokVTG60",
+    "title": "Episode 3: Market Conditions",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode3.jpg",
+    "tags": [{ "name": "BTC" }, { "name": "ETH" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=IZUK-hIT4sc",
+    "title": "Episode 4: The Mind Is The Antenna",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode4.jpg",
+    "tags": [{ "name": "OSI" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=TsIAKInAGqg",
+    "title": "Episode 5: The New Economic System",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode5.jpg",
+    "tags": [{ "name": "NP" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=d5WKqTiQSJQ",
+    "title": "Episode 6: Navigating The Darkness",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode6.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=pX5BLiuQc7A",
+    "title": "Episode 7: Blockchain Trilemma",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode7.jpg",
+    "tags": [{ "name": "ETH" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=DQTJunOZZF0",
+    "title": "Episode 8: Decentralized Internet",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode8.jpg",
+    "tags": [{ "name": "OSI" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=xwpuaAHrJTM",
+    "title": "Episode 9: Quantum Resistance",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode9.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ehdySfqn7is",
+    "title": "Episode 10: We Are Connected ...",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode10.jpg",
+    "tags": [{ "name": "BTC" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=t7uM-Kdro8Q",
+    "title": "Episode 11: Interoperability",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode11.jpg",
+    "tags": [{ "name": "BTC" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=63CRMkwqk3E",
+    "title": "Episode 12: The Service Industry, business ideas",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode12.jpg",
+    "tags": [{ "name": "BTC" }, { "name": "ETH" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=zCPtao6nbe0",
+    "title": "Episode 13: Decentralized Social Media",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode14.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=u2aPDXQ7U2Q",
+    "title": "Episode 14: Nexus Trust System",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode15.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=wKy1ufH1jJE",
+    "title": "Episode 15: Three-Dimensional Blockchain",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode16.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=KCzddUtC3aI",
+    "title": "Episode 16: Blockchain Security",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode17.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Z7TzXiYxB4s",
+    "title": "Episode 17: Social Stack",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode18.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Gn1Mw-jyMk8",
+    "title": "Episode 18: Decentralized Search Engine",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode18b.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=hxGKZX331YE",
+    "title": "Episode 19: Cyberhuman #DNA",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode19.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=XMP-KUYuBsA",
+    "title": "Episode 20: DAO",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode20.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=0fjRKnNYVvQ",
+    "title": "Episode 21: AI & Blockchain",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode21.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=P6QQh2uI_wo",
+    "title": "Episode 22: Starfish Architecture",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode22.jpg",
+    "tags": [{ "name": "DAO" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=QQwdNrvhcUQ",
+    "title": "Episode 23: Mining",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode23.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=oJSHrsfmrYc",
+    "title": "Episode 24: Signature Chain",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode24.jpg",
+    "tags": [{ "name": "WEB3" }, { "name": "UTXO" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=yEOAwoiwFWs",
+    "title": "Episode 25: 5G",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode25.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=0evBYiOV-bc",
+    "title": "Episode 26: Routing System",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode26.jpg",
+    "tags": [{ "name": "WEB3" }, { "name": "UTXO" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=xuu0xUJrnVw",
+    "title": "Episode 27: Decentralize Everything",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode27.jpg",
+    "tags": [{ "name": "Crypto" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=axZ2pWJhyeA",
+    "title": "Episode 28: Nexus In Space",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode28.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=sU4baUtVgDw",
+    "title": "Episode 29: New World Order Illusion",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode29.jpg",
+    "tags": [{ "name": "NWO" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=nPJogjO31rU",
+    "title": "Episode 30: Bitcoin",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode30.jpg",
+    "tags": [{ "name": "BTC" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=OxwZEgk2AKk",
+    "title": "Episode 31: Distributed Ledger Technology",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode31.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=QyYRfzidWS0",
+    "title": "Episode 32: Blockchain Challenges",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode32.jpg",
+    "tags": [{ "name": "Blockchain" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=hBn6qqxpaII",
+    "title": "Episode 33: Building Our Own Infrastructure",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode33.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=K9lqb8qEzlo",
+    "title": "Episode 34: Corruption",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode34.jpg",
+    "tags": [{ "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=ae2K3t9IJG4",
+    "title": "Episode 35: Threats To Crypto",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode35.jpg",
+    "tags": [{ "name": "BTC" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=14TVMGqRWf0",
+    "title": "Episode 36: Nexus Universal Platform",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode36.jpg",
+    "tags": [{ "name": "NFT" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=Tlp5OqrNvXE",
+    "title": "Episode 37: CBDC",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode37.jpg",
+    "tags": [{ "name": "CBDC" }, { "name": "WEB3" }]
+  },
+  {
+    "url": "//www.youtube.com/watch?v=QhNJD_agtYs",
+    "title": "Episode 38: Economy",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode38.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=m4lIS7NN2Jo",
+    "title": "Episode 39: Philosophy",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode39.jpg",
+    "tags": []
+  },
+  {
+    "url": "//www.youtube.com/watch?v=05X8X9jDMwg",
+    "title": "Episode 40: Decentralization and Power Dynamics",
+    "category": "Architect Of Nexus",
+    "image": "arch_episode40.jpg",
+    "tags": []
   }
 ]

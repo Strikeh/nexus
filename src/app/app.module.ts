@@ -1,3 +1,4 @@
+import { ModulesComponent } from './develop/modules/modules.component';
 import { BlockchainComponent } from './technology/blockchain/blockchain.component';
 import { ScriptService } from './services/script-service';
 import { RouterModule } from '@angular/router';
@@ -21,15 +22,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { RoadmapComponent } from './technology/roadmap/roadmap.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { CommonModule } from '@angular/common';
-import { BuyNexusComponent } from './develop/buy-nexus/buy-nexus.component';
+import { BuyNexusComponent } from './use/buy-nexus/buy-nexus.component';
 import { DecentralizedInternetComponent } from './technology/decentralized-internet/decentralized-internet.component';
 import { BlogComponent } from './resources/blog/blog.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { OperatingSystemComponent } from './technology/operating-system/operating-system.component';
-import { TokenizationComponent } from './tokenization/tokenization.component';
-import { WalletComponent } from './develop/wallet/wallet.component';
+import { TokenizationComponent } from './develop/tokenization/tokenization.component';
+import { WalletComponent } from './use/wallet/wallet.component';
 import { VideosComponent } from './resources/videos/videos.component';
 import { BaseComponent } from './utils/base-component/base-component.component';
+import { BubbleComponent } from './develop/bubble/bubble.component';
+import { IntegratedApiComponent } from './develop/integrated-api/integrated-api.component';
+import { ContractsComponent } from './develop/contracts/contracts.component';
+import { HybridNetworksComponent } from './develop/hybrid-networks/hybrid-networks.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +58,11 @@ import { BaseComponent } from './utils/base-component/base-component.component';
     WalletComponent,
     VideosComponent,
     BaseComponent,
+    BubbleComponent,
+    IntegratedApiComponent,
+    ContractsComponent,
+    HybridNetworksComponent,
+    ModulesComponent,
   ],
   imports: [
     BrowserModule,
