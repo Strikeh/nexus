@@ -1,3 +1,5 @@
+import { TransactComponent } from './use/transact/transact.component';
+import { UsecasesComponent } from './develop/usecases/usecases.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
@@ -14,10 +16,14 @@ import { LandingComponent } from './landing/landing.component';
 import { TeamComponent } from './team/team.component';
 import { VideosComponent } from './resources/videos/videos.component';
 import { WalletComponent } from './use/wallet/wallet.component';
+import { AssetsComponent } from './use/assets/assets.component';
+import { StakeMineComponent } from './use/stake-mine/stake-mine.component';
 import { ModulesComponent } from './develop/modules/modules.component';
 import { HybridNetworksComponent } from './develop/hybrid-networks/hybrid-networks.component';
 import { ContractsComponent } from './develop/contracts/contracts.component';
 import { IntegratedApiComponent } from './develop/integrated-api/integrated-api.component';
+import { NamespacesComponent } from './use/namespaces/namespaces.component';
+import { DappsComponent } from './use/dapps/dapps.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -37,6 +43,12 @@ const routes: Routes = [
   { path: 'contracts', component: ContractsComponent },
   { path: 'hybrid-networks', component: HybridNetworksComponent },
   { path: 'modules', component: ModulesComponent },
+  { path: 'usecases', component: UsecasesComponent },
+  { path: 'transact', component: TransactComponent },
+  { path: 'stake-mine', component: StakeMineComponent },
+  { path: 'assets', component: AssetsComponent },
+  { path: 'namespaces', component: NamespacesComponent },
+  { path: 'dapps', component: DappsComponent },
 ];
 
 @NgModule({

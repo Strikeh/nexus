@@ -42,28 +42,28 @@ export class TeamComponent implements AfterViewInit {
     this.jurorMembers = [
       {
         name: 'Arron Hill',
-        image: 'arron',
+        image: 'arron2',
         popup: 'arron-juror',
         position: 'Jury Chair',
         description1: `I'm a manager at a solar company, so my daily job is pretty balanced between technical thinking and management. I've been watching crypto from the sideline since the earliest days of BTC. I lead a community here in AZ that Colin is a part of, and I got really interested in NXS through him about a year ago. I joined the Nexus community a few months ago b/c I felt ready to participate more actively. I have formal training to mediate conflict and I teach classes on conflict resolution to my community.`,
       },
       {
         name: 'Barak (B12)',
-        image: 'silhouette',
+        image: 'silhouette2',
         popup: 'barak-juror',
         position: 'Juror',
         description1: `I’m a nomad pianist decided to live in South America many years ago. Introduced to nexus back in 2017 and sadly watching the shit market evolving and taken over by Moon boys and banksters. I have hope that one day nexus will shine and unfold the original satoshi vision to free the planet from the modern slavery system.`,
       },
       {
         name: 'Vincent (AUGUST2022)',
-        image: 'silhouette',
+        image: 'silhouette2',
         popup: 'vincent-juror',
         position: 'Juror',
         description1: `I am broke developer with 24 years experience, love my family and town and all people in it, In blockchain since beginning, with nexus since coinshield, I done many good code for the world that is used today, I dont like names and have probably more than 5000 names I have used on internet since 😂 I love Nexus and wish I have time to work on it.`,
       },
       {
         name: 'Craig (BUMP)',
-        image: 'bump',
+        image: 'bump2',
         popup: 'craig-juror',
         position: 'Juror',
         description1: `I am a pilot operating for an airline in Australia.`,
@@ -75,7 +75,7 @@ export class TeamComponent implements AfterViewInit {
     this.embassyMembers = [
       {
         name: 'Colin Cantrell',
-        image: 'colin',
+        image: 'colin2',
         popup: 'colin-embassy',
         position: 'Lead Developer',
         description1: `Colin Cantrell is a software architect, engineer,
@@ -91,7 +91,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Carolyn Sechler',
-        image: 'carolyn',
+        image: 'carolyn2',
         popup: 'carolyn-embassy',
         position: 'US Embassy Board Of Directors',
         description1: ``,
@@ -103,7 +103,7 @@ export class TeamComponent implements AfterViewInit {
     this.relationshipMembers = [
       {
         name: 'Sohaan',
-        image: 'sohaan',
+        image: 'sohaan2',
         popup: 'sohaan-member',
         position: 'Relationships Chair - No-Code & Tokenomics Support',
         description1: `Sohaan is one of the 100 influential people in noCode
@@ -118,7 +118,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Richard Osborne',
-        image: 'richard',
+        image: 'richard2',
         popup: 'richard-member',
         position: 'Usecase Development Support',
         description1: `Richard is a long-time no-code and low-code web
@@ -127,14 +127,14 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Chris',
-        image: 'silhouette',
+        image: 'silhouette2',
         popup: 'chris-member',
         position: 'Coordination Facilitator',
         description1: ``,
       },
       {
         name: 'Philip Lee',
-        image: 'phil',
+        image: 'phil2',
         popup: 'phil-member',
         position: 'Community Facilitator',
         description1: `Philip Lee, registered nurse, attorney and founder of
@@ -149,7 +149,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Tash Anestos',
-        image: 'tash',
+        image: 'tash2',
         popup: 'tash-member',
         position: 'Advisor',
         description1: `Tash Anestos, Director of Business Operations &
@@ -167,7 +167,7 @@ export class TeamComponent implements AfterViewInit {
     this.interactionMembers = [
       {
         name: 'Katarzyna Ochnio',
-        image: 'kat',
+        image: 'kat2',
         popup: 'kat-member',
         position:
           'Interactions Chair & International Socal Media Network Facilitator',
@@ -185,7 +185,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Arun Pais',
-        image: 'arun',
+        image: 'arun2',
         popup: 'arun-member',
         position: 'Developer Support Facilitator',
         description1: ` Having completed formal education in Electrical
@@ -208,24 +208,14 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Neal Helman',
-        image: 'neal',
+        image: 'neal2',
         popup: 'neal-member',
         position: 'Support Facilitator',
         description1: ``,
       },
       {
-        name: 'Robert Kolec',
-        image: 'robert',
-        popup: 'robert-member',
-        position: 'Support',
-        description1: `I'm fascinated by the technology and possibilities of
-        Nexus. As a member of the community, began to actively
-        participate in building the foundations of the DAO. I
-        love traveling and good cuisine.`,
-      },
-      {
         name: 'Rayan Fernandes',
-        image: 'rayan',
+        image: 'rayan2',
         popup: 'rayan-member',
         position: 'Developer Support',
         description1: `I'm an Electronics & Communication Engineer and have
@@ -240,14 +230,14 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Marek Szklarz',
-        image: 'marek',
+        image: 'marek2',
         popup: 'marek-member',
         position: 'ISMN Graphic Design',
         description1: ``,
       },
       {
         name: 'Miguel Franco',
-        image: 'miguel',
+        image: 'miguel2',
         popup: 'miguel-member',
         position: 'SM Team',
         description1: `I discovered cryptocurrencies in 2020, I think that
@@ -269,23 +259,16 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Emmanuel Ramos',
-        image: 'emmanuel',
+        image: 'emmanuel2',
         popup: 'emmanuel-member',
         position: 'SM Facilitator',
         description1: ``,
       },
       {
         name: 'Mark Costa',
-        image: 'mark',
+        image: 'mark2',
         popup: 'mark-member',
         position: 'ISMN Australia & New Zealand',
-        description1: ``,
-      },
-      {
-        name: 'Anichebe Osuta',
-        image: 'anichebe',
-        popup: 'anichebe-member',
-        position: 'ISMN Nigeria',
         description1: ``,
       },
     ];
@@ -295,14 +278,14 @@ export class TeamComponent implements AfterViewInit {
     this.impressionMembers = [
       {
         name: 'Christophe Verheyen',
-        image: 'christophe',
+        image: 'christophe2',
         popup: 'christophe-member',
         position: 'Impressions Chair & Frontend Developer',
         description1: ``,
       },
       {
         name: 'Tommie',
-        image: 'tommie',
+        image: 'tommie2',
         popup: 'tommie-member',
         position: 'Advertising',
         description1: ``,
@@ -314,7 +297,7 @@ export class TeamComponent implements AfterViewInit {
     this.developers = [
       {
         name: 'Colin Cantrell',
-        image: 'colin',
+        image: 'colin2',
         popup: 'colin-dev',
         position: 'Lead Developer',
         description1: `Colin Cantrell is a software architect, engineer,
@@ -330,7 +313,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Kendal Cormany',
-        image: 'kendal',
+        image: 'kendal2',
         popup: 'kendal-dev',
         position: 'Developer',
         description1: `Kendal graduated in 2012 with a BA of Science and has
@@ -350,7 +333,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Hoàng Phú Quý',
-        image: 'krysto',
+        image: 'krysto2',
         popup: 'krysto-dev',
         position: 'Developer',
         description1: `krysto Quý (Krysto) began his interest in software
@@ -372,7 +355,7 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Ajion',
-        image: 'ajion',
+        image: 'ajion2',
         popup: 'ajion-dev',
         position: 'Developer',
         description1: `Ajion is a UI/UX engineer, since 1997, when modems
@@ -393,21 +376,21 @@ export class TeamComponent implements AfterViewInit {
     this.communicationMembers = [
       {
         name: 'Tomas Gaia',
-        image: 'tomas',
+        image: 'tomas2',
         popup: 'tomas-member',
         position: 'Communications Chair',
         description1: ``,
       },
       {
         name: 'Arielle Friedman',
-        image: 'arielle',
+        image: 'arielle2',
         popup: 'arielle-member',
         position: 'Communicator',
         description1: ``,
       },
       {
         name: 'Karl Don',
-        image: 'karl',
+        image: 'karl2',
         popup: 'karl-member',
         position: 'Communicator',
         description1: ``,
@@ -419,7 +402,7 @@ export class TeamComponent implements AfterViewInit {
     this.mediaMembers = [
       {
         name: 'Stijn Ottevaere',
-        image: 'stijn',
+        image: 'stijn2',
         popup: 'stijn-member',
         position: 'Media Chair & 2D/3D Graphics',
         description1: `I'm a creative mind with a passion for Design, Nature, Sports & Crypto. 
@@ -430,28 +413,28 @@ export class TeamComponent implements AfterViewInit {
       },
       {
         name: 'Aflatun Abdullayev',
-        image: 'aflatun',
+        image: 'aflatun2',
         popup: 'aflatun-member',
         position: 'Videographer',
         description1: ``,
       },
       {
         name: 'Elvina Alakbarova',
-        image: 'elvina',
+        image: 'elvina2',
         popup: 'elvina-member',
         position: 'Film & Script',
         description1: `Elvina Alakbarova was born in 1985 in Baku, Azerbaijan. While studying Translation at the Baku Slavic University, she worked as a freelance translator of feature films and TV series. In 2010, she studied Language and Culture at Linkoping University in Sweden. From 2011-2014, she continues her linguistic studies at the University of Vienna, Austria. In 2014-2019, she worked as a financial translator in Denizbank, Vienna. In 2020, she started her writing career besides her activity in translation projects. Her first feature film script, One Corner of the World, was a finalist in Oaxaca Film Festival in Mexico in February 2021 and won the best Screenplay award in Turkey in November 2021. Furthermore, her second screenplay, â€œEternal Dilemma,â€� has been nominated as the Best Screenplay in five film festivals. Starting from January 2022, she has been working as a screenwriter and content creator for Nexus US Media.`,
       },
       {
         name: 'Levente Kovacs',
-        image: 'levente',
+        image: 'levente2',
         popup: 'levente-member',
         position: '3D Graphics',
         description1: ``,
       },
       {
         name: 'Alec Rappelet',
-        image: 'alec',
+        image: 'alec2',
         popup: 'alec-member',
         position: '2D Graphics',
         description1: ``,

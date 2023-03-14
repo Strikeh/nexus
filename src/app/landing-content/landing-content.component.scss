@@ -1,21 +1,25 @@
 .spinner-border {
-    color: #6dcefe !important;
+  color: #6dcefe !important;
 }
 
-.icon.ti-light-bulb{
-    color: white;
+.icon.ti-light-bulb {
+  color: rgb(255, 255, 255);
+
+  &.dark {
+    color: #003651;
+  }
 }
 
 .section {
-    padding-bottom: 120px;
-    padding-top: 120px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 
 .section-video {
-    padding-top: 0px;
-    padding-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .video-container {
-    display:flex;
+  display: flex;
 }

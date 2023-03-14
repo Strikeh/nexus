@@ -35,6 +35,12 @@ import { BubbleComponent } from './develop/bubble/bubble.component';
 import { IntegratedApiComponent } from './develop/integrated-api/integrated-api.component';
 import { ContractsComponent } from './develop/contracts/contracts.component';
 import { HybridNetworksComponent } from './develop/hybrid-networks/hybrid-networks.component';
+import { UsecasesComponent } from './develop/usecases/usecases.component';
+import { TransactComponent } from './use/transact/transact.component';
+import { StakeMineComponent } from './use/stake-mine/stake-mine.component';
+import { AssetsComponent } from './use/assets/assets.component';
+import { NamespacesComponent } from './use/namespaces/namespaces.component';
+import { DappsComponent } from './use/dapps/dapps.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +69,12 @@ import { HybridNetworksComponent } from './develop/hybrid-networks/hybrid-networ
     ContractsComponent,
     HybridNetworksComponent,
     ModulesComponent,
+    UsecasesComponent,
+    TransactComponent,
+    StakeMineComponent,
+    AssetsComponent,
+    NamespacesComponent,
+    DappsComponent,
   ],
   imports: [
     BrowserModule,
