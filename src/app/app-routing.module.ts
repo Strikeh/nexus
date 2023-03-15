@@ -1,5 +1,3 @@
-import { TransactComponent } from './use/transact/transact.component';
-import { UsecasesComponent } from './develop/usecases/usecases.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
@@ -24,6 +22,11 @@ import { ContractsComponent } from './develop/contracts/contracts.component';
 import { IntegratedApiComponent } from './develop/integrated-api/integrated-api.component';
 import { NamespacesComponent } from './use/namespaces/namespaces.component';
 import { DappsComponent } from './use/dapps/dapps.component';
+import { EconomicsComponent } from './resources/economics/economics.component';
+import { SecurityAuditComponent } from './resources/security-audit/security-audit.component';
+import { BrandingComponent } from './resources/branding/branding.component';
+import { TransactComponent } from './use/transact/transact.component';
+import { UsecasesComponent } from './develop/usecases/usecases.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -49,6 +52,9 @@ const routes: Routes = [
   { path: 'assets', component: AssetsComponent },
   { path: 'namespaces', component: NamespacesComponent },
   { path: 'dapps', component: DappsComponent },
+  { path: 'security', component: SecurityAuditComponent },
+  { path: 'economics', component: EconomicsComponent },
+  { path: 'branding', component: BrandingComponent },
 ];
 
 @NgModule({

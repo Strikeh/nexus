@@ -1,0 +1,36 @@
+section.branding {
+  background-color: #fff;
+
+  padding-top: 0;
+  margin-top: -5rem;
+
+  .nk-block-text {
+    box-shadow: 0px 5px 46px rgba(25, 64, 176, 0.14);
+  }
+}
+
+.vertical-middle {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.box {
+  padding: 2rem;
+}
+
+h2.doc {
+  border-bottom: 3px solid #00a5ff;
+  border-top: 3px solid #00a5ff;
+  background-color: #062234;
+}
+
+table {
+  text-align: center;
+}
+
+.bg-theme {
+  background-color: #084d79 !important;
+}

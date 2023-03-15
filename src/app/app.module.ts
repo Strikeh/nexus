@@ -41,6 +41,9 @@ import { StakeMineComponent } from './use/stake-mine/stake-mine.component';
 import { AssetsComponent } from './use/assets/assets.component';
 import { NamespacesComponent } from './use/namespaces/namespaces.component';
 import { DappsComponent } from './use/dapps/dapps.component';
+import { SecurityAuditComponent } from './resources/security-audit/security-audit.component';
+import { EconomicsComponent } from './resources/economics/economics.component';
+import { BrandingComponent } from './resources/branding/branding.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +78,9 @@ import { DappsComponent } from './use/dapps/dapps.component';
     AssetsComponent,
     NamespacesComponent,
     DappsComponent,
+    SecurityAuditComponent,
+    EconomicsComponent,
+    BrandingComponent,
   ],
   imports: [
     BrowserModule,

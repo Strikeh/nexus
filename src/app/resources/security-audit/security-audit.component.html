@@ -1,0 +1,85 @@
+<body class="nk-body body-wider bg-light">
+  <div class="nk-wrap">
+    <nexus-page-header
+      [title]="'Security Audit'"
+      headerText="Always be yourself unless you can be an Internal Auditor."
+      [isSmall]="true"
+    >
+    </nexus-page-header>
+  </div>
+
+  <section class="section pdt-1 ov-v">
+    <div class="ui-mask-left ui-mask-s8"></div>
+    <div class="container">
+      <!-- Block @s -->
+      <div class="nk-block nk-block-text-wrap">
+        <div
+          class="row align-items-center gutter-vr-30px justify-content-between"
+        >
+          <div class="col-lg-4 col-mb-8 m-auto">
+            <div
+              class="nk-block-img"
+              data-animate="fadeInUp"
+              data-delay=".1"
+              style="visibility: visible; animation-delay: 0.1s"
+            >
+              <img class="audit" src="images/auditcheck.png" alt="app" />
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="nk-block-text">
+              <h3
+                class="title title-s2 title-s2-alt animated doc"
+                data-animate="fadeInUp"
+                data-delay=".1"
+                style="visibility: visible; animation-delay: 0.1s"
+              >
+                ISE Assesment
+              </h3>
+              <p
+                class="animated doc"
+                data-animate="fadeInUp"
+                data-delay=".1"
+                style="visibility: visible; animation-delay: 0.1s"
+              >
+                Nexus engaged Independent Security Evaluators (ISE) to evaluate
+                the security posture of the Nexus daemon and Nexus Interface,
+                two key components in the Nexus platform. ISE performed a white
+                box vulnerability assessment to discover vulnerabilities within
+                the Nexus daemon and Interface that could lead to the compromise
+                of cryptocurrency assets or user information, disruption of
+                service, or leveraging Nexus’ functionality for other attacks.
+                This report represents the results of that assessment.
+              </p>
+            </div>
+
+            <div class="read-button doc">
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://nexus.io/files/tritium/NexusAuditReport.pdf"
+                ><em class="link-icon fs-5"></em><span>Read</span></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-mb-8 m-auto">
+            <div
+              class="nk-block-img"
+              data-animate="fadeInUp"
+              data-delay=".1"
+              style="visibility: visible; animation-delay: 0.1s"
+            >
+              <img class="audit" src="images/auditshield.png" alt="app" />
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .block @e -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <nexus-footer></nexus-footer>
+</body>

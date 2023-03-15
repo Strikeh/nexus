@@ -4,11 +4,9 @@
 >
   <!-- Banner @s -->
   <div class="header-banner bg-theme-grad">
-    <!-- <div class="nk-ovm shape-c"></div> -->
     <div class="nk-banner">
       <div class="banner banner-page" [class.small]="isSmall">
-        <!-- <div class="ui-shape ui-shape-header ui-shape-"></div> -->
-        <div class="banner-wrap">
+        <div class="banner-wrap" [class.alternative-mask]="alternativeMask">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-xl-6 col-lg-9">
@@ -45,7 +43,8 @@
     </div>
     <!-- .nk-banner -->
     <!-- <div class="nk-ovm mask-g-bg shape-v"></div> -->
-    <div class="nk-ovm mask-g-bg shape-z7"></div>
+    <div class="nk-ovm mask-d shape-x" *ngIf="alternativeMask"></div>
+    <div class="nk-ovm mask-g-bg shape-z7" *ngIf="!alternativeMask"></div>
     <div id="particles-bg" class="particles-container particles-bg"></div>
   </div>
 

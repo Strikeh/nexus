@@ -18,6 +18,7 @@ export class PageHeaderComponent implements AfterViewInit {
   @Input() titleBackground: string;
   @Input() headerText: string;
   @Input() isSmall: boolean = false;
+  @Input() alternativeMask: boolean = false;
 
   url = './../../assets/js/particles.js';
 
