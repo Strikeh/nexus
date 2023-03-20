@@ -1,194 +1,56 @@
 [
-    {
-        "publishDate": "Nov 14, 2022",
-        "tags": [ { "name": "nexus"}],
-        "title": "Hardware Wallets are Old Tech",
-        "url":  "https://medium.com/@NexusOfficial/hardware-wallets-are-old-tech-b395ad0d8cc0",
-        "description": "Your crypto wallet is old tech but you just don’t know it yet. It is difficult to use and you probably hate having to worry about it. It is unlikely that Grandma is going to be able to figure out how to use it either.",
-        "image": "oldtech.png"
-    },
-    {
-        "publishDate": "Sep 2, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Don’t lose it all, decentralize and take control",
-        "url":  "https://medium.com/@NexusOfficial/dont-lose-it-all-decentralize-and-take-control-5edc612c42ca",
-        "description": "When the all-in-one crypto banking provider Celsius, froze withdrawals and filed for bankruptcy, over one hundred thousand customers instantly lost access to their money. For many, who were...",
-        "image": "decentralizeTakeControl.png"
-    },
-    {
-        "publishDate": "Mar 29, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Why Decentralization in Crypto is essential for a Free Society",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/why-decentralization-in-crypto-is-essential-for-a-free-socie-xdgeqym",
-        "description": "With their prodigious rise in the financial markets and public consciousness, it’s hard to believe that over a decade ago, Bitcoin and cryptocurrencies were within the realm of privacy enthusiasts and radicals.",
-        "image": "freesociety.png"
-    },
-    {
-        "publishDate": "Mar 25, 2022",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Interoperability and the Nexus Blockchain",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/interoperability-and-the-nexus-blockchain-xlzpgpp",
-        "description": "The blockchain ecosystem started with Bitcoin being the premier digital asset offering a way to transfer value while eliminating centralized authority. The Ethereum network has taken this further with the use of smart contracts to...",
-        "image": "interoperability.png"
-    },
-    {
-        "publishDate": "22 Oct, 2021",
-        "tags": [ { "name": "Nexus"}, { "name": "Crypto"}],
-        "title": "Building DApps with no-code Bubble + Nexus.io plugin",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/building-dapps-with-no-code-bubble-plus-nexusio-plugin-xjoqpvq",
-        "description": "Nexus’ no-code Bubble plugin allows you to create Web3 applications on the Nexus blockchain using REST APIs. Nexus Bubble plugin Bubble is a leader in the no-code movement, which offers a powerful point-...",
-        "image": "bubble.png"
-    },
-    {
-        "publishDate": "11 Oct, 2021",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Top 10 Reasons to Build on Nexus",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/top-10-reasons-to-build-on-nexus-xrnrgoo",
-        "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
-        "image": "top10reasons.png"
-    },
-    {
-        "publishDate": "Nov 14, 2022",
-        "tags": [ { "name": "nexus"}],
-        "title": "Hardware Wallets are Old Tech",
-        "url":  "https://medium.com/@NexusOfficial/hardware-wallets-are-old-tech-b395ad0d8cc0",
-        "description": "Your crypto wallet is old tech but you just don’t know it yet. It is difficult to use and you probably hate having to worry about it. It is unlikely that Grandma is going to be able to figure out how to use it either.",
-        "image": "oldtech.png"
-    },
-    {
-        "publishDate": "Sep 2, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Don’t lose it all, decentralize and take control",
-        "url":  "https://medium.com/@NexusOfficial/dont-lose-it-all-decentralize-and-take-control-5edc612c42ca",
-        "description": "When the all-in-one crypto banking provider Celsius, froze withdrawals and filed for bankruptcy, over one hundred thousand customers instantly lost access to their money. For many, who were...",
-        "image": "decentralizeTakeControl.png"
-    },
-    {
-        "publishDate": "Mar 29, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Why Decentralization in Crypto is essential for a Free Society",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/why-decentralization-in-crypto-is-essential-for-a-free-socie-xdgeqym",
-        "description": "With their prodigious rise in the financial markets and public consciousness, it’s hard to believe that over a decade ago, Bitcoin and cryptocurrencies were within the realm of privacy enthusiasts and radicals.",
-        "image": "freesociety.png"
-    },
-    {
-        "publishDate": "Mar 25, 2022",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Interoperability and the Nexus Blockchain",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/interoperability-and-the-nexus-blockchain-xlzpgpp",
-        "description": "The blockchain ecosystem started with Bitcoin being the premier digital asset offering a way to transfer value while eliminating centralized authority. The Ethereum network has taken this further with the use of smart contracts to...",
-        "image": "interoperability.png"
-    },
-    {
-        "publishDate": "22 Oct, 2021",
-        "tags": [ { "name": "Nexus"}, { "name": "Crypto"}],
-        "title": "Building DApps with no-code Bubble + Nexus.io plugin",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/building-dapps-with-no-code-bubble-plus-nexusio-plugin-xjoqpvq",
-        "description": "Nexus’ no-code Bubble plugin allows you to create Web3 applications on the Nexus blockchain using REST APIs. Nexus Bubble plugin Bubble is a leader in the no-code movement, which offers a powerful point-...",
-        "image": "bubble.png"
-    },
-    {
-        "publishDate": "11 Oct, 2021",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Top 10 Reasons to Build on Nexus",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/top-10-reasons-to-build-on-nexus-xrnrgoo",
-        "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
-        "image": "top10reasons.png"
-    },
-    {
-        "publishDate": "Nov 14, 2022",
-        "tags": [ { "name": "nexus"}],
-        "title": "Hardware Wallets are Old Tech",
-        "url":  "https://medium.com/@NexusOfficial/hardware-wallets-are-old-tech-b395ad0d8cc0",
-        "description": "Your crypto wallet is old tech but you just don’t know it yet. It is difficult to use and you probably hate having to worry about it. It is unlikely that Grandma is going to be able to figure out how to use it either.",
-        "image": "oldtech.png"
-    },
-    {
-        "publishDate": "Sep 2, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Don’t lose it all, decentralize and take control",
-        "url":  "https://medium.com/@NexusOfficial/dont-lose-it-all-decentralize-and-take-control-5edc612c42ca",
-        "description": "When the all-in-one crypto banking provider Celsius, froze withdrawals and filed for bankruptcy, over one hundred thousand customers instantly lost access to their money. For many, who were...",
-        "image": "decentralizeTakeControl.png"
-    },
-    {
-        "publishDate": "Mar 29, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Why Decentralization in Crypto is essential for a Free Society",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/why-decentralization-in-crypto-is-essential-for-a-free-socie-xdgeqym",
-        "description": "With their prodigious rise in the financial markets and public consciousness, it’s hard to believe that over a decade ago, Bitcoin and cryptocurrencies were within the realm of privacy enthusiasts and radicals.",
-        "image": "freesociety.png"
-    },
-    {
-        "publishDate": "Mar 25, 2022",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Interoperability and the Nexus Blockchain",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/interoperability-and-the-nexus-blockchain-xlzpgpp",
-        "description": "The blockchain ecosystem started with Bitcoin being the premier digital asset offering a way to transfer value while eliminating centralized authority. The Ethereum network has taken this further with the use of smart contracts to...",
-        "image": "interoperability.png"
-    },
-    {
-        "publishDate": "22 Oct, 2021",
-        "tags": [ { "name": "Nexus"}, { "name": "Crypto"}],
-        "title": "Building DApps with no-code Bubble + Nexus.io plugin",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/building-dapps-with-no-code-bubble-plus-nexusio-plugin-xjoqpvq",
-        "description": "Nexus’ no-code Bubble plugin allows you to create Web3 applications on the Nexus blockchain using REST APIs. Nexus Bubble plugin Bubble is a leader in the no-code movement, which offers a powerful point-...",
-        "image": "bubble.png"
-    },
-    {
-        "publishDate": "11 Oct, 2021",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Top 10 Reasons to Build on Nexus",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/top-10-reasons-to-build-on-nexus-xrnrgoo",
-        "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
-        "image": "top10reasons.png"
-    },
-    {
-        "publishDate": "Nov 14, 2022",
-        "tags": [ { "name": "nexus"}],
-        "title": "Hardware Wallets are Old Tech",
-        "url":  "https://medium.com/@NexusOfficial/hardware-wallets-are-old-tech-b395ad0d8cc0",
-        "description": "Your crypto wallet is old tech but you just don’t know it yet. It is difficult to use and you probably hate having to worry about it. It is unlikely that Grandma is going to be able to figure out how to use it either.",
-        "image": "oldtech.png"
-    },
-    {
-        "publishDate": "Sep 2, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Don’t lose it all, decentralize and take control",
-        "url":  "https://medium.com/@NexusOfficial/dont-lose-it-all-decentralize-and-take-control-5edc612c42ca",
-        "description": "When the all-in-one crypto banking provider Celsius, froze withdrawals and filed for bankruptcy, over one hundred thousand customers instantly lost access to their money. For many, who were...",
-        "image": "decentralizeTakeControl.png"
-    },
-    {
-        "publishDate": "Mar 29, 2022",
-        "tags": [ { "name": "Crypto"}],
-        "title": "Why Decentralization in Crypto is essential for a Free Society",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/why-decentralization-in-crypto-is-essential-for-a-free-socie-xdgeqym",
-        "description": "With their prodigious rise in the financial markets and public consciousness, it’s hard to believe that over a decade ago, Bitcoin and cryptocurrencies were within the realm of privacy enthusiasts and radicals.",
-        "image": "freesociety.png"
-    },
-    {
-        "publishDate": "Mar 25, 2022",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Interoperability and the Nexus Blockchain",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/interoperability-and-the-nexus-blockchain-xlzpgpp",
-        "description": "The blockchain ecosystem started with Bitcoin being the premier digital asset offering a way to transfer value while eliminating centralized authority. The Ethereum network has taken this further with the use of smart contracts to...",
-        "image": "interoperability.png"
-    },
-    {
-        "publishDate": "22 Oct, 2021",
-        "tags": [ { "name": "Nexus"}, { "name": "Crypto"}],
-        "title": "Building DApps with no-code Bubble + Nexus.io plugin",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/building-dapps-with-no-code-bubble-plus-nexusio-plugin-xjoqpvq",
-        "description": "Nexus’ no-code Bubble plugin allows you to create Web3 applications on the Nexus blockchain using REST APIs. Nexus Bubble plugin Bubble is a leader in the no-code movement, which offers a powerful point-...",
-        "image": "bubble.png"
-    },
-    {
-        "publishDate": "11 Oct, 2021",
-        "tags": [ { "name": "Nexus"}],
-        "title": "Top 10 Reasons to Build on Nexus",
-        "url":  "https://www.publish0x.com/nexus-blockchain-technical-articles/top-10-reasons-to-build-on-nexus-xrnrgoo",
-        "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
-        "image": "top10reasons.png"
-    }
+  {
+    "publishDate": "Nov 14, 2022",
+    "tags": [{ "name": "nexus" }],
+    "title": "Hardware Wallets are Old Tech",
+    "url": "https://medium.com/@NexusOfficial/hardware-wallets-are-old-tech-b395ad0d8cc0",
+    "description": "Your crypto wallet is old tech but you just don’t know it yet. It is difficult to use and you probably hate having to worry about it. It is unlikely that Grandma is going to be able to figure out how to use it either.",
+    "image": "oldtech.png",
+    "category": "Articles"
+  },
+  {
+    "publishDate": "Sep 2, 2022",
+    "tags": [{ "name": "Crypto" }],
+    "title": "Don’t lose it all, decentralize and take control",
+    "url": "https://medium.com/@NexusOfficial/dont-lose-it-all-decentralize-and-take-control-5edc612c42ca",
+    "description": "When the all-in-one crypto banking provider Celsius, froze withdrawals and filed for bankruptcy, over one hundred thousand customers instantly lost access to their money. For many, who were...",
+    "image": "decentralizeTakeControl.png",
+    "category": "Articles"
+  },
+  {
+    "publishDate": "Mar 29, 2022",
+    "tags": [{ "name": "Crypto" }],
+    "title": "Why Decentralization in Crypto is essential for a Free Society",
+    "url": "https://www.publish0x.com/nexus-blockchain-technical-articles/why-decentralization-in-crypto-is-essential-for-a-free-socie-xdgeqym",
+    "description": "With their prodigious rise in the financial markets and public consciousness, it’s hard to believe that over a decade ago, Bitcoin and cryptocurrencies were within the realm of privacy enthusiasts and radicals.",
+    "image": "freesociety.png",
+    "category": "Articles"
+  },
+  {
+    "publishDate": "Mar 25, 2022",
+    "tags": [{ "name": "Nexus" }],
+    "title": "Interoperability and the Nexus Blockchain",
+    "url": "https://www.publish0x.com/nexus-blockchain-technical-articles/interoperability-and-the-nexus-blockchain-xlzpgpp",
+    "description": "The blockchain ecosystem started with Bitcoin being the premier digital asset offering a way to transfer value while eliminating centralized authority. The Ethereum network has taken this further with the use of smart contracts to...",
+    "image": "interoperability.png",
+    "category": "Articles"
+  },
+  {
+    "publishDate": "22 Oct, 2021",
+    "tags": [{ "name": "Nexus" }, { "name": "Crypto" }],
+    "title": "Building DApps with no-code Bubble + Nexus.io plugin",
+    "url": "https://www.publish0x.com/nexus-blockchain-technical-articles/building-dapps-with-no-code-bubble-plus-nexusio-plugin-xjoqpvq",
+    "description": "Nexus’ no-code Bubble plugin allows you to create Web3 applications on the Nexus blockchain using REST APIs. Nexus Bubble plugin Bubble is a leader in the no-code movement, which offers a powerful point-...",
+    "image": "bubble.png",
+    "category": "News"
+  },
+  {
+    "publishDate": "11 Oct, 2021",
+    "tags": [{ "name": "Nexus" }],
+    "title": "Top 10 Reasons to Build on Nexus",
+    "url": "https://www.publish0x.com/nexus-blockchain-technical-articles/top-10-reasons-to-build-on-nexus-xrnrgoo",
+    "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
+    "image": "top10reasons.png",
+    "category": "News"
+  }
 ]

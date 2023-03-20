@@ -1,15 +1,21 @@
 .protocol {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .banner.banner-page {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .layers {
-    padding-bottom: 2rem!important;
+  padding-bottom: 2rem !important;
 }
 
 img.cubes {
-    max-width: 85%;
+  max-width: 85%;
+}
+
+.sigchain-documentation,
+.qr-documentation,
+.tree-d-documentation {
+  padding-top: 2rem;
 }

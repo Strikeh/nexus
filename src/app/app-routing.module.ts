@@ -27,6 +27,8 @@ import { SecurityAuditComponent } from './resources/security-audit/security-audi
 import { BrandingComponent } from './resources/branding/branding.component';
 import { TransactComponent } from './use/transact/transact.component';
 import { UsecasesComponent } from './develop/usecases/usecases.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -55,6 +57,8 @@ const routes: Routes = [
   { path: 'security', component: SecurityAuditComponent },
   { path: 'economics', component: EconomicsComponent },
   { path: 'branding', component: BrandingComponent },
+  { path: 'privacypolicy', component: PrivacyPolicyComponent },
+  { path: 'terms', component: TermsComponent },
 ];
 
 @NgModule({

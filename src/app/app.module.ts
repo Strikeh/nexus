@@ -44,9 +44,11 @@ import { DappsComponent } from './use/dapps/dapps.component';
 import { SecurityAuditComponent } from './resources/security-audit/security-audit.component';
 import { EconomicsComponent } from './resources/economics/economics.component';
 import { BrandingComponent } from './resources/branding/branding.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     TeamComponent,
     LandingComponent,
@@ -81,7 +83,9 @@ import { BrandingComponent } from './resources/branding/branding.component';
     SecurityAuditComponent,
     EconomicsComponent,
     BrandingComponent,
-  ],
+    PrivacyPolicyComponent,
+      TermsComponent
+   ],
   imports: [
     BrowserModule,
     CommonModule,

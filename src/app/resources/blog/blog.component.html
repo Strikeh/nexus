@@ -119,16 +119,31 @@
                       </button>
                     </form>
                   </div>
-                  <!-- <div class="wgs wgs-category">
+                  <div class="wgs wgs-category">
                     <h6 class="wgs-title">Category</h6>
                     <div class="wgs-body">
                       <ul class="wgs-links wgs-links-category">
-                        <li><a href="#">Blockchain</a></li>
-                        <li><a href="#">Cryptocurrency</a></li>
-                        <li><a href="#">Technology</a></li>
+                        <li>
+                          <a
+                            href="#"
+                            [class.active-category]="activeCategory === 'News'"
+                            (click)="filterCategory('News', $event)"
+                            >News</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            [class.active-category]="
+                              activeCategory === 'Articles'
+                            "
+                            (click)="filterCategory('Articles', $event)"
+                            >Articles</a
+                          >
+                        </li>
                       </ul>
                     </div>
-                  </div> -->
+                  </div>
                   <div class="wgs wgs-tags">
                     <h6 class="wgs-title">Tags</h6>
                     <div class="wgs-body">
