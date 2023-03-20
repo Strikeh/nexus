@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,20 @@ export class AppComponent {
   title = 'nexus';
   showBannerAndFooter = false;
 
-  constructor(router: Router) {
-    router.events.subscribe((event) => {
-      if (router.url === 'landing' || router.url === '/') {
+  constructor(private router: Router) {
+    this.handleRouteEvents();
+  }
+
+  handleRouteEvents() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        (<any>window).gtag('event', 'page_view', {
+          page_location: document.location.origin + event.urlAfterRedirects,
+          page_title: event.urlAfterRedirects.substring(1),
+        });
+      }
+
+      if (this.router.url === 'landing' || this.router.url === '/') {
         return (this.showBannerAndFooter = true);
       }
       this.showBannerAndFooter = false;
