@@ -10,6 +10,7 @@ import {
 import { PagerService } from 'src/app/services/pager.service';
 import 'magnific-popup';
 import { map } from 'rxjs';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-videos',
@@ -21,6 +22,8 @@ export class VideosComponent implements OnInit, AfterViewChecked {
   @ViewChild('videos') videosDiv: ElementRef;
 
   activeCategory = '';
+
+  searchTerm = new FormControl('');
 
   constructor(
     private http: HttpClient,
@@ -59,7 +62,18 @@ export class VideosComponent implements OnInit, AfterViewChecked {
   pagedItems: any[];
 
   ngOnInit() {
-    // get videos
+    this.fetchVideos();
+  }
+
+  reset(): void {
+    this.searchTerm.setValue('');
+
+    this.fetchVideos();
+
+    event.preventDefault();
+  }
+
+  fetchVideos(): void {
     this.http.get('/assets/data/videos.json').subscribe((data: any) => {
       // set items to json response
       this.videos = data;
@@ -69,14 +83,40 @@ export class VideosComponent implements OnInit, AfterViewChecked {
     });
   }
 
+  search(): void {
+    this.http
+      .get('/assets/data/videos.json')
+      .pipe(
+        map((videos: Object[]) =>
+          videos.filter((video) =>
+            (<string>video['title'])
+              .toLowerCase()
+              .includes(this.searchTerm.value.toLowerCase())
+          )
+        )
+      )
+      .subscribe((data: any) => {
+        // set items to json response
+        this.videos = data;
+
+        // initialize to page 1
+        this.setPage(1, null);
+      });
+
+    event.preventDefault();
+  }
+
   filterCategory(category: string, event: any): void {
     this.activeCategory = category;
+    this.searchTerm.setValue('');
 
     this.http
       .get('/assets/data/videos.json')
       .pipe(
         map((videos: Object[]) =>
-          videos.filter((video) => video['category'] === category)
+          videos.filter((video) => {
+            return category === 'All' || video['category'] === category;
+          })
         )
       )
       .subscribe((data: any) => {

@@ -10,3 +10,18 @@
 .active-category {
   font-weight: bold;
 }
+
+.btn.reset {
+  min-width: 10px;
+  margin-left: 16px;
+  width: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid #0ca4fb;
+  background-color: #0ca4fb;
+  color: white !important;
+}
+
+.btn.search {
+  min-width: 20px;
+}

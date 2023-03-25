@@ -2,6 +2,7 @@ import { PagerService } from '../../services/pager.service';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-blog',
@@ -11,6 +12,8 @@ import { map } from 'rxjs';
 })
 export class BlogComponent implements OnInit {
   activeCategory = '';
+
+  searchTerm = new FormControl('');
 
   constructor(
     private http: HttpClient,
@@ -27,7 +30,10 @@ export class BlogComponent implements OnInit {
   pagedItems: any[];
 
   ngOnInit() {
-    // get dummy data
+    this.fetchArticles();
+  }
+
+  fetchArticles(): void {
     this.http
       .get('/assets/data/articles.json')
       // .pipe(map((response: Response) => response.json()))
@@ -40,14 +46,48 @@ export class BlogComponent implements OnInit {
       });
   }
 
+  search(): void {
+    this.http
+      .get('/assets/data/articles.json')
+      .pipe(
+        map((articles: Object[]) =>
+          articles.filter((article) =>
+            (<string>article['title'])
+              .toLowerCase()
+              .includes(this.searchTerm.value.toLowerCase())
+          )
+        )
+      )
+      .subscribe((data: any) => {
+        // set items to json response
+        this.articles = data;
+
+        // initialize to page 1
+        this.setPage(1, null);
+      });
+
+    event.preventDefault();
+  }
+
+  reset(): void {
+    this.searchTerm.setValue('');
+
+    this.fetchArticles();
+
+    event.preventDefault();
+  }
+
   filterCategory(category: string, event: any): void {
     this.activeCategory = category;
+    this.searchTerm.setValue('');
 
     this.http
       .get('/assets/data/articles.json')
       .pipe(
         map((articles: Object[]) =>
-          articles.filter((article) => article['category'] === category)
+          articles.filter((article) => {
+            return category === 'All' || article['category'] === category;
+          })
         )
       )
       .subscribe((data: any) => {

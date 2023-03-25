@@ -1,15 +1,3 @@
-import { ModulesComponent } from './develop/modules/modules.component';
-import { BlockchainComponent } from './technology/blockchain/blockchain.component';
-import { ScriptService } from './services/script-service';
-import { RouterModule } from '@angular/router';
-import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { TeamComponent } from './team/team.component';
-import { LandingComponent } from './landing/landing.component';
-
 import * as $ from 'jquery';
 import 'magnific-popup';
 
@@ -46,9 +34,22 @@ import { EconomicsComponent } from './resources/economics/economics.component';
 import { BrandingComponent } from './resources/branding/branding.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsComponent } from './terms/terms.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ModulesComponent } from './develop/modules/modules.component';
+import { BlockchainComponent } from './technology/blockchain/blockchain.component';
+import { ScriptService } from './services/script-service';
+import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TeamComponent } from './team/team.component';
+import { LandingComponent } from './landing/landing.component';
+import { SafePipeModule } from 'safe-pipe';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     TeamComponent,
     LandingComponent,
@@ -84,17 +85,20 @@ import { TermsComponent } from './terms/terms.component';
     EconomicsComponent,
     BrandingComponent,
     PrivacyPolicyComponent,
-      TermsComponent
-   ],
+    TermsComponent,
+  ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    SafePipeModule,
   ],
   providers: [ScriptService],
   bootstrap: [AppComponent],
+  exports: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

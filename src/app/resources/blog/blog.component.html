@@ -18,26 +18,29 @@
                   <div *ngFor="let article of pagedItems" class="col-sm-6">
                     <div class="blog">
                       <div class="blog-photo">
-                        <img
-                          src="images/blog/{{ article.image }}"
-                          alt="blog-thumb"
-                        />
+                        <a href="{{ article.url }}">
+                          <img
+                            src="images/blog/{{ article.image }}"
+                            alt="blog-thumb"
+                        /></a>
                       </div>
                       <div class="blog-text">
                         <ul class="blog-meta">
                           <li>
-                            <a href="#">{{ article.publishDate }}</a>
+                            <a href="#" class="pubdate">{{
+                              article.publishDate
+                            }}</a>
                           </li>
                           <li *ngFor="let tag of article.tags">
-                            <a href="#">{{ tag.name }}</a>
+                            <a href="#">{{ tag }}</a>
                           </li>
                         </ul>
                         <h4 class="title title-sm">
                           <a href="{{ article.url }}">{{ article.title }}</a>
                         </h4>
-                        <p>
+                        <!-- <p>
                           {{ article.description }}
-                        </p>
+                        </p> -->
                       </div>
                     </div>
                     <!-- .blog -->
@@ -113,9 +116,20 @@
                         type="text"
                         placeholder="Search Keyword"
                         class="input-bordered"
+                        [formControl]="searchTerm"
                       />
-                      <button class="btn btn-primary btn-icon">
+                      <button
+                        class="btn btn-primary btn-link search"
+                        (click)="search()"
+                      >
                         <em class="ti ti-search"></em>
+                      </button>
+                      <button
+                        *ngIf="searchTerm.value"
+                        class="btn btn-primary btn-with-icon btn-light reset"
+                        (click)="reset()"
+                      >
+                        <em class="ti ti-back-left"></em>
                       </button>
                     </form>
                   </div>
@@ -141,10 +155,18 @@
                             >Articles</a
                           >
                         </li>
+                        <li>
+                          <a
+                            href="#"
+                            [class.active-category]="activeCategory === 'All'"
+                            (click)="filterCategory('All', $event)"
+                            >All</a
+                          >
+                        </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="wgs wgs-tags">
+                  <!-- <div class="wgs wgs-tags">
                     <h6 class="wgs-title">Tags</h6>
                     <div class="wgs-body">
                       <ul class="wgs-links wgs-links-tags">
@@ -156,7 +178,7 @@
                         <li><a href="#">crypto</a></li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="wgs wgs-archive">
                     <h6 class="wgs-title">Archive</h6>
                     <div class="wgs-body">

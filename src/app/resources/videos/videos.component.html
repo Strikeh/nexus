@@ -111,9 +111,20 @@
                         type="text"
                         placeholder="Search Keyword"
                         class="input-bordered"
+                        [formControl]="searchTerm"
                       />
-                      <button class="btn btn-primary btn-icon">
+                      <button
+                        class="btn btn-primary btn-link search"
+                        (click)="search()"
+                      >
                         <em class="ti ti-search"></em>
+                      </button>
+                      <button
+                        *ngIf="searchTerm.value"
+                        class="btn btn-primary btn-with-icon btn-light reset"
+                        (click)="reset()"
+                      >
+                        <em class="ti ti-back-left"></em>
                       </button>
                     </form>
                   </div>
@@ -141,6 +152,14 @@
                               filterCategory('Architect Of Nexus', $event)
                             "
                             >Architect Of Nexus</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            [class.active-category]="activeCategory === 'All'"
+                            (click)="filterCategory('All', $event)"
+                            >All</a
                           >
                         </li>
                       </ul>
