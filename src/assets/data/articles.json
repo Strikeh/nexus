@@ -1,5 +1,24 @@
 [
   {
+    "publishDate": "28 March, 2023",
+    "tags": ["blockchain"],
+    "title": "Nexus Introduces Advanced APIs that Empower Developers to Build Smarter Applications",
+    "url": "https://medium.com/@NexusOfficial/nexus-introduces-advanced-apis-that-empower-developers-to-build-smarter-applications-f5d5d35dadc3",
+    "description": "Nexus Introduces Advanced APIs that Empower Developers to Build Smarter Applications Nexus is poised to revolutionize the development...",
+    "image": "empower.png",
+    "category": "Articles"
+  },
+
+  {
+    "publishDate": "24 March, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Nexus summary 24th of March 2023",
+    "url": "https://medium.com/@NexusOfficial/nexus-summary-24th-of-march-2023-b4fa3cec9fa1",
+    "description": "Nexus summary 24th of March 2023 So we're doing a quick recap today, and we're mainly focusing on the beta testing progress. We released the next round of betas last Tuesday, which took a bit longer to process...",
+    "image": "recap.png",
+    "category": "News"
+  },
+  {
     "publishDate": "22 March, 2023",
     "tags": [
       "decentralization",
@@ -13,6 +32,15 @@
     "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
     "image": "handshake.jpg",
     "category": "Articles"
+  },
+  {
+    "publishDate": "17 March, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Summary of Nexus Weekly Recap March 17, 2023",
+    "url": "https://medium.com/@NexusOfficial/summary-of-nexus-weekly-recap-march-17-2023-c64e6e162608",
+    "description": "Summary of Nexus Weekly Recap March 17, 2023 In the Nexus Weekly Recap, Chief Architect Colin Cantrell provided updates on various developments related to the project. First up, an update on the mobile...",
+    "image": "recap.png",
+    "category": "News"
   },
   {
     "publishDate": "Nov 14, 2022",
@@ -57,7 +85,7 @@
     "url": "https://www.publish0x.com/nexus-blockchain-technical-articles/building-dapps-with-no-code-bubble-plus-nexusio-plugin-xjoqpvq",
     "description": "Nexus’ no-code Bubble plugin allows you to create Web3 applications on the Nexus blockchain using REST APIs. Nexus Bubble plugin Bubble is a leader in the no-code movement, which offers a powerful point-...",
     "image": "bubble.png",
-    "category": "News"
+    "category": "Articles"
   },
   {
     "publishDate": "11 Oct, 2021",
@@ -66,6 +94,6 @@
     "url": "https://www.publish0x.com/nexus-blockchain-technical-articles/top-10-reasons-to-build-on-nexus-xrnrgoo",
     "description": "There is an increasing number of smart contract platforms rolling out in the crypto space, with many becoming household names. However, a dark horse in the race to be the most efficient and secure blockchain...",
     "image": "top10reasons.png",
-    "category": "News"
+    "category": "Articles"
   }
 ]

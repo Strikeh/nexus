@@ -7,6 +7,7 @@ import {
   ViewChild,
   ElementRef,
 } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { ScriptService } from '../../services/script-service';
 
 declare const TradingView: any;
@@ -30,14 +31,31 @@ export class BuyNexusComponent implements OnInit {
 
   constructor(
     private renderer: Renderer2,
-    private scriptService: ScriptService
-  ) {}
+    private scriptService: ScriptService,
+    private readonly meta: Meta,
+    private readonly title: Title
+  ) {
+    this.meta.addTags([
+      { name: 'description', content: 'Buy Nexus' },
+      { name: 'author', content: 'Christophe Verheyen' },
+      {
+        name: 'keywords',
+        content:
+          'nexus, crypto, blockchain, web3, Buy Nexus, chart, exchanges, bittrex, binance, coinstore, usdt, nxs, currency, fiat',
+      },
+    ]);
+    this.setTitle('Nexus - Buy Nexus');
+  }
 
   ngOnInit() {
     this.executeCryptoComScript();
     this.executeTradingViewScript();
     this.executeCryptoHopperScript();
     this.executCoinGekkoScript();
+  }
+
+  setTitle(newTitle: string) {
+    this.title.setTitle(newTitle);
   }
 
   private executeCryptoComScript() {

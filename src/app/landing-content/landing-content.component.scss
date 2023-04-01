@@ -23,3 +23,34 @@
 .video-container {
   display: flex;
 }
+
+.bg-theme .box-bordered-inner {
+  background: #023e60;
+}
+
+#articles,
+#videos {
+  padding-bottom: 2rem !important;
+}
+
+#articles {
+  margin-bottom: 5rem;
+}
+
+.schedule-content.videos img {
+  max-width: 26rem;
+}
+
+.metrics {
+  margin-bottom: 5rem;
+}
+
+.articles-button,
+.videos-button {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-top: 10px;
+  }
+}

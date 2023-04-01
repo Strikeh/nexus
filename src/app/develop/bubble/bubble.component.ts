@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-bubble',
@@ -6,8 +7,21 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   styleUrls: ['./bubble.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BubbleComponent implements OnInit {
-  constructor() {}
+export class BubbleComponent {
+  constructor(private readonly meta: Meta, private readonly title: Title) {
+    this.meta.addTags([
+      { name: 'description', content: 'no-code' },
+      { name: 'author', content: 'Christophe Verheyen' },
+      {
+        name: 'keywords',
+        content:
+          'nexus, crypto, blockchain, web3, no-code, nocode, bubble, api, bubble plugin, wix, dapp',
+      },
+    ]);
+    this.setTitle('Nexus - No-Code (Bubble)');
+  }
 
-  ngOnInit() {}
+  setTitle(newTitle: string) {
+    this.title.setTitle(newTitle);
+  }
 }

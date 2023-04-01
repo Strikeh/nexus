@@ -226,7 +226,7 @@
   <!-- // -->
 
   <!-- // -->
-  <section class="section bg-theme-grad-alt tc-light">
+  <section class="section bg-theme-grad-alt tc-light metrics">
     <div class="container">
       <div class="section-head section-head-s2 text-center wide-auto-md">
         <h2 class="title title-thin">Nexus Today</h2>
@@ -301,7 +301,343 @@
     </div> -->
   </section>
 
-  <section class="section tc-light section-video">
+  <!-- .section -->
+  <div
+    class="section bg-theme tc-light section-t-l pb-0 ov-h"
+    id="articles"
+    *ngIf="showArticles"
+  >
+    <div class="container container-xxl">
+      <div class="nk-block">
+        <div class="section-head text-center">
+          <div class="row justify-content-center">
+            <div class="col-xxl-6 col-xl-8 col-lg-9">
+              <h2 class="animated" data-animate="fadeInUp" data-delay=".1">
+                Latest <span class="text-grad">Articles</span>
+              </h2>
+              <p class="lead animated" data-animate="fadeInUp" data-delay=".2">
+                An overview of our latest published articles.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .section-head -->
+        <div class="row justify-content-center">
+          <div class="col-xxl-8 col-xl-9">
+            <div
+              class="has-carousel carousel-navs-middle carousel-navs-fill carousel-dots-long-line carousel-dots-sharp carousel-center-focused animated"
+              data-animate="fadeInUp"
+              data-delay=".3"
+              data-margin="28"
+              data-items="1"
+              data-navs="true"
+              data-dots="true"
+              data-loop="true"
+            >
+              <!-- .schedule-item -->
+              <div class="schedule-item box-bordered-grad">
+                <div class="box-bordered-inner flex-grow-0">
+                  <div class="schedule-meta">
+                    <div class="schedule-step">
+                      <h5>
+                        <em class="ti ti-notepad"></em>
+                      </h5>
+                    </div>
+                    <div class="schedule-meta-text">
+                      <ul class="schedule-meta-list">
+                        <li class="text-grad">
+                          {{ articles[0]?.publishDate }}
+                        </li>
+                      </ul>
+                      <h5 class="schedule-meta-title">
+                        {{ articles[0]?.category }}
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bordered-inner schedule-content">
+                  <a href="{{ articles[0]?.url }}" target="_blank">
+                    <img
+                      src="images/blog/{{ articles[0]?.image }}"
+                      alt="blog-thumb"
+                  /></a>
+                  <div class="schedule-text">
+                    <h5 class="line-truncate-2">
+                      {{ articles[0]?.title }}
+                    </h5>
+                    <p class="line-truncate-4">
+                      {{ articles[0]?.description }}
+                    </p>
+                    <a
+                      href="{{ articles[0]?.url }}"
+                      target="_blank"
+                      class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0"
+                      >Read article</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- .schedule-item -->
+              <div class="schedule-item box-bordered-grad">
+                <div class="box-bordered-inner flex-grow-0">
+                  <div class="schedule-meta">
+                    <div class="schedule-step">
+                      <h5><em class="ti ti-notepad"></em></h5>
+                    </div>
+                    <div class="schedule-meta-text">
+                      <ul class="schedule-meta-list">
+                        <li class="text-grad">
+                          {{ articles[1]?.publishDate }}
+                        </li>
+                      </ul>
+                      <h5 class="schedule-meta-title">
+                        {{ articles[1]?.category }}
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bordered-inner schedule-content">
+                  <a href="{{ articles[1]?.url }}" target="_blank">
+                    <img
+                      src="images/blog/{{ articles[1]?.image }}"
+                      alt="blog-thumb"
+                  /></a>
+                  <div class="schedule-text">
+                    <h5 class="line-truncate-2">
+                      {{ articles[1]?.title }}
+                    </h5>
+                    <p class="line-truncate-4">
+                      {{ articles[1]?.description }}
+                    </p>
+                    <a
+                      href="{{ articles[1]?.url }}"
+                      target="_blank"
+                      class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0"
+                      >Read article</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- .schedule-item -->
+              <div class="schedule-item box-bordered-grad">
+                <div class="box-bordered-inner flex-grow-0">
+                  <div class="schedule-meta">
+                    <div class="schedule-step">
+                      <h5><em class="ti ti-notepad"></em></h5>
+                    </div>
+                    <div class="schedule-meta-text">
+                      <ul class="schedule-meta-list">
+                        <li class="text-grad">
+                          {{ articles[2]?.publishDate }}
+                        </li>
+                      </ul>
+                      <h5 class="schedule-meta-title">
+                        {{ articles[2]?.category }}
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bordered-inner schedule-content">
+                  <a href="{{ articles[2]?.url }}" target="_blank">
+                    <img
+                      src="images/blog/{{ articles[2]?.image }}"
+                      alt="blog-thumb"
+                  /></a>
+                  <div class="schedule-text">
+                    <h5 class="line-truncate-2">
+                      {{ articles[2]?.title }}
+                    </h5>
+                    <p class="line-truncate-4">
+                      {{ articles[2]?.description }}
+                    </p>
+                    <a
+                      href="{{ articles[2]?.url }}"
+                      target="_blank"
+                      class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0"
+                      >Read article</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- .schedule-item -->
+            </div>
+
+            <div class="articles-button">
+              <a href="./blog" class="btn btn-primary btn-md">All articles</a>
+            </div>
+            <!-- .has-carousel -->
+          </div>
+
+          <!-- .col -->
+        </div>
+
+        <!-- .row -->
+      </div>
+      <!-- .nk-block -->
+    </div>
+    <!-- .container -->
+  </div>
+  <!-- .section -->
+
+  <!-- .section -->
+  <div
+    class="section bg-theme-alt tc-light section-t-l pb-0 ov-h"
+    id="videos"
+    *ngIf="showVideos"
+  >
+    <div class="container container-xxl">
+      <div class="nk-block">
+        <div class="section-head text-center">
+          <div class="row justify-content-center">
+            <div class="col-xxl-6 col-xl-8 col-lg-9">
+              <h2 class="animated" data-animate="fadeInUp" data-delay=".1">
+                Latest <span class="text-grad">Videos</span>
+              </h2>
+              <p class="lead animated" data-animate="fadeInUp" data-delay=".2">
+                An overview of our latest recorded videos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- .section-head -->
+        <div class="row justify-content-center">
+          <div class="col-xxl-8 col-xl-9">
+            <div
+              class="has-carousel carousel-navs-middle carousel-navs-fill carousel-dots-long-line carousel-dots-sharp carousel-center-focused animated"
+              data-animate="fadeInUp"
+              data-delay=".3"
+              data-margin="28"
+              data-items="1"
+              data-navs="true"
+              data-dots="true"
+              data-loop="true"
+            >
+              <!-- .schedule-item -->
+              <div class="schedule-item box-bordered-grad">
+                <div class="box-bordered-inner flex-grow-0">
+                  <div class="schedule-meta">
+                    <div class="schedule-step">
+                      <h5>
+                        <em class="ti ti-video-camera"></em>
+                      </h5>
+                    </div>
+                    <div class="schedule-meta-text">
+                      <ul class="schedule-meta-list">
+                        <li class="text-grad">
+                          {{ videos[2]?.category }}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bordered-inner schedule-content videos">
+                  <a href="{{ videos[2]?.url }}" target="_blank">
+                    <img
+                      src="images/video/{{ videos[2]?.image }}"
+                      alt="blog-thumb"
+                  /></a>
+                  <div class="schedule-text">
+                    <h5 class="line-truncate-2">
+                      {{ videos[2]?.title }}
+                    </h5>
+                    <a
+                      href="{{ videos[2]?.url }}"
+                      target="_blank"
+                      class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0"
+                      >Watch video</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- .schedule-item -->
+              <div class="schedule-item box-bordered-grad">
+                <div class="box-bordered-inner flex-grow-0">
+                  <div class="schedule-meta">
+                    <div class="schedule-step">
+                      <h5><em class="ti ti-video-camera"></em></h5>
+                    </div>
+                    <div class="schedule-meta-text">
+                      <ul class="schedule-meta-list">
+                        <li class="text-grad">
+                          {{ videos[1]?.category }}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bordered-inner schedule-content videos">
+                  <a href="{{ videos[1]?.url }}" target="_blank">
+                    <img
+                      src="images/video/{{ videos[1]?.image }}"
+                      alt="blog-thumb"
+                  /></a>
+                  <div class="schedule-text">
+                    <h5 class="line-truncate-2">
+                      {{ videos[1]?.title }}
+                    </h5>
+                    <a
+                      href="{{ videos[1]?.url }}"
+                      target="_blank"
+                      class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0"
+                      >Watch video</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- .schedule-item -->
+              <div class="schedule-item box-bordered-grad">
+                <div class="box-bordered-inner flex-grow-0">
+                  <div class="schedule-meta">
+                    <div class="schedule-step">
+                      <h5><em class="ti ti-video-camera"></em></h5>
+                    </div>
+                    <div class="schedule-meta-text">
+                      <ul class="schedule-meta-list">
+                        <li class="text-grad">
+                          {{ videos[0]?.category }}
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bordered-inner schedule-content videos">
+                  <a href="{{ videos[0]?.url }}" target="_blank">
+                    <img
+                      src="images/video/{{ videos[0]?.image }}"
+                      alt="blog-thumb"
+                  /></a>
+                  <div class="schedule-text">
+                    <h5 class="line-truncate-2">
+                      {{ videos[0]?.title }}
+                    </h5>
+                    <a
+                      href="{{ videos[0]?.url }}"
+                      target="_blank"
+                      class="btn btn-sm btn-grad btn-auto btn-noround btn-nocap mt-0"
+                      >Watch video</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- .schedule-item -->
+            </div>
+
+            <div class="videos-button">
+              <a href="./videos" class="btn btn-primary btn-md">All videos</a>
+            </div>
+            <!-- .has-carousel -->
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .nk-block -->
+    </div>
+    <!-- .container -->
+  </div>
+  <!-- .section -->
+
+  <section class="section tc-light section-video d-none d-md-block">
     <div id="videoDiv" class="container">
       <video
         class="video-container"

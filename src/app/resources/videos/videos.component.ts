@@ -11,6 +11,7 @@ import { PagerService } from 'src/app/services/pager.service';
 import 'magnific-popup';
 import { map } from 'rxjs';
 import { FormControl } from '@angular/forms';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-videos',
@@ -26,9 +27,22 @@ export class VideosComponent implements OnInit, AfterViewChecked {
   searchTerm = new FormControl('');
 
   constructor(
-    private http: HttpClient,
-    private readonly pagerService: PagerService
-  ) {}
+    private readonly http: HttpClient,
+    private readonly pagerService: PagerService,
+    private readonly meta: Meta,
+    private readonly title: Title
+  ) {
+    this.meta.addTags([
+      { name: 'description', content: 'Videos' },
+      { name: 'author', content: 'Christophe Verheyen' },
+      {
+        name: 'keywords',
+        content:
+          'nexus, crypto, blockchain, web3, Videos, series, youtube, architect, bitcoin, tokens, crypto, released',
+      },
+    ]);
+    this.setTitle('Nexus - Videos');
+  }
 
   ngAfterViewChecked(): void {
     const popups = document.querySelectorAll('a.video-popup');
@@ -50,6 +64,10 @@ export class VideosComponent implements OnInit, AfterViewChecked {
         },
       });
     });
+  }
+
+  setTitle(newTitle: string) {
+    this.title.setTitle(newTitle);
   }
 
   // array of all items to be paged

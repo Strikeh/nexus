@@ -1,32 +1,31 @@
 .scroll-to-top {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    opacity: 0;
-    transition: all .2s ease-in-out;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 120000;
 }
 
 .show-scrollTop {
-    opacity: 1;
-    transition: all .2s ease-in-out;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 
 .fa-chevron-up {
-    color:#0ca4fb;
+  color: #0ca4fb;
 }
-
 
 .button-up {
-
-    z-index: 1;
-    border: none;
-    outline: 0;
-    background-color: #0ca4fb;
-    color: #fff;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 50%;
+  z-index: 1;
+  border: none;
+  outline: 0;
+  background-color: #0ca4fb;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
 }
 .button-up:hover {
-    background-color: #025e93 ;
+  background-color: #025e93;
 }

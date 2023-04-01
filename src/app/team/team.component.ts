@@ -1,4 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 type TeamMember = {
   name: string;
@@ -26,6 +27,23 @@ export class TeamComponent implements AfterViewInit {
   embassyMembers: TeamMember[] = [];
   jurorMembers: TeamMember[] = [];
   mediaMembers: TeamMember[] = [];
+
+  constructor(private readonly meta: Meta, private readonly title: Title) {
+    this.meta.addTags([
+      { name: 'description', content: 'Team' },
+      { name: 'author', content: 'Christophe Verheyen' },
+      {
+        name: 'keywords',
+        content:
+          'nexus, crypto, blockchain, web3, Team, founder, developers, ambassadors, embassies, mission, vision, jurors',
+      },
+    ]);
+    this.setTitle('Nexus - Team');
+  }
+
+  setTitle(newTitle: string) {
+    this.title.setTitle(newTitle);
+  }
 
   ngOnInit() {
     this.fillDevelopers();
@@ -353,22 +371,22 @@ export class TeamComponent implements AfterViewInit {
                           his free time, Quý enjoys music, dancing, and playing
                           board games with friends.`,
       },
-      {
-        name: 'Ajion',
-        image: 'ajion2',
-        popup: 'ajion-dev',
-        position: 'Developer',
-        description1: `Ajion is a UI/UX engineer, since 1997, when modems
-                          ruled the world, "notepad coding" was L33t and nuking
-                          IPs was a thing. He is passionate about data
-                          visualization, machine learning and creating awesome
-                          user interfaces, even after 10 years in the Corporate
-                          Financial Sector. He discovered Nexus in late 2017.
-                          And in 2021, he joined Nexus and their mission for a
-                          space faring decentralized world. Additionally, he is
-                          fascinated with financial fractal patterns and you
-                          might have seen some of his work on Tradingview.`,
-      },
+      // {
+      //   name: 'Ajion',
+      //   image: 'ajion2',
+      //   popup: 'ajion-dev',
+      //   position: 'Developer',
+      //   description1: `Ajion is a UI/UX engineer, since 1997, when modems
+      //                     ruled the world, "notepad coding" was L33t and nuking
+      //                     IPs was a thing. He is passionate about data
+      //                     visualization, machine learning and creating awesome
+      //                     user interfaces, even after 10 years in the Corporate
+      //                     Financial Sector. He discovered Nexus in late 2017.
+      //                     And in 2021, he joined Nexus and their mission for a
+      //                     space faring decentralized world. Additionally, he is
+      //                     fascinated with financial fractal patterns and you
+      //                     might have seen some of his work on Tradingview.`,
+      // },
     ];
   }
 
@@ -376,7 +394,7 @@ export class TeamComponent implements AfterViewInit {
     this.communicationMembers = [
       {
         name: 'Tomas Gaia',
-        image: 'tomas2',
+        image: 'silhouette2',
         popup: 'tomas-member',
         position: 'Communications Chair',
         description1: ``,
@@ -389,7 +407,7 @@ export class TeamComponent implements AfterViewInit {
         description1: ``,
       },
       {
-        name: 'Karl Don',
+        name: 'Don Karl',
         image: 'karl2',
         popup: 'karl-member',
         position: 'Communicator',

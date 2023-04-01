@@ -13,102 +13,8 @@
         <div class="container">
           <div class="nk-block nk-block-blog">
             <div class="row">
-              <div class="col-lg-8">
-                <div class="row">
-                  <div *ngFor="let article of pagedItems" class="col-sm-6">
-                    <div class="blog">
-                      <div class="blog-photo">
-                        <a href="{{ article.url }}">
-                          <img
-                            src="images/blog/{{ article.image }}"
-                            alt="blog-thumb"
-                        /></a>
-                      </div>
-                      <div class="blog-text">
-                        <ul class="blog-meta">
-                          <li>
-                            <a href="#" class="pubdate">{{
-                              article.publishDate
-                            }}</a>
-                          </li>
-                          <li *ngFor="let tag of article.tags">
-                            <a href="#">{{ tag }}</a>
-                          </li>
-                        </ul>
-                        <h4 class="title title-sm">
-                          <a href="{{ article.url }}">{{ article.title }}</a>
-                        </h4>
-                        <!-- <p>
-                          {{ article.description }}
-                        </p> -->
-                      </div>
-                    </div>
-                    <!-- .blog -->
-                  </div>
-                  <!-- .col -->
-                </div>
-                <!-- .row -->
-                <nav class="w-100 d-flex">
-                  <!-- pager -->
-                  <ul
-                    *ngIf="pager.pages && pager.pages.length"
-                    class="pagination"
-                  >
-                    <li [ngClass]="{ disabled: pager.currentPage === 1 }">
-                      <a href="#" (click)="setPage(1); $event.preventDefault()"
-                        >First</a
-                      >
-                    </li>
-                    <li [ngClass]="{ disabled: pager.currentPage === 1 }">
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.currentPage - 1);
-                          $event.preventDefault()
-                        "
-                        >Previous</a
-                      >
-                    </li>
-                    <li *ngFor="let page of pager.pages">
-                      <a
-                        [ngClass]="{ active: pager.currentPage === page }"
-                        href="#"
-                        (click)="setPage(page); $event.preventDefault()"
-                        >{{ page }}</a
-                      >
-                    </li>
-                    <li
-                      [ngClass]="{
-                        disabled: pager.currentPage === pager.totalPages
-                      }"
-                    >
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.currentPage + 1);
-                          $event.preventDefault()
-                        "
-                        >Next</a
-                      >
-                    </li>
-                    <li
-                      [ngClass]="{
-                        disabled: pager.currentPage === pager.totalPages
-                      }"
-                    >
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.totalPages); $event.preventDefault()
-                        "
-                        >Last</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </div>
               <!-- .col -->
-              <div class="col-lg-4 order-lg-first">
+              <div class="col-lg-4">
                 <div class="sidebar me-lg-4 mt-5 mt-lg-0">
                   <div class="wgs wgs-search">
                     <form action="#" class="field-inline">
@@ -202,6 +108,101 @@
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="row">
+                  <div *ngFor="let article of pagedItems" class="col-sm-6">
+                    <div class="blog">
+                      <div class="blog-photo">
+                        <a href="{{ article.url }}">
+                          <img
+                            src="images/blog/{{ article.image }}"
+                            alt="blog-thumb"
+                        /></a>
+                      </div>
+                      <div class="blog-text">
+                        <ul class="blog-meta">
+                          <li>
+                            <a href="#" class="pubdate">{{
+                              article.publishDate
+                            }}</a>
+                          </li>
+                          <li *ngFor="let tag of article.tags">
+                            <a href="#">{{ tag }}</a>
+                          </li>
+                        </ul>
+                        <h4 class="title title-sm">
+                          <a href="{{ article.url }}">{{ article.title }}</a>
+                        </h4>
+                        <!-- <p>
+                          {{ article.description }}
+                        </p> -->
+                      </div>
+                    </div>
+                    <!-- .blog -->
+                  </div>
+                  <!-- .col -->
+                </div>
+                <!-- .row -->
+                <nav class="w-100 d-flex">
+                  <!-- pager -->
+                  <ul
+                    *ngIf="pager.pages && pager.pages.length"
+                    class="pagination"
+                  >
+                    <li [ngClass]="{ disabled: pager.currentPage === 1 }">
+                      <a href="#" (click)="setPage(1); $event.preventDefault()"
+                        >First</a
+                      >
+                    </li>
+                    <li [ngClass]="{ disabled: pager.currentPage === 1 }">
+                      <a
+                        href="#"
+                        (click)="
+                          setPage(pager.currentPage - 1);
+                          $event.preventDefault()
+                        "
+                        >Previous</a
+                      >
+                    </li>
+                    <li *ngFor="let page of pager.pages">
+                      <a
+                        [ngClass]="{ active: pager.currentPage === page }"
+                        href="#"
+                        (click)="setPage(page); $event.preventDefault()"
+                        >{{ page }}</a
+                      >
+                    </li>
+                    <li
+                      [ngClass]="{
+                        disabled: pager.currentPage === pager.totalPages
+                      }"
+                    >
+                      <a
+                        href="#"
+                        (click)="
+                          setPage(pager.currentPage + 1);
+                          $event.preventDefault()
+                        "
+                        >Next</a
+                      >
+                    </li>
+                    <li
+                      [ngClass]="{
+                        disabled: pager.currentPage === pager.totalPages
+                      }"
+                    >
+                      <a
+                        href="#"
+                        (click)="
+                          setPage(pager.totalPages); $event.preventDefault()
+                        "
+                        >Last</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
             <!-- .row -->

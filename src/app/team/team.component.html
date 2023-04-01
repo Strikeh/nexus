@@ -81,13 +81,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ dev.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ dev.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ dev.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="dev.linkedIn" href="{{ dev.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -116,12 +116,12 @@
                         <p class="team-position">{{ dev.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ dev.linkedIn }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ dev.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ dev.facebook }}"
+                            <a *ngIf="dev.linkedIn" href="{{ dev.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -186,13 +186,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -221,12 +221,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -280,13 +282,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -315,12 +317,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -373,13 +377,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -408,12 +412,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -466,13 +472,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -501,12 +507,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -556,13 +564,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -591,12 +599,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -706,13 +716,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -741,12 +751,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>
@@ -844,13 +856,13 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
+                        <a href="{{ member.telegram }}"
+                          ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
                       <li>
-                        <a href="{{ member.facebook }}"
-                          ><em class="fab fa-facebook-f"></em
+                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
+                          ><em class="fab fa-linkedin-in"></em
                         ></a>
                       </li>
                     </ul>
@@ -879,12 +891,14 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.facebook }}"
-                              ><em class="fab fa-facebook-f"></em
+                            <a href="{{ member.telegram }}"
+                              ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
                           <li>
-                            <a href="{{ member.linkedIn }}"
+                            <a
+                              *ngIf="member.linkedIn"
+                              href="{{ member.linkedIn }}"
                               ><em class="fab fa-linkedin-in"></em
                             ></a>
                           </li>

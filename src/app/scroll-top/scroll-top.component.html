@@ -4,7 +4,7 @@
     href="#"
     class="menu-link nav-link menu-toggle button-up"
     title="test"
-    (click)="scrollToTop()"
+    (click)="scrollToTop(); $event.preventDefault()"
   >
     <!-- <i class="fa fa-chevron-up"></i> -->
     <img src="../../images/up.png" alt="up" />

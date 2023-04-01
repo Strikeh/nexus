@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { FormControl } from '@angular/forms';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-blog',
@@ -16,9 +17,22 @@ export class BlogComponent implements OnInit {
   searchTerm = new FormControl('');
 
   constructor(
-    private http: HttpClient,
-    private readonly pagerService: PagerService
-  ) {}
+    private readonly http: HttpClient,
+    private readonly pagerService: PagerService,
+    private readonly meta: Meta,
+    private readonly title: Title
+  ) {
+    this.meta.addTags([
+      { name: 'description', content: 'Blog' },
+      { name: 'author', content: 'Christophe Verheyen' },
+      {
+        name: 'keywords',
+        content:
+          'nexus, crypto, blockchain, web3, Blog, articles, news, medium',
+      },
+    ]);
+    this.setTitle('Nexus - Blog');
+  }
 
   // array of all items to be paged
   private articles: any[];
@@ -33,17 +47,18 @@ export class BlogComponent implements OnInit {
     this.fetchArticles();
   }
 
-  fetchArticles(): void {
-    this.http
-      .get('/assets/data/articles.json')
-      // .pipe(map((response: Response) => response.json()))
-      .subscribe((data: any) => {
-        // set items to json response
-        this.articles = data;
+  setTitle(newTitle: string) {
+    this.title.setTitle(newTitle);
+  }
 
-        // initialize to page 1
-        this.setPage(1, null);
-      });
+  fetchArticles(): void {
+    this.http.get('/assets/data/articles.json').subscribe((data: any) => {
+      // set items to json response
+      this.articles = data;
+
+      // initialize to page 1
+      this.setPage(1, null);
+    });
   }
 
   search(): void {

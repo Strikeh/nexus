@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { LandingContentComponent } from './landing-content/landing-content.component';
 import { BannerComponent } from './banner/banner.component';
 import { WhitepapersComponent } from './whitepapers/whitepapers.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RoadmapComponent } from './technology/roadmap/roadmap.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { CommonModule } from '@angular/common';
@@ -47,6 +47,7 @@ import { AppComponent } from './app.component';
 import { TeamComponent } from './team/team.component';
 import { LandingComponent } from './landing/landing.component';
 import { SafePipeModule } from 'safe-pipe';
+import { HttpsInterceptor } from './httpsInterceptor.service';
 
 @NgModule({
   declarations: [
