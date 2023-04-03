@@ -8,7 +8,47 @@
     </nexus-page-header>
   </div>
 
-  <section class="section protocol pdt-1 ov-v">
+  <div class="header-main header-sub">
+    <div class="header-container container">
+      <div class="header-wrap">
+        <!-- Menu @s -->
+        <div class="header-navbar">
+          <nav class="header-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a
+                  class="menu-link nav-link"
+                  href="#"
+                  (click)="scroll(protocol); $event.preventDefault()"
+                  >Nexus Protocol</a
+                >
+              </li>
+              <li class="menu-item">
+                <a
+                  class="menu-link nav-link"
+                  href="#"
+                  (click)="scroll(satelites); $event.preventDefault()"
+                  >Tokenized Satelites</a
+                >
+              </li>
+              <li class="menu-item">
+                <a
+                  class="menu-link nav-link"
+                  href="#"
+                  (click)="scroll(groundstations); $event.preventDefault()"
+                  >Ground stations</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- .header-navbar @e -->
+      </div>
+    </div>
+  </div>
+  <!-- .header-main @e -->
+
+  <section class="section protocol pdt-1 ov-v" #protocol>
     <div class="ui-mask-left ui-mask-s8"></div>
     <div class="container">
       <!-- Block @s -->
@@ -79,17 +119,17 @@
     </div>
   </section>
 
-  <section class="section ov-v pdb-2 bg-theme-accent-alt">
+  <section class="section ov-v pdb-2 bg-theme-accent-alt" #satelites>
     <div class="ui-mask-right ui-mask-s11"></div>
     <div class="container">
       <div class="nk-block">
         <div class="row align-items-center gutter-vr-30px">
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <div class="nk-block-img">
               <img class="cubes" src="images/cubesatroadmap.png" alt="gfx" />
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <div class="nk-block-text">
               <h2
                 class="title title-s2 title-s2-alt animated"
@@ -134,7 +174,7 @@
     </div>
   </section>
 
-  <section class="section protocol pdt-1 ov-v">
+  <section class="section protocol pdt-1 ov-v" #groundstations>
     <div class="ui-mask-left ui-mask-s8"></div>
     <div class="container">
       <!-- Block @s -->

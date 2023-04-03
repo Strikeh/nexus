@@ -8,210 +8,341 @@
     </nexus-page-header>
 
     <main class="nk-pages">
-      <section class="section bg-light blog-header">
+      <section class="section bg-light tabs">
         <div class="ui-mask-left ui-mask-s11"></div>
         <div class="container">
-          <div class="nk-block nk-block-blog">
-            <div class="row">
-              <!-- .col -->
-              <div class="col-lg-4">
-                <div class="sidebar me-lg-4 mt-5 mt-lg-0">
-                  <div class="wgs wgs-search">
-                    <form action="#" class="field-inline">
-                      <input
-                        type="text"
-                        placeholder="Search Keyword"
-                        class="input-bordered"
-                        [formControl]="searchTerm"
-                      />
-                      <button
-                        class="btn btn-primary btn-link search"
-                        (click)="search()"
-                      >
-                        <em class="ti ti-search"></em>
-                      </button>
-                      <button
-                        *ngIf="searchTerm.value"
-                        class="btn btn-primary btn-with-icon btn-light reset"
-                        (click)="reset()"
-                      >
-                        <em class="ti ti-back-left"></em>
-                      </button>
-                    </form>
-                  </div>
-                  <div class="wgs wgs-category">
-                    <h6 class="wgs-title">Category</h6>
-                    <div class="wgs-body">
-                      <ul class="wgs-links wgs-links-category">
-                        <li>
-                          <a
-                            href="#"
-                            [class.active-category]="activeCategory === 'News'"
-                            (click)="filterCategory('News', $event)"
-                            >News</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            [class.active-category]="
-                              activeCategory === 'Articles'
-                            "
-                            (click)="filterCategory('Articles', $event)"
-                            >Articles</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            [class.active-category]="activeCategory === 'All'"
-                            (click)="filterCategory('All', $event)"
-                            >All</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- <div class="wgs wgs-tags">
-                    <h6 class="wgs-title">Tags</h6>
-                    <div class="wgs-body">
-                      <ul class="wgs-links wgs-links-tags">
-                        <li><a href="#">nexus</a></li>
-                        <li><a href="#">bitcoin</a></li>
-                        <li><a href="#">released</a></li>
-                        <li><a href="#">tokens</a></li>
-                        <li><a href="#">roadmap</a></li>
-                        <li><a href="#">crypto</a></li>
-                      </ul>
-                    </div>
-                  </div> -->
-                  <div class="wgs wgs-archive">
-                    <h6 class="wgs-title">Archive</h6>
-                    <div class="wgs-body">
-                      <select
-                        name="post-archive"
-                        class="select"
-                        data-select2-placehold="Select Month"
-                      >
-                        <option label="placeholder"></option>
-                        <option value="All">All</option>
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-8">
-                <div class="row">
-                  <div *ngFor="let article of pagedItems" class="col-sm-6">
-                    <div class="blog">
-                      <div class="blog-photo">
-                        <a href="{{ article.url }}">
-                          <img
-                            src="images/blog/{{ article.image }}"
-                            alt="blog-thumb"
-                        /></a>
-                      </div>
-                      <div class="blog-text">
-                        <ul class="blog-meta">
-                          <li>
-                            <a href="#" class="pubdate">{{
-                              article.publishDate
-                            }}</a>
-                          </li>
-                          <li *ngFor="let tag of article.tags">
-                            <a href="#">{{ tag }}</a>
-                          </li>
-                        </ul>
-                        <h4 class="title title-sm">
-                          <a href="{{ article.url }}">{{ article.title }}</a>
-                        </h4>
-                        <!-- <p>
-                          {{ article.description }}
-                        </p> -->
-                      </div>
-                    </div>
-                    <!-- .blog -->
-                  </div>
-                  <!-- .col -->
-                </div>
-                <!-- .row -->
-                <nav class="w-100 d-flex">
-                  <!-- pager -->
-                  <ul
-                    *ngIf="pager.pages && pager.pages.length"
-                    class="pagination"
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <ul class="nav tab-nav tab-nav-s2 tab-nav-center">
+                <li>
+                  <a class="active" data-bs-toggle="tab" href="#tab-3-1"
+                    >Articles</a
                   >
-                    <li [ngClass]="{ disabled: pager.currentPage === 1 }">
-                      <a href="#" (click)="setPage(1); $event.preventDefault()"
-                        >First</a
-                      >
-                    </li>
-                    <li [ngClass]="{ disabled: pager.currentPage === 1 }">
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.currentPage - 1);
-                          $event.preventDefault()
-                        "
-                        >Previous</a
-                      >
-                    </li>
-                    <li *ngFor="let page of pager.pages">
-                      <a
-                        [ngClass]="{ active: pager.currentPage === page }"
-                        href="#"
-                        (click)="setPage(page); $event.preventDefault()"
-                        >{{ page }}</a
-                      >
-                    </li>
-                    <li
-                      [ngClass]="{
-                        disabled: pager.currentPage === pager.totalPages
-                      }"
-                    >
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.currentPage + 1);
-                          $event.preventDefault()
-                        "
-                        >Next</a
-                      >
-                    </li>
-                    <li
-                      [ngClass]="{
-                        disabled: pager.currentPage === pager.totalPages
-                      }"
-                    >
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.totalPages); $event.preventDefault()
-                        "
-                        >Last</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
+                </li>
+                <li><a data-bs-toggle="tab" href="#tab-3-2">Reports</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-3-1">
+                  <!-- <h3 class="title title-md">Articles</h3> -->
+                  <section class="section bg-light blog-header">
+                    <div class="container">
+                      <div class="nk-block nk-block-blog">
+                        <div class="row">
+                          <!-- .col -->
+                          <div class="col-lg-4">
+                            <div class="sidebar me-lg-4 mt-5 mt-lg-0">
+                              <div class="wgs wgs-search">
+                                <form action="#" class="field-inline">
+                                  <input
+                                    type="text"
+                                    placeholder="Search Keyword"
+                                    class="input-bordered"
+                                    [formControl]="searchTerm"
+                                  />
+                                  <button
+                                    class="btn btn-primary btn-link search"
+                                    (click)="search()"
+                                  >
+                                    <em class="ti ti-search"></em>
+                                  </button>
+                                  <button
+                                    *ngIf="searchTerm.value"
+                                    class="btn btn-primary btn-with-icon btn-light reset"
+                                    (click)="reset()"
+                                  >
+                                    <em class="ti ti-back-left"></em>
+                                  </button>
+                                </form>
+                              </div>
+                              <div class="wgs wgs-category">
+                                <h6 class="wgs-title">Category</h6>
+                                <div class="wgs-body">
+                                  <ul class="wgs-links wgs-links-category">
+                                    <li>
+                                      <a
+                                        href="#"
+                                        [class.active-category]="
+                                          activeCategory === 'News'
+                                        "
+                                        (click)="filterCategory('News', $event)"
+                                        >News</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="#"
+                                        [class.active-category]="
+                                          activeCategory === 'Articles'
+                                        "
+                                        (click)="
+                                          filterCategory('Articles', $event)
+                                        "
+                                        >Articles</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="#"
+                                        [class.active-category]="
+                                          activeCategory === 'International'
+                                        "
+                                        (click)="
+                                          filterCategory(
+                                            'International',
+                                            $event
+                                          )
+                                        "
+                                        >International</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="#"
+                                        [class.active-category]="
+                                          activeCategory === 'All'
+                                        "
+                                        (click)="filterCategory('All', $event)"
+                                        >All</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <!-- <div class="wgs wgs-tags">
+                                          <h6 class="wgs-title">Tags</h6>
+                                          <div class="wgs-body">
+                                            <ul class="wgs-links wgs-links-tags">
+                                              <li><a href="#">nexus</a></li>
+                                              <li><a href="#">bitcoin</a></li>
+                                              <li><a href="#">released</a></li>
+                                              <li><a href="#">tokens</a></li>
+                                              <li><a href="#">roadmap</a></li>
+                                              <li><a href="#">crypto</a></li>
+                                            </ul>
+                                          </div>
+                                        </div> -->
+                              <div class="wgs wgs-archive">
+                                <h6 class="wgs-title">Archive</h6>
+                                <div class="wgs-body">
+                                  <select
+                                    name="post-archive"
+                                    class="select"
+                                    data-select2-placehold="Select Month"
+                                  >
+                                    <option label="placeholder"></option>
+                                    <option value="All">All</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-8">
+                            <div class="row">
+                              <div
+                                *ngFor="let article of pagedItems"
+                                class="col-sm-6"
+                              >
+                                <div class="blog">
+                                  <div class="blog-photo">
+                                    <a href="{{ article.url }}">
+                                      <img
+                                        src="images/blog/{{ article.image }}"
+                                        alt="blog-thumb"
+                                    /></a>
+                                  </div>
+                                  <div class="blog-text">
+                                    <ul class="blog-meta">
+                                      <li>
+                                        <a href="#" class="pubdate">{{
+                                          article.publishDate
+                                        }}</a>
+                                      </li>
+                                      <li *ngFor="let tag of article.tags">
+                                        <a href="#">{{ tag }}</a>
+                                      </li>
+                                    </ul>
+                                    <h4 class="title title-sm">
+                                      <a href="{{ article.url }}">{{
+                                        article.title
+                                      }}</a>
+                                    </h4>
+                                    <!-- <p>
+                                                {{ article.description }}
+                                              </p> -->
+                                  </div>
+                                </div>
+                                <!-- .blog -->
+                              </div>
+                              <!-- .col -->
+                            </div>
+                            <!-- .row -->
+                            <nav class="w-100 d-flex">
+                              <!-- pager -->
+                              <ul
+                                *ngIf="pager.pages && pager.pages.length"
+                                class="pagination"
+                              >
+                                <li
+                                  [ngClass]="{
+                                    disabled: pager.currentPage === 1
+                                  }"
+                                >
+                                  <a
+                                    href="#"
+                                    (click)="
+                                      setPage(1); $event.preventDefault()
+                                    "
+                                    >First</a
+                                  >
+                                </li>
+                                <li
+                                  [ngClass]="{
+                                    disabled: pager.currentPage === 1
+                                  }"
+                                >
+                                  <a
+                                    href="#"
+                                    (click)="
+                                      setPage(pager.currentPage - 1);
+                                      $event.preventDefault()
+                                    "
+                                    >Previous</a
+                                  >
+                                </li>
+                                <li *ngFor="let page of pager.pages">
+                                  <a
+                                    [ngClass]="{
+                                      active: pager.currentPage === page
+                                    }"
+                                    href="#"
+                                    (click)="
+                                      setPage(page); $event.preventDefault()
+                                    "
+                                    >{{ page }}</a
+                                  >
+                                </li>
+                                <li
+                                  [ngClass]="{
+                                    disabled:
+                                      pager.currentPage === pager.totalPages
+                                  }"
+                                >
+                                  <a
+                                    href="#"
+                                    (click)="
+                                      setPage(pager.currentPage + 1);
+                                      $event.preventDefault()
+                                    "
+                                    >Next</a
+                                  >
+                                </li>
+                                <li
+                                  [ngClass]="{
+                                    disabled:
+                                      pager.currentPage === pager.totalPages
+                                  }"
+                                >
+                                  <a
+                                    href="#"
+                                    (click)="
+                                      setPage(pager.totalPages);
+                                      $event.preventDefault()
+                                    "
+                                    >Last</a
+                                  >
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <!-- .row -->
+                      </div>
+                      <!-- .nk-block -->
+                    </div>
+                    <!-- .container -->
+                  </section>
+                  <!-- .section -->
+                </div>
+                <div class="tab-pane fade" id="tab-3-2">
+                  <section class="section pt-0">
+                    <div class="container">
+                      <div class="nk-block nk-block-feature">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-8 col-mb-10">
+                            <div class="section-head text-center">
+                              <h2 class="title title-s1 tc-primary">
+                                <span class="ambassador-title"
+                                  >Communications Arm</span
+                                >
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center">
+                          <div class="col-lg-6 col-mb-10">
+                            <div
+                              class="feature feature-inline card card-s3 flex-wrap flex-sm-nowrap"
+                            >
+                              <div class="feature-icon feature-icon-lg-s3 mt-0">
+                                <img src="images/whitepaper.png" alt="icon" />
+                              </div>
+                              <div class="feature-text">
+                                <h5 class="title title-md">Q2 - 2023</h5>
+                                <p>Report of Q2</p>
+                                <a
+                                  href="#"
+                                  class="btn btn-secondary btn-md disabled"
+                                  >Download Report
+                                  <em class="ti ti-arrow-right ps-2"></em
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-mb-10">
+                            <div
+                              class="feature feature-inline card card-s3 flex-wrap flex-sm-nowrap"
+                            >
+                              <div class="feature-icon feature-icon-lg-s3 mt-0">
+                                <img src="images/whitepaper.png" alt="icon" />
+                              </div>
+                              <div class="feature-text">
+                                <h5 class="title title-md">Q1 - 2023</h5>
+                                <p>Report of Q1</p>
+                                <a
+                                  href="#"
+                                  class="btn btn-secondary btn-md"
+                                  (click)="
+                                    downloadFile(
+                                      './assets/data/Report, Q1 2023 - Nexus Communications Arm.pdf'
+                                    );
+                                    $event.preventDefault()
+                                  "
+                                  >Download Report
+                                  <em class="ti ti-arrow-right ps-2"></em
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
             </div>
-            <!-- .row -->
           </div>
-          <!-- .nk-block -->
         </div>
-        <!-- .container -->
       </section>
-      <!-- .section -->
     </main>
   </div>
 

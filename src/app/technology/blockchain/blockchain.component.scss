@@ -10,12 +10,30 @@
   padding-bottom: 2rem !important;
 }
 
-// img.cubes {
-//   max-width: 85%;
-// }
+.header-wrap {
+  justify-content: center;
+  align-items: center;
+}
 
-.sigchain-documentation,
-.qr-documentation,
-.tree-d-documentation {
-  padding-top: 2rem;
+@media (max-width: 991px) {
+  .header-sub {
+    display: none;
+  }
+}
+
+.header-main {
+  background-color: #0b3149;
+  padding: 0px;
+
+  position: sticky;
+  top: 73px;
+  z-index: 99999999;
+}
+
+.menu-item a {
+  color: #e3f5ff;
+
+  &:hover {
+    color: #46bdf4;
+  }
 }

@@ -61,6 +61,14 @@ export class BlogComponent implements OnInit {
     });
   }
 
+  downloadFile(filePath) {
+    let link = document.createElement('a');
+    link.href = filePath;
+    link.target = '_blank';
+    // link.download = filePath.substr(filePath.lastIndexOf('/') + 1);
+    link.click();
+  }
+
   search(): void {
     this.http
       .get('/assets/data/articles.json')

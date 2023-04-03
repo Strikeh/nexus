@@ -1,7 +1,32 @@
 .protocol {
-    margin-top: 1rem;
+  margin-top: 1rem;
+  padding-top: 5rem;
 }
 
-img.cubes {
-    max-width: 90%;
+.header-wrap {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .header-sub {
+    display: none;
+  }
+}
+
+.header-main {
+  background-color: #0b3149;
+  padding: 0px;
+
+  position: sticky;
+  top: 73px;
+  z-index: 99999999;
+}
+
+.menu-item a {
+  color: #e3f5ff;
+
+  &:hover {
+    color: #46bdf4;
+  }
 }

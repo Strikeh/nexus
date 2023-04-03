@@ -11,6 +11,19 @@
   padding: 15px;
 }
 
+.blog-photo {
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-height: 250px;
+  }
+}
+
+.tab-nav li a {
+  color: #025e93;
+}
+
 .active-category {
   font-weight: bold;
 }
@@ -33,4 +46,16 @@
 .pubdate {
   font-weight: bold;
   color: #0ca4fb;
+}
+
+.ambassador-title {
+  color: #02466e;
+}
+
+.nk-pages {
+  padding-top: 0px;
+}
+
+.section.tabs {
+  padding-top: 5rem;
 }

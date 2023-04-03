@@ -24,4 +24,15 @@ export class DecentralizedInternetComponent {
   setTitle(newTitle: string) {
     this.title.setTitle(newTitle);
   }
+
+  scroll(element) {
+    const headerOffset = 60;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  }
 }
