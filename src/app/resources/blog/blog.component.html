@@ -10,7 +10,7 @@
     <main class="nk-pages">
       <section class="section bg-light tabs">
         <div class="ui-mask-left ui-mask-s11"></div>
-        <div class="container">
+        <div id="articles" class="container">
           <div class="row justify-content-center">
             <div class="col-lg-12">
               <ul class="nav tab-nav tab-nav-s2 tab-nav-center">
@@ -197,11 +197,7 @@
                                     disabled: pager.currentPage === 1
                                   }"
                                 >
-                                  <a
-                                    href="#"
-                                    (click)="
-                                      setPage(1); $event.preventDefault()
-                                    "
+                                  <a href="#" (click)="setPage(1, $event)"
                                     >First</a
                                   >
                                 </li>
@@ -213,8 +209,7 @@
                                   <a
                                     href="#"
                                     (click)="
-                                      setPage(pager.currentPage - 1);
-                                      $event.preventDefault()
+                                      setPage(pager.currentPage - 1, $event)
                                     "
                                     >Previous</a
                                   >
@@ -225,9 +220,7 @@
                                       active: pager.currentPage === page
                                     }"
                                     href="#"
-                                    (click)="
-                                      setPage(page); $event.preventDefault()
-                                    "
+                                    (click)="setPage(page, $event)"
                                     >{{ page }}</a
                                   >
                                 </li>
@@ -240,8 +233,7 @@
                                   <a
                                     href="#"
                                     (click)="
-                                      setPage(pager.currentPage + 1);
-                                      $event.preventDefault()
+                                      setPage(pager.currentPage + 1, $event)
                                     "
                                     >Next</a
                                   >
@@ -254,10 +246,7 @@
                                 >
                                   <a
                                     href="#"
-                                    (click)="
-                                      setPage(pager.totalPages);
-                                      $event.preventDefault()
-                                    "
+                                    (click)="setPage(pager.totalPages, $event)"
                                     >Last</a
                                   >
                                 </li>

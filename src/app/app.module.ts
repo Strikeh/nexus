@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { LandingContentComponent } from './landing-content/landing-content.component';
 import { BannerComponent } from './banner/banner.component';
 import { WhitepapersComponent } from './whitepapers/whitepapers.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RoadmapComponent } from './technology/roadmap/roadmap.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { CommonModule } from '@angular/common';
@@ -41,13 +41,13 @@ import { ScriptService } from './services/script-service';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeamComponent } from './team/team.component';
 import { LandingComponent } from './landing/landing.component';
 import { SafePipeModule } from 'safe-pipe';
-import { HttpsInterceptor } from './httpsInterceptor.service';
+import { FAQComponent } from './resources/faq/faq.component';
+import { GlossaryComponent } from './resources/glossary/glossary.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +87,8 @@ import { HttpsInterceptor } from './httpsInterceptor.service';
     BrandingComponent,
     PrivacyPolicyComponent,
     TermsComponent,
+    FAQComponent,
+    GlossaryComponent,
   ],
   imports: [
     BrowserModule,

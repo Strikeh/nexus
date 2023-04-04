@@ -79,10 +79,7 @@
                     >
                       <a
                         href="#"
-                        (click)="
-                          setPage(pager.currentPage + 1);
-                          $event.preventDefault()
-                        "
+                        (click)="setPage(pager.currentPage + 1, $event)"
                         >Next</a
                       >
                     </li>
@@ -91,11 +88,7 @@
                         disabled: pager.currentPage === pager.totalPages
                       }"
                     >
-                      <a
-                        href="#"
-                        (click)="
-                          setPage(pager.totalPages); $event.preventDefault()
-                        "
+                      <a href="#" (click)="setPage(pager.totalPages, $event)"
                         >Last</a
                       >
                     </li>

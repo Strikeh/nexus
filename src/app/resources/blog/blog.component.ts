@@ -135,7 +135,7 @@ export class BlogComponent implements OnInit {
     );
 
     if (event) {
-      const id = 'videos';
+      const id = 'articles';
       const yOffset = -100;
       const element = document.getElementById(id);
       const y =

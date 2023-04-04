@@ -3583,7 +3583,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 /** 04. Components */
 /** 04.01 Tab */
-.tab-nav li a { display: block; padding: 12px 12px; line-height: 19px; font-weight: 400; color: rgba(10, 25, 146, 0.6); border-bottom: 1px solid rgba(219, 228, 247, 0.5); transition: all .4s; }
+.tab-nav li a { display: block; padding: 12px 12px; line-height: 19px; font-weight: 400; color: #024a74; border-bottom: 1px solid rgba(219, 228, 247, 0.5); transition: all .4s; }
 
 .tab-nav li a:hover, .tab-nav li a.active { color: #000537; }
 

@@ -29,6 +29,8 @@ import { TransactComponent } from './use/transact/transact.component';
 import { UsecasesComponent } from './develop/usecases/usecases.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsComponent } from './terms/terms.component';
+import { GlossaryComponent } from './resources/glossary/glossary.component';
+import { FAQComponent } from './resources/faq/faq.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -59,6 +61,8 @@ const routes: Routes = [
   { path: 'branding', component: BrandingComponent },
   { path: 'privacypolicy', component: PrivacyPolicyComponent },
   { path: 'terms', component: TermsComponent },
+  { path: 'faq', component: FAQComponent },
+  { path: 'glossary', component: GlossaryComponent },
 ];
 
 @NgModule({
