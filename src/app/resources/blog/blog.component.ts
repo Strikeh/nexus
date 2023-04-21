@@ -1,5 +1,10 @@
 import { PagerService } from '../../services/pager.service';
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  AfterViewChecked,
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { FormControl } from '@angular/forms';
@@ -11,7 +16,7 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./blog.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent implements OnInit, AfterViewChecked {
   activeCategory = '';
 
   searchTerm = new FormControl('');
@@ -45,6 +50,28 @@ export class BlogComponent implements OnInit {
 
   ngOnInit() {
     this.fetchArticles();
+  }
+
+  ngAfterViewChecked(): void {
+    const popups = document.querySelectorAll('a.video-popup');
+
+    popups.forEach((popup) => {
+      (<any>$(popup)).magnificPopup({
+        type: 'iframe',
+        removalDelay: 160,
+        preloader: true,
+        fixedContentPos: false,
+        callbacks: {
+          beforeOpen: function () {
+            this.st.image.markup = this.st.image.markup.replace(
+              'mfp-figure',
+              'mfp-figure mfp-with-anim'
+            );
+            this.st.mainClass = this.st.el.attr('data-effect');
+          },
+        },
+      });
+    });
   }
 
   setTitle(newTitle: string) {

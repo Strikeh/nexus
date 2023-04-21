@@ -1,8 +1,35 @@
 [
   {
+    "publishDate": "17 April, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Progress, Usability and Blockchain Health",
+    "url": "https://medium.com/@NexusOfficial/nexus-recap-exchange-listings-and-further-updates-4d1ef04760c1",
+    "description": "Progress, Usability and Blockchain Health Nexus Development Recap – April 14, 2023 by Colin Cantrell. Hello everyone, today we're having our development weekly recap. I'm excited to update you on our progress...",
+    "image": "p2p.png",
+    "category": "News"
+  },
+  {
+    "publishDate": "7 April, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Nexus Recap; Exchange listings and Further Updates!",
+    "url": "https://medium.com/@NexusOfficial/nexus-recap-exchange-listings-and-further-updates-4d1ef04760c1",
+    "description": "Nexus Recap; Exchange listings and Further Updates! It's been quite a week. As you may have seen, Bittrex announced on Friday that they will no longer be servicing US customers. We're now focused on getting...",
+    "image": "p2p.png",
+    "category": "News"
+  },
+  {
+    "publishDate": "7 April, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Nexus Dev recap, April 6th, 2023",
+    "url": "https://medium.com/@NexusOfficial/nexus-dev-recap-8bcd325a00a9",
+    "description": "Short Summary of Nexus Development Recap In this week’s development recap, Colin Cantrell discusses the progress made on the mobile wallet. Several beta versions have been released, and the team...",
+    "image": "recap.png",
+    "category": "News"
+  },
+  {
     "publishDate": "3 April, 2023",
     "tags": ["cryptocurrency"],
-    "title": "Short Summary of Nexus Development Recap",
+    "title": "Nexus Dev recap, April 2nd, 2023",
     "url": "https://medium.com/@NexusOfficial/short-summary-of-nexus-development-recap-c068bdab16d2",
     "description": "Short Summary of Nexus Development Recap In this week’s development recap, Colin Cantrell discusses the progress made on the mobile wallet. Several beta versions have been released, and the team...",
     "image": "recap.png",
@@ -45,9 +72,9 @@
     "category": "Articles"
   },
   {
-    "publishDate": "24 March, 2023",
+    "publishDate": "25 March, 2023",
     "tags": ["cryptocurrency"],
-    "title": "Nexus summary 24th of March 2023",
+    "title": "Nexus Dev recap, March 24th, 2023",
     "url": "https://medium.com/@NexusOfficial/nexus-summary-24th-of-march-2023-b4fa3cec9fa1",
     "description": "Nexus summary 24th of March 2023 So we're doing a quick recap today, and we're mainly focusing on the beta testing progress. We released the next round of betas last Tuesday, which took a bit longer to process...",
     "image": "recap.png",

@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
+import { InquiryComponent } from './inquiry/inquiry.component';
 import { TokenizationComponent } from './develop/tokenization/tokenization.component';
 import { BubbleComponent } from './develop/bubble/bubble.component';
 import { OperatingSystemComponent } from './technology/operating-system/operating-system.component';
@@ -31,6 +32,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { TermsComponent } from './terms/terms.component';
 import { GlossaryComponent } from './resources/glossary/glossary.component';
 import { FAQComponent } from './resources/faq/faq.component';
+import { MetricsComponent } from './metrics/metrics.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -63,6 +65,8 @@ const routes: Routes = [
   { path: 'terms', component: TermsComponent },
   { path: 'faq', component: FAQComponent },
   { path: 'glossary', component: GlossaryComponent },
+  { path: 'inquire', component: InquiryComponent },
+  { path: 'visitors', component: MetricsComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,168 @@
+<body class="nk-body body-wider bg-light">
+  <div class="nk-wrap">
+    <nexus-page-header
+      [title]="'Inquire'"
+      headerText="Try to put well in practice what you already know."
+      [isSmall]="true"
+    >
+    </nexus-page-header>
+  </div>
+
+  <section class="section section-contact bg-transparent">
+    <div class="container">
+      <!-- Block @s -->
+      <div class="nk-block block-contact" id="contact">
+        <div class="row justify-content-center g-0">
+          <div class="col-lg-6">
+            <div
+              class="contact-wrap round split split-left split-lg-left bg-white"
+            >
+              <h5 class="title title-md">Contact Us</h5>
+              <form novalidate="novalidate">
+                <div class="field-item">
+                  <input
+                    name="contact-name"
+                    type="text"
+                    class="input-line required"
+                    aria-required="true"
+                  />
+                  <label class="field-label field-label-line">Your Name</label>
+                </div>
+                <div class="field-item">
+                  <input
+                    name="contact-email"
+                    type="email"
+                    class="input-line required email"
+                    aria-required="true"
+                  />
+                  <label class="field-label field-label-line">Your Email</label>
+                </div>
+                <div class="field-item">
+                  <textarea
+                    name="contact-message"
+                    class="input-line input-textarea required"
+                    aria-required="true"
+                  ></textarea>
+                  <label class="field-label field-label-line"
+                    >Your Message</label
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="d-none"
+                  name="form-anti-honeypot"
+                  value=""
+                />
+                <div class="row">
+                  <div class="col-sm-4">
+                    <button
+                      class="btn btn-lg btn-grad"
+                      (click)="sendEmail(); $event.preventDefault()"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="form-results"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-4">
+            <div
+              class="contact-wrap split split-right split-lg-right bg-genitian bg-theme tc-light"
+            >
+              <div class="d-flex flex-column justify-content-between h-100">
+                <ul class="contact-list">
+                  <li>
+                    <em class="contact-icon fas fa-building"></em>
+                    <div class="contact-text">
+                      <h6>Nexus</h6>
+                    </div>
+                  </li>
+                  <li>
+                    <em class="contact-icon fas fa-envelope"></em>
+                    <div class="contact-text">
+                      <span>impressions@nexus.io</span>
+                    </div>
+                  </li>
+                  <li>
+                    <em class="contact-icon fas fa-paper-plane"></em>
+                    <div class="contact-text">
+                      <span>Join us on Telegram</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="contact-social">
+                  <h6>Be a part of our community</h6>
+                  <ul class="social-links">
+                    <li>
+                      <a
+                        href="https://twitter.com/NexusOfficial"
+                        alt="nexus twitter"
+                        ><em class="fab fa-twitter"></em
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/nexusblockchain/"
+                        alt="nexus instagram"
+                        ><em class="fab fa-instagram"></em
+                      ></a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.youtube.com/channel/UCDi2stU5yj71_iPgxMZF79w"
+                        alt="nexus youtube"
+                        ><em class="fab fa-youtube"></em
+                      ></a>
+                    </li>
+
+                    <li>
+                      <a href="https://t.me/NexusOfficial" alt="nexus telegram"
+                        ><em class="fab fa-telegram"></em
+                      ></a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://discord.gg/YZZt8t6Ur5"
+                        alt="nexus discord"
+                        ><em class="fab fa-discord"></em
+                      ></a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.reddit.com/r/nexus_community/"
+                        alt="nexus reddit"
+                        ><em class="fab fa-reddit"></em
+                      ></a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://github.com/Nexusoft/LLL-TAO"
+                        alt="nexus github"
+                        ><em class="fab fa-github"></em
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .block @e -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <nexus-footer></nexus-footer>
+</body>

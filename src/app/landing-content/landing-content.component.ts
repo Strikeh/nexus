@@ -2,11 +2,21 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
+  ElementRef,
   OnInit,
+  Renderer2,
+  ViewChild,
 } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, zip } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
+import { ScriptService } from '../services/script-service';
+
+const path =
+  '//rf.revolvermaps.com/0/0/8.js?i=5f2xlo2m52c&m=0c&c=ff0000&cr1=ffffff&f=calibri&l=0&bv=60&cw=0ca4fb&cb=012235';
+
+const visitorsBarPath =
+  '//rf.revolvermaps.com/0/0/0.js?i=5tm6jyucib6&d=3&p=0&b=1&w=293&g=3&f=arial&fs=14&r=0&c0=003a75&c1=0ca4fb&c2=e3f7ff&ic0=0&ic1=0';
 
 @Component({
   selector: 'nexus-landing-content',
@@ -15,6 +25,9 @@ import { Meta, Title } from '@angular/platform-browser';
   changeDetection: ChangeDetectionStrategy.Default,
 })
 export class LandingContentComponent implements OnInit, AfterViewInit {
+  @ViewChild('globe') globeElement: ElementRef<HTMLInputElement>;
+  @ViewChild('bar') barElement: ElementRef<HTMLInputElement>;
+
   sigchains: string = '';
   coinsInCirculation: string = '';
   stakingPercentage: string = '';
@@ -31,7 +44,9 @@ export class LandingContentComponent implements OnInit, AfterViewInit {
   constructor(
     private readonly http: HttpClient,
     private readonly meta: Meta,
-    private readonly title: Title
+    private readonly title: Title,
+    private readonly renderer: Renderer2,
+    private readonly scriptService: ScriptService
   ) {
     this.meta.addTags([
       { name: 'description', content: 'Landing page of Nexus.io' },
@@ -104,6 +119,9 @@ export class LandingContentComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.executeVisitorsScript();
+    this.executeVisitorsBarScript();
+
     const vid = document.getElementById('HPVid');
     const mp4 = document.createElement('source');
     mp4.type = 'video/mp4';
@@ -124,5 +142,47 @@ export class LandingContentComponent implements OnInit, AfterViewInit {
     vid.appendChild(mp4);
     vid.appendChild(webm);
     document.getElementById('videoDiv').appendChild(vid);
+  }
+
+  private executeVisitorsScript() {
+    const scriptElement = this.scriptService.loadJsScript(
+      this.renderer,
+      path,
+      '',
+      this.globeElement.nativeElement
+    );
+    scriptElement.onload = () => {
+      setTimeout(() => {
+        const divs = document.querySelectorAll("[style*='max-width: 341px']");
+        if (divs.length) {
+          (<HTMLElement>divs[0]).style.maxWidth = '850px';
+          (<HTMLElement>divs[0]).style.width = '100%';
+        }
+      }, 500);
+    };
+    // scriptElement.onerror = () => {
+    //   console.log('Could not load the Crypthopper script!');
+    // };
+  }
+
+  private executeVisitorsBarScript() {
+    const scriptElement = this.scriptService.loadJsScript(
+      this.renderer,
+      visitorsBarPath,
+      '',
+      this.barElement.nativeElement
+    );
+    scriptElement.onload = () => {
+      // setTimeout(() => {
+      //   const divs = document.querySelectorAll("[style*='max-width: 341px']");
+      //   if (divs.length) {
+      //     (<HTMLElement>divs[0]).style.maxWidth = '1150px';
+      //     (<HTMLElement>divs[0]).style.width = '115%';
+      //   }
+      // }, 500);
+    };
+    // scriptElement.onerror = () => {
+    //   console.log('Could not load the Crypthopper script!');
+    // };
   }
 }

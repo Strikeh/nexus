@@ -48,6 +48,8 @@ import { LandingComponent } from './landing/landing.component';
 import { SafePipeModule } from 'safe-pipe';
 import { FAQComponent } from './resources/faq/faq.component';
 import { GlossaryComponent } from './resources/glossary/glossary.component';
+import { InquiryComponent } from './inquiry/inquiry.component';
+import { MetricsComponent } from './metrics/metrics.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +91,8 @@ import { GlossaryComponent } from './resources/glossary/glossary.component';
     TermsComponent,
     FAQComponent,
     GlossaryComponent,
+    InquiryComponent,
+    MetricsComponent,
   ],
   imports: [
     BrowserModule,

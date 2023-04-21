@@ -95,7 +95,7 @@ export class TeamComponent implements AfterViewInit {
         name: 'Colin Cantrell',
         image: 'colin2',
         popup: 'colin-embassy',
-        position: 'Lead Developer',
+        position: 'Judical Coordinator',
         description1: `Colin Cantrell is a software architect, engineer,
                           musician and composer. Having been raised in the
                           aerospace industry, he took up programming at the age
@@ -108,10 +108,10 @@ export class TeamComponent implements AfterViewInit {
                           a greater connection to one another.`,
       },
       {
-        name: 'Carolyn Sechler',
-        image: 'carolyn2',
-        popup: 'carolyn-embassy',
-        position: 'US Embassy Board Of Directors',
+        name: 'Philip Lee',
+        image: 'phil2',
+        popup: 'phil-embassy',
+        position: 'Judical Coordinator',
         description1: ``,
       },
     ];

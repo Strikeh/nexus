@@ -1,37 +1,41 @@
-@media (min-width: 1200px) { 
-
-.buy-nxs-image {
+@media (min-width: 1200px) {
+  .buy-nxs-image {
     margin-bottom: 140px;
-}
+  }
 }
 
 @media (max-width: 767px) {
-    .buy-nxs-image {
-        margin-bottom: 9rem;
-    }
+  .buy-nxs-image {
+    margin-bottom: 9rem;
+  }
 }
 
 #coinstore-img {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .exchanges {
-    display:flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  gap: 10px;
 }
 
 .section.tradingview {
-    padding-top: 10px;
-    background-color: #FFF;
-
+  padding-top: 10px;
+  background-color: #fff;
 }
 
-.crypto-carrousel, .cryptohopper-web-widget {
-    margin-top: 2rem;
+.crypto-carrousel,
+.cryptohopper-web-widget {
+  margin-top: 2rem;
 }
 
 .nexus-chart {
-    margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+#tradeogre-img img {
+  padding-top: 6px;
 }

@@ -1,3 +1,4 @@
+import { async } from '@angular/core/testing';
 import { Renderer2, Inject, Injectable } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
@@ -16,13 +17,15 @@ export class ScriptService {
   public loadJsScript(
     renderer: Renderer2,
     src: string,
-    text?: string
+    text?: string,
+    element?: HTMLElement
   ): HTMLScriptElement {
     const script = renderer.createElement('script');
     script.type = 'text/javascript';
     script.src = src;
     script.txt = text;
-    renderer.appendChild(this.document.body, script);
+    script.async = 'async';
+    renderer.appendChild(element ?? this.document.body, script);
     return script;
   }
 }
