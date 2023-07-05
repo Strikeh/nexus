@@ -186,7 +186,7 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.telegram }}"
+                        <a *ngIf="member.telegram" href="{{ member.telegram }}"
                           ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
@@ -221,7 +221,9 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.telegram }}"
+                            <a
+                              *ngIf="member.telegram"
+                              href="{{ member.telegram }}"
                               ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
@@ -282,7 +284,7 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.telegram }}"
+                        <a *ngIf="member.telegram" href="{{ member.telegram }}"
                           ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
@@ -317,7 +319,9 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.telegram }}"
+                            <a
+                              *ngIf="member.telegram"
+                              href="{{ member.telegram }}"
                               ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
@@ -377,7 +381,7 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.telegram }}"
+                        <a *ngIf="member.telegram" href="{{ member.telegram }}"
                           ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
@@ -412,7 +416,9 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.telegram }}"
+                            <a
+                              *ngIf="member.telegram"
+                              href="{{ member.telegram }}"
                               ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
@@ -472,7 +478,7 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.telegram }}"
+                        <a *ngIf="member.telegram" href="{{ member.telegram }}"
                           ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
@@ -507,7 +513,9 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.telegram }}"
+                            <a
+                              *ngIf="member.telegram"
+                              href="{{ member.telegram }}"
                               ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
@@ -564,7 +572,7 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.telegram }}"
+                        <a *ngIf="member.telegram" href="{{ member.telegram }}"
                           ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
@@ -598,140 +606,10 @@
                         </h3>
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
-                          <li>
-                            <a href="{{ member.telegram }}"
-                              ><em class="fab fa-telegram"></em
-                            ></a>
-                          </li>
                           <li>
                             <a
-                              *ngIf="member.linkedIn"
-                              href="{{ member.linkedIn }}"
-                              ><em class="fab fa-linkedin-in"></em
-                            ></a>
-                          </li>
-                        </ul>
-                        <p>
-                          {{ member.description1 }}
-                        </p>
-                        <p *ngIf="member.description2">
-                          {{ member.description2 }}
-                        </p>
-                      </div>
-                    </div>
-                    <!-- .col  -->
-                  </div>
-                  <!-- .row  -->
-                </div>
-                <!-- .team-profile  -->
-              </div>
-            </div>
-            <!-- .row -->
-          </div>
-          <!-- Block @r -->
-        </div>
-      </section>
-
-      <!-- Embassies -->
-      <section class="section section-team bg-light-alt">
-        <div class="container">
-          <!-- Section Head @s -->
-          <div class="section-head text-center wide-auto">
-            <h2
-              class="title title-s4 animated fadeInUp"
-              data-animate="fadeInUp"
-              data-delay=".1"
-              title="Coordinators"
-              style="visibility: visible; animation-delay: 0.1s"
-            >
-              Judicial Coordinators
-            </h2>
-            <!-- <h2 class="title title-lg title-dark">Communications Arm</h2> -->
-          </div>
-          <!-- Block @s -->
-
-          <div class="nk-block">
-            <div class="row align-items-top">
-              <div class="col-lg-10">
-                <div class="team-featured-cont embassies">
-                  <h6 class="title title-xs title-dark">Mission</h6>
-                  <!-- <h2 class="title title-lg title-dark">The Founder</h2> -->
-                  <p>
-                    Developing open-source technology to support
-                    decentralization, innovative applications and responsible
-                    values.
-                  </p>
-                </div>
-
-                <div class="team-featured-cont embassies">
-                  <h6 class="title title-xs title-dark">Vision</h6>
-                  <!-- <h2 class="title title-lg title-dark">The Founder</h2> -->
-                  <p>
-                    Nexus is a community-driven project with the common vision
-                    of a world inspired by innovation and responsible values,
-                    expansive technology, and the fundamental quality of
-                    connection being ubiquitous, free, and available to
-                    everyone. Our technology is designed to simplify lives,
-                    empower communities, and streamline business, while
-                    embodying the founding principles of Satoshi Nakamoto, the
-                    creator of Bitcoin.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="nk-block nk-block-team-list team-list">
-            <div class="row justify-content-center">
-              <div class="col-md-3 col-6" *ngFor="let member of embassyMembers">
-                <div class="team">
-                  <div class="team-photo team-photo-sm">
-                    <img
-                      src="./../../images/team/{{ member.image }}.png"
-                      alt="team"
-                    />
-                    <a
-                      href="#team-{{ member.popup }}"
-                      class="team-show content-popup"
-                    ></a>
-                    <ul class="team-social">
-                      <li>
-                        <a href="{{ member.telegram }}"
-                          ><em class="fab fa-telegram"></em
-                        ></a>
-                      </li>
-                      <li>
-                        <a *ngIf="member.linkedIn" href="{{ member.linkedIn }}"
-                          ><em class="fab fa-linkedin-in"></em
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <h5 class="team-name title title-sm">{{ member.name }}</h5>
-                  <span class="team-position">{{ member.position }}</span>
-                </div>
-                <!-- Start .team-profile  -->
-                <div id="team-{{ member.popup }}" class="team-popup mfp-hide">
-                  <a title="Close" class="mfp-close">×</a>
-                  <div class="row align-items-start">
-                    <div class="col-md-6">
-                      <div class="team-photo">
-                        <img
-                          src="./../../images/team/{{ member.image }}.png"
-                          alt="team"
-                        />
-                      </div>
-                    </div>
-                    <!-- .col  -->
-                    <div class="col-md-6">
-                      <div class="team-popup-info ps-md-3">
-                        <h3 class="team-name title title-lg pt-4">
-                          {{ member.name }}
-                        </h3>
-                        <p class="team-position">{{ member.position }}</p>
-                        <ul class="team-social mb-4">
-                          <li>
-                            <a href="{{ member.telegram }}"
+                              *ngIf="member.telegram"
+                              href="{{ member.telegram }}"
                               ><em class="fab fa-telegram"></em
                             ></a>
                           </li>
@@ -836,7 +714,7 @@
                     ></a>
                     <ul class="team-social">
                       <li>
-                        <a href="{{ member.telegram }}"
+                        <a *ngIf="member.telegram" href="{{ member.telegram }}"
                           ><em class="fab fa-telegram"></em
                         ></a>
                       </li>
@@ -871,7 +749,9 @@
                         <p class="team-position">{{ member.position }}</p>
                         <ul class="team-social mb-4">
                           <li>
-                            <a href="{{ member.telegram }}"
+                            <a
+                              *ngIf="member.telegram"
+                              href="{{ member.telegram }}"
                               ><em class="fab fa-telegram"></em
                             ></a>
                           </li>

@@ -23,4 +23,11 @@ export class SecurityAuditComponent {
   setTitle(newTitle: string) {
     this.title.setTitle(newTitle);
   }
+
+  downloadFile(filePath) {
+    let link = document.createElement('a');
+    link.href = filePath;
+    link.target = '_blank';
+    link.click();
+  }
 }

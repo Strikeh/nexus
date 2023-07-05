@@ -73,18 +73,12 @@ export class TeamComponent implements AfterViewInit {
         description1: `I’m a nomad pianist decided to live in South America many years ago. Introduced to nexus back in 2017 and sadly watching the shit market evolving and taken over by Moon boys and banksters. I have hope that one day nexus will shine and unfold the original satoshi vision to free the planet from the modern slavery system.`,
       },
       {
-        name: 'Vincent (AUGUST2022)',
-        image: 'silhouette2',
-        popup: 'vincent-juror',
-        position: 'Juror',
-        description1: `I am broke developer with 24 years experience, love my family and town and all people in it, In blockchain since beginning, with nexus since coinshield, I done many good code for the world that is used today, I dont like names and have probably more than 5000 names I have used on internet since 😂 I love Nexus and wish I have time to work on it.`,
-      },
-      {
         name: 'Craig (BUMP)',
         image: 'bump2',
         popup: 'craig-juror',
         position: 'Juror',
         description1: `I am a pilot operating for an airline in Australia.`,
+        telegram: 'https://t.me/BumpaC',
       },
     ];
   }
@@ -106,6 +100,7 @@ export class TeamComponent implements AfterViewInit {
                           His ultimate vision is to increase the accessibility
                           of these technologies in order to help people to build
                           a greater connection to one another.`,
+        telegram: 'https://t.me/Videlicet',
       },
       {
         name: 'Philip Lee',
@@ -113,6 +108,7 @@ export class TeamComponent implements AfterViewInit {
         popup: 'phil-embassy',
         position: 'Judical Coordinator',
         description1: ``,
+        telegram: 'https://t.me/sleepingboodah',
       },
     ];
   }
@@ -133,15 +129,24 @@ export class TeamComponent implements AfterViewInit {
         advocating tokenization and gamification. His goal is
         to foster peace & harmony amongst humanity using web
         3.0 and DeFi.`,
+        telegram: 'https://t.me/Sohaan0077',
       },
+      // {
+      //   name: 'Richard Osborne',
+      //   image: 'richard2',
+      //   popup: 'richard-member',
+      //   position: 'Usecase Development Support',
+      //   description1: `Richard is a long-time no-code and low-code web
+      //   developer, creating web and mobile applications and
+      //   excited about creating future dapps`,
+      // },
       {
-        name: 'Richard Osborne',
-        image: 'richard2',
-        popup: 'richard-member',
-        position: 'Usecase Development Support',
-        description1: `Richard is a long-time no-code and low-code web
-        developer, creating web and mobile applications and
-        excited about creating future dapps`,
+        name: 'Neal Helman',
+        image: 'neal2',
+        popup: 'neal-member',
+        position: 'Support Facilitator',
+        description1: ``,
+        telegram: 'https://t.me/nhelman64',
       },
       {
         name: 'Chris',
@@ -149,6 +154,7 @@ export class TeamComponent implements AfterViewInit {
         popup: 'chris-member',
         position: 'Coordination Facilitator',
         description1: ``,
+        telegram: 'https://t.me/Cheemskerk',
       },
       {
         name: 'Philip Lee',
@@ -164,6 +170,7 @@ export class TeamComponent implements AfterViewInit {
         lead to worldwide adoption. He believes that a system
         which incentivizes cooperation over competition is the
         way of the new world.`,
+        telegram: 'https://t.me/sleepingboodah',
       },
       {
         name: 'Tash Anestos',
@@ -177,6 +184,7 @@ export class TeamComponent implements AfterViewInit {
         contributing to Nexus' vision of a decentralized world
         through his wealth of experience, business acumen, and
         passion for blockchain technology.`,
+        telegram: 'https://t.me/Tash_A77',
       },
     ];
   }
@@ -184,80 +192,10 @@ export class TeamComponent implements AfterViewInit {
   private fillInteractionsMembers(): void {
     this.interactionMembers = [
       {
-        name: 'Katarzyna Ochnio',
-        image: 'kat2',
-        popup: 'kat-member',
-        position:
-          'Interactions Chair & International Socal Media Network Facilitator',
-        description1: `I have been a staunch supporter of Nexus for many
-        years in Poland. Jumped into Nexus after hearing about
-        it in 2016 and joined the project shortly after
-        learning about Bitcoin. Beautiful vision close to my
-        heart, technologically ahead of others. Nexus puts the
-        world into the hands of people, gives a sense of
-        responsibility and freedom. I share these values with
-        others, building local communities. Now I am working
-        with a team supporting the new social architecture and
-        reaching out and educating people about Nexus all over
-        the world.`,
-      },
-      {
-        name: 'Arun Pais',
-        image: 'arun2',
-        popup: 'arun-member',
-        position: 'Developer Support Facilitator',
-        description1: ` Having completed formal education in Electrical
-        Engineering was drawn towards Bitcoin in early 2017.
-        Liked the concept and ethos, took a deep dive which
-        increased awareness about money and economics and the
-        threat of emerging technologies whose convergence is
-        pushing us further into the fully centralised digital
-        realm.`,
-        description2: `I am a staunch believer that blockchain will be the
-        foundation of our digital future and the decisions we
-        make today will shape our future. Having delved into
-        blockchain projects to find the one which has the
-        vision and ideology of Sathoshi, and also decentralize
-        and democratize money, economics, internet, emerging
-        technologies to give people back the power, led me to
-        Nexus and there has been no looking back. Using this
-        opportunity to spread Nexus and its innovative
-        technology to the masses.`,
-      },
-      {
-        name: 'Neal Helman',
-        image: 'neal2',
-        popup: 'neal-member',
-        position: 'Support Facilitator',
-        description1: ``,
-      },
-      {
-        name: 'Rayan Fernandes',
-        image: 'rayan2',
-        popup: 'rayan-member',
-        position: 'Developer Support',
-        description1: `I'm an Electronics & Communication Engineer and have
-        been working as a full stack software developer. Been
-        looking at crypto-space since 2017 BTC hype. Got
-        introduced to Nexus in 2021 and have been involved in
-        learning more. Love the core vision, power and
-        simplicity. Currently Working on a few projects of my
-        own on Nexus and giving my support in the community. I
-        also like to create 3D artwork, code bots and learn
-        musical instruments in my spare time.`,
-      },
-      {
-        name: 'Marek Szklarz',
-        image: 'marek2',
-        popup: 'marek-member',
-        position: 'ISMN Graphic Design',
-        description1: ``,
-      },
-      {
+        position: 'Interactions Chair ',
         name: 'Miguel Franco',
         image: 'miguel2',
         popup: 'miguel-member',
-        position: 'SM Team',
         description1: `I discovered cryptocurrencies in 2020, I think that
         from that day my life changed. As an engineer I'm
         fascinated because I am a lover of technology, and
@@ -274,19 +212,13 @@ export class TeamComponent implements AfterViewInit {
         that nexus will take care of it. This community is not
         to empower a single person, this community is to give
         well-being to all equally. Remember we are all Nexus.`,
+        telegram: 'https://t.me/mikhealfranco14',
       },
       {
         name: 'Emmanuel Ramos',
         image: 'emmanuel2',
         popup: 'emmanuel-member',
         position: 'SM Facilitator',
-        description1: ``,
-      },
-      {
-        name: 'Mark Costa',
-        image: 'mark2',
-        popup: 'mark-member',
-        position: 'ISMN Australia & New Zealand',
         description1: ``,
       },
     ];
@@ -300,6 +232,7 @@ export class TeamComponent implements AfterViewInit {
         popup: 'christophe-member',
         position: 'Impressions Chair & Frontend Developer',
         description1: ``,
+        telegram: 'https://t.me/christophe1982',
       },
       {
         name: 'Tommie',
@@ -307,6 +240,7 @@ export class TeamComponent implements AfterViewInit {
         popup: 'tommie-member',
         position: 'Advertising',
         description1: ``,
+        telegram: 'https://t.me/tommievictor',
       },
     ];
   }
@@ -328,6 +262,7 @@ export class TeamComponent implements AfterViewInit {
                           His ultimate vision is to increase the accessibility
                           of these technologies in order to help people to build
                           a greater connection to one another.`,
+        telegram: 'https://t.me/Videlicet',
       },
       {
         name: 'Kendal Cormany',
@@ -348,6 +283,7 @@ export class TeamComponent implements AfterViewInit {
                           towards Nexus will usher in a new way systems interact
                           with other systems. In his spare time he likes to play
                           games and build plastic models.`,
+        telegram: 'https://t.me/KendalCormany_nexusio',
       },
       {
         name: 'Hoàng Phú Quý',
@@ -370,6 +306,7 @@ export class TeamComponent implements AfterViewInit {
                           he brings many skills and experience to the team. In
                           his free time, Quý enjoys music, dancing, and playing
                           board games with friends.`,
+        telegram: 'https://t.me/kwyiz',
       },
       // {
       //   name: 'Ajion',
@@ -398,6 +335,7 @@ export class TeamComponent implements AfterViewInit {
         popup: 'tomas-member',
         position: 'Communications Chair',
         description1: ``,
+        telegram: 'https://t.me/Tomas_SWE',
       },
       {
         name: 'Arielle Friedman',
@@ -428,6 +366,7 @@ export class TeamComponent implements AfterViewInit {
         As an Industrial Product Designer I understand very well how important the UX is! 
         Signature chains are a very unique USP that will be key for mass adoption. 
         I'm happy to share our vision. We are all in this together!`,
+        telegram: 'https://t.me/MrWoXIV',
       },
       {
         name: 'Aflatun Abdullayev',
@@ -449,6 +388,7 @@ export class TeamComponent implements AfterViewInit {
         popup: 'levente-member',
         position: '3D Graphics',
         description1: ``,
+        telegram: 'https://t.me/Themadblacksmith',
       },
       {
         name: 'Alec Rappelet',

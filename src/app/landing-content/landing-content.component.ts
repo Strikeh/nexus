@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 import { map, zip } from 'rxjs';
 import { Meta, Title } from '@angular/platform-browser';
 import { ScriptService } from '../services/script-service';
+import { Router } from '@angular/router';
 
 const path =
   '//rf.revolvermaps.com/0/0/8.js?i=5f2xlo2m52c&m=0c&c=ff0000&cr1=ffffff&f=calibri&l=0&bv=60&cw=0ca4fb&cb=012235';
@@ -44,6 +45,7 @@ export class LandingContentComponent implements OnInit, AfterViewInit {
   constructor(
     private readonly http: HttpClient,
     private readonly meta: Meta,
+    private readonly router: Router,
     private readonly title: Title,
     private readonly renderer: Renderer2,
     private readonly scriptService: ScriptService
@@ -163,6 +165,10 @@ export class LandingContentComponent implements OnInit, AfterViewInit {
     // scriptElement.onerror = () => {
     //   console.log('Could not load the Crypthopper script!');
     // };
+  }
+
+  navigateToWallets(): void {
+    this.router.navigate(['/wallet']);
   }
 
   private executeVisitorsBarScript() {

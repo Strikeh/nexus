@@ -1,5 +1,41 @@
 [
   {
+    "publishDate": "09 May, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Connecting a Decentralized World",
+    "url": "https://medium.com/@NexusOfficial/nexus-connecting-a-decentralized-world-7a7b9bef6436",
+    "description": "NEXUS – Connecting a Decentralized World Introduction Welcome to the world of Nexus: an innovative and ambitious project with the potential to revolutionize the entire crypto industry. In this...",
+    "image": "decentralizedinternet.png",
+    "category": "Articles"
+  },
+  {
+    "publishDate": "29 April, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "Release of 5.1 Dev Recap",
+    "url": "https://medium.com/@NexusOfficial/release-of-5-1-dev-recap-9a9aa66de4aa",
+    "description": "Hey everyone, it's great to be here for this weekly recap, even if it's technically a week and a half recap. I've been working my butt off to get everything ready and fix all the bugs. We're compiling the wallets and...",
+    "image": "eye.png",
+    "category": "News"
+  },
+  {
+    "publishDate": "27 April, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "3.1.0 Tritium++ !!!",
+    "url": "https://medium.com/@developer_20425/3-1-0-tritium-d34d1af05fdb",
+    "description": "After years of hard work, the Nexus Development team would like to finally present Tritium++, a monumental leap forward of our TAO realization. This is Phase I of III phases of the first Tritium++ release...",
+    "image": "tritium++.png",
+    "category": "News"
+  },
+  {
+    "publishDate": "24 April, 2023",
+    "tags": ["cryptocurrency"],
+    "title": "A review and reflection on 'The Starfish and the Spider'",
+    "url": "https://medium.com/@NexusOfficial/a-review-and-reflection-on-the-starfish-and-the-spider-83513b7c7b30",
+    "description": "A review and reflection on 'The Starfish and the Spider', a book that explores the potential of decentralized organizations 'The Starfish and...",
+    "image": "spider.png",
+    "category": "Articles"
+  },
+  {
     "publishDate": "17 April, 2023",
     "tags": ["cryptocurrency"],
     "title": "Progress, Usability and Blockchain Health",
@@ -14,7 +50,7 @@
     "title": "Nexus Recap; Exchange listings and Further Updates!",
     "url": "https://medium.com/@NexusOfficial/nexus-recap-exchange-listings-and-further-updates-4d1ef04760c1",
     "description": "Nexus Recap; Exchange listings and Further Updates! It's been quite a week. As you may have seen, Bittrex announced on Friday that they will no longer be servicing US customers. We're now focused on getting...",
-    "image": "p2p.png",
+    "image": "recap.png",
     "category": "News"
   },
   {
