@@ -8,7 +8,9 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'nexus';
-  showBannerAndFooter = false;
+  showBanner = false;
+  showFooter = false;
+  showHeader = true;
 
   constructor(private router: Router) {
     this.handleRouteEvents();
@@ -24,9 +26,22 @@ export class AppComponent {
       }
 
       if (this.router.url === 'landing' || this.router.url === '/') {
-        return (this.showBannerAndFooter = true);
+        this.showHeader = true;
+        this.showFooter = true;
+        this.showBanner = true;
+        return;
       }
-      this.showBannerAndFooter = false;
+
+      if (this.router.url === '/resourcehub') {
+        this.showHeader = false;
+        this.showFooter = true;
+        this.showBanner = false;
+        return;
+      }
+
+      this.showHeader = true;
+      this.showBanner = false;
+      this.showFooter = false;
     });
   }
 }

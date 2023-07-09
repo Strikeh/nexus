@@ -50,6 +50,10 @@ import { FAQComponent } from './resources/faq/faq.component';
 import { GlossaryComponent } from './resources/glossary/glossary.component';
 import { InquiryComponent } from './inquiry/inquiry.component';
 import { MetricsComponent } from './metrics/metrics.component';
+import { ResourceHubComponent } from './resources/resource-hub/resource-hub.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -93,15 +97,19 @@ import { MetricsComponent } from './metrics/metrics.component';
     GlossaryComponent,
     InquiryComponent,
     MetricsComponent,
+    ResourceHubComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
     ReactiveFormsModule,
     SafePipeModule,
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule,
   ],
   providers: [ScriptService],
   bootstrap: [AppComponent],

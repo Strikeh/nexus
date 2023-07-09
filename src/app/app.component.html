@@ -6,13 +6,12 @@
       class="nk-header page-header is-transparent is-sticky is-shrink"
       id="header"
     >
-      <nexus-header></nexus-header>
-
-      <nexus-banner *ngIf="showBannerAndFooter"></nexus-banner>
+      <nexus-header *ngIf="showHeader"></nexus-header>
+      <nexus-banner *ngIf="showBanner"></nexus-banner>
     </header>
   </div>
 </body>
 
 <router-outlet></router-outlet>
 
-<nexus-footer *ngIf="showBannerAndFooter"></nexus-footer>
+<nexus-footer *ngIf="showFooter"></nexus-footer>

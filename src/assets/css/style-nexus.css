@@ -4171,7 +4171,15 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .tc-light .cpn-text { color: #8ca2e5; }
 
-.cpn-text p { color: #6dcefe !important; font-size: inherit !important; }
+.cpn-text p {
+   color: #6dcefe;
+   font-size: inherit; 
+}
+
+.cpn-text p.lead-s2 {
+  font-size: 1.1rem;
+  color: #415076;
+}
 
 .cpn-text-center { margin-left: auto; margin-right: auto; }
 

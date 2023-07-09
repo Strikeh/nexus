@@ -33,6 +33,7 @@ import { TermsComponent } from './terms/terms.component';
 import { GlossaryComponent } from './resources/glossary/glossary.component';
 import { FAQComponent } from './resources/faq/faq.component';
 import { MetricsComponent } from './metrics/metrics.component';
+import { ResourceHubComponent } from './resources/resource-hub/resource-hub.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -67,6 +68,7 @@ const routes: Routes = [
   { path: 'glossary', component: GlossaryComponent },
   { path: 'inquire', component: InquiryComponent },
   { path: 'visitors', component: MetricsComponent },
+  { path: 'resourcehub', component: ResourceHubComponent },
 ];
 
 @NgModule({
