@@ -1,14 +1,28 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { fadeInUpAnimation, fadeInDownAnimation } from 'angular-animations';
+import {
+  fadeInUpAnimation,
+  fadeInDownAnimation,
+  bounceInUpOnEnterAnimation,
+  bounceInUpAnimation,
+  expandOnEnterAnimation,
+  bounceInOnEnterAnimation,
+} from 'angular-animations';
 
 @Component({
   selector: 'app-resource-hub',
   templateUrl: './resource-hub.component.html',
   styleUrls: ['./resource-hub.component.scss'],
-  animations: [fadeInUpAnimation(), fadeInDownAnimation()],
+  animations: [
+    fadeInUpAnimation(),
+    fadeInDownAnimation(),
+    bounceInUpAnimation(),
+    expandOnEnterAnimation({ duration: 200 }),
+    bounceInOnEnterAnimation(),
+  ],
 })
 export class ResourceHubComponent implements AfterViewInit {
   animationState = false;
+  qrAnimationState = false;
 
   url = './../../assets/js/particles.js';
 
@@ -27,10 +41,19 @@ export class ResourceHubComponent implements AfterViewInit {
     document.getElementsByTagName('head')[0].appendChild(node);
   }
 
+  scrollToTag(event: Event, tag: string) {
+    document.getElementById(tag).scrollIntoView({ behavior: 'smooth' });
+    event.preventDefault();
+  }
+
   animate() {
     this.animationState = false;
     setTimeout(() => {
       this.animationState = true;
     }, 1);
+  }
+
+  onAppearQR() {
+    this.qrAnimationState = true;
   }
 }

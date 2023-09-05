@@ -1,3 +1,4 @@
+import { AppearDirective } from './directives/appear.directive';
 import * as $ from 'jquery';
 import 'magnific-popup';
 
@@ -52,8 +53,6 @@ import { InquiryComponent } from './inquiry/inquiry.component';
 import { MetricsComponent } from './metrics/metrics.component';
 import { ResourceHubComponent } from './resources/resource-hub/resource-hub.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -98,6 +97,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     InquiryComponent,
     MetricsComponent,
     ResourceHubComponent,
+    AppearDirective,
   ],
   imports: [
     BrowserModule,
@@ -108,8 +108,6 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     HttpClientModule,
     ReactiveFormsModule,
     SafePipeModule,
-    NgxPageScrollCoreModule,
-    NgxPageScrollModule,
   ],
   providers: [ScriptService],
   bootstrap: [AppComponent],

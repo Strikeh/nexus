@@ -72,6 +72,8 @@ html, body { font-family: "Roboto", sans-serif; color: #415076; font-size: 14px;
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section { display: block; }
 
+html { scroll-behavior: auto !important; }
+
 *[hidden] { display: none; }
 
 ol, ul { list-style: none; }

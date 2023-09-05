@@ -27,6 +27,6 @@ export class BannerComponent {
   }
 
   navigateToWiki(): void {
-    (window as any).open('https://wiki.nexus.io/en/tritium++', '_blank');
+    (window as any).open('https://docs.nexus.io/', '_blank');
   }
 }
