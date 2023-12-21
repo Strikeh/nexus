@@ -7,14 +7,14 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "build-prod": "ng build --configuration production",
+    "build-prod": "ng build --configuration production ",
+    "build-custom": "npm run build --configuration=production --aot=true --named-chunks=true --source-map=true",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^16.1.4",
     "@angular/animations": "^16.1.4",
-    "@angular/cli": "^16.1.4",
     "@angular/common": "~16.1.4",
     "@angular/compiler": "~16.1.4",
     "@angular/core": "~16.1.4",
@@ -37,6 +37,8 @@
     "zone.js": "~0.13.1"
   },
   "devDependencies": {
+    "@angular-devkit/core": "^17.0.7",
+    "@angular/cli": "^17.0.7",
     "@angular/compiler-cli": "~16.1.4",
     "@schematics/angular": "^15.1.4",
     "@types/jasmine": "~3.5.0",

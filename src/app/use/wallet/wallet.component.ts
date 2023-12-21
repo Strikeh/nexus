@@ -1,11 +1,10 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-wallet',
   templateUrl: './wallet.component.html',
   styleUrls: ['./wallet.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WalletComponent {
   constructor(private readonly meta: Meta, private readonly title: Title) {
@@ -23,5 +22,17 @@ export class WalletComponent {
 
   setTitle(newTitle: string) {
     this.title.setTitle(newTitle);
+  }
+
+  downloadFile(filePath, event: any) {
+    let link = document.createElement('a');
+    link.setAttribute('type', 'hidden');
+    link.href = filePath;
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    event.preventDefault();
   }
 }

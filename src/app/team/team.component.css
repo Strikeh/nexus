@@ -1,20 +1,17 @@
 .team-show {
-    background: rgb(150 193 244 / 40%);
+  background: rgb(150 193 244 / 40%);
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .wgs-body {
-    width: 20rem;
+  width: 20rem;
 }
 
-.bg-light-alt {
-    background-image: linear-gradient(to right,rgb(232 242 255) 0%,rgb(239 250 255) 100%)!important;
-}
-
-.team-featured-cont.embassies, .team-featured-cont.jurors {
-    margin-bottom: 1.5rem;
+.team-featured-cont.embassies,
+.team-featured-cont.jurors {
+  margin-bottom: 1.5rem;
 }

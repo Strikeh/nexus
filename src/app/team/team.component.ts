@@ -66,11 +66,11 @@ export class TeamComponent implements AfterViewInit {
         description1: `I'm a manager at a solar company, so my daily job is pretty balanced between technical thinking and management. I've been watching crypto from the sideline since the earliest days of BTC. I lead a community here in AZ that Colin is a part of, and I got really interested in NXS through him about a year ago. I joined the Nexus community a few months ago b/c I felt ready to participate more actively. I have formal training to mediate conflict and I teach classes on conflict resolution to my community.`,
       },
       {
-        name: 'Barak (B12)',
+        name: 'Barak Epstein (B12)',
         image: 'silhouette2',
         popup: 'barak-juror',
         position: 'Juror',
-        description1: `I’m a nomad pianist decided to live in South America many years ago. Introduced to nexus back in 2017 and sadly watching the shit market evolving and taken over by Moon boys and banksters. I have hope that one day nexus will shine and unfold the original satoshi vision to free the planet from the modern slavery system.`,
+        description1: `I’m a pianist who decided to live in South America many years ago. I was Introduced to nexus back in 2017 and sadly watching the crypto market evolving and taken over by Moon boys and banksters. I have hope that one day nexus will shine and unfold the original satoshi vision to free the planet from the modern slavery system.`,
       },
       {
         name: 'Craig (BUMP)',
@@ -79,6 +79,43 @@ export class TeamComponent implements AfterViewInit {
         position: 'Juror',
         description1: `I am a pilot operating for an airline in Australia.`,
         telegram: 'https://t.me/BumpaC',
+      },
+      {
+        name: 'Shae',
+        image: 'shae',
+        popup: 'shae-juror',
+        position: 'Juror',
+        description1: `My name is Shae, I'm from Australia and I am passionate about Nexus and its ambitious mission to provide the world with new and more efficient technologies to help re-create the internet and provide humanity with financial independence and sovereignty. 
+ 
+        I have spent most of my years working as a support worker within the aged-care industry which has allowed me to better connect and empathise with people from all walks of life and abilities and to develop the necessary skills to manage and mediate between various challenging situations. I now work from home as an artist as my passion is to explore the mysteries and nature of our reality whilst creating artwork that reflects the insights and experiences of life.  
+        I aim to bring my life skills into Nexus, to help this project grow and overcome challenges as they come.`,
+        telegram: 'https://t.me/Shae_sp',
+      },
+      {
+        name: 'Tasha Lindsay (Tish)',
+        image: 'silhouette2',
+        popup: 'tish-juror',
+        position: 'Juror',
+        description1: `I am an artist, musician, set theory researcher and eternal student. My greatest passion is an obscure mathematical curiosity called “magic squares” and their healing effects on the human brain. 
+
+        I got involved in Nexus because I truly believe in this projects potential to unite people from around the world under a common goal and common set of needs. Humanity working together to find innovative solutions to our collective problems will advance our species in ways we have, thus far, only dreamed of.`,
+      },
+      {
+        name: 'Chuck scholer',
+        image: 'silhouette2',
+        popup: 'chuck-juror',
+        position: 'Juror',
+        description1: `I have been involved in Nexus since early 2017. I retired from the US Navy back in 2001 as an electronics technician. Now I teach math at a private Christian school in Las Vegas, which my two children attended. My interest is more in the technical development of Nexus, satellites, routers, etc., but I follow everything related to it and read through Telegram every day.
+        I plant the seeds of Nexus by making, funding, and gifting wallets to my interested scholars as graduation presents.`,
+      },
+      {
+        name: 'Frank The good and wise',
+        image: 'silhouette2',
+        popup: 'frank-juror',
+        position: 'Juror',
+        description1: `I was introduced to NEXUS and Colin at a meeting in 04-2017. We literally shared a lunch and found we had mutual thoughts and social issues. I was an attendee at 2017 Aspen conference and 2018 conference. We have a small group here in beautiful SW USA Las Vegas and a VGK Hockey fan.
+
+        With our group we have created and funded mini wallets as an attempt to create interest in Nexus to have a wallet on a free computer. Someday my dream is to feed the world for free . I believe in honesty, integrity, and honor and try to conduct myself as such.`,
       },
     ];
   }

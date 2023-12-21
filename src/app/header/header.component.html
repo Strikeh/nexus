@@ -245,6 +245,28 @@
             <li class="menu-item">
               <a class="menu-link nav-link" routerLink="team">Team</a>
             </li>
+
+            <li class="menu-item">
+              <!-- <button (click)="toggleTheme()" class="theme-toggle-button">
+                <i
+                  class="toggle-icon"
+                  [ngClass]="{
+                    'fa-sun': isLightTheme,
+                    'fa-moon': !isLightTheme
+                  }"
+                ></i>
+              </button> -->
+
+              <a class="menu-link nav-link" (click)="toggleTheme()"
+                ><em
+                  class="fas"
+                  [ngClass]="{
+                    'fa-sun': isLightTheme,
+                    'fa-moon': !isLightTheme
+                  }"
+                ></em
+              ></a>
+            </li>
           </ul>
         </nav>
       </div>

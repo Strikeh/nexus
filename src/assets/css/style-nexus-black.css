@@ -115,14 +115,14 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  color: #415076;
+  color: #fff;
   font-size: 14px;
   line-height: 1.68;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background-color: #fff;
+  background-color: #000a11;
 }
 
 @media (min-width: 576px) {
@@ -187,7 +187,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #012235 !important;
+  color: #90c5e3 !important;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   line-height: 1.45;
@@ -221,13 +221,13 @@ h6:last-child,
 .tc-light .h4,
 .tc-light .h5,
 .tc-light .h6 {
-  color: #fff !important;
+  color: #fff;
 }
 
 p {
   font-size: 14px;
   margin-bottom: 1rem;
-  color: #415076;
+  color: #fff;
 }
 
 p:last-child {
@@ -1472,7 +1472,7 @@ h6,
 }
 
 .bg-light {
-  background-color: #f5f7fe !important;
+  background-color: #000000 !important;
 }
 
 .bg-light.current {
@@ -1480,7 +1480,7 @@ h6,
 }
 
 .bg-light-alt {
-  background-color: #c3e3f2 !important;
+  background-image: linear-gradient(to right, rgb(0 0 0) 0%, rgb(0 44 65) 100%);
 }
 
 .bg-light-alt.current {
@@ -1488,7 +1488,7 @@ h6,
 }
 
 .bg-light-grad {
-  background-image: linear-gradient(to bottom, #fff 0%, #f5f7fe 100%);
+  background-image: linear-gradient(to bottom, #000a0e 0%, #000000 100%);
 }
 
 .bg-dark {
@@ -1605,7 +1605,7 @@ h6,
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: unset !important;
 }
 
 .bg-white-2 {
@@ -1633,7 +1633,7 @@ h6,
 }
 
 .bg-theme {
-  background-color: #012235 !important;
+  background-color: #000000 !important;
 }
 
 .bg-theme.current {
@@ -1641,7 +1641,7 @@ h6,
 }
 
 .bg-theme-alt {
-  background-color: #3b5b68 !important;
+  background-color: #000000 !important;
 }
 
 .bg-theme-alt.current {
@@ -1651,8 +1651,8 @@ h6,
 .bg-theme-grad {
   background-image: linear-gradient(
     to right,
-    rgb(2, 94, 147) 0%,
-    rgb(1, 34, 53) 100%
+    rgb(0 0 0) 0%,
+    rgb(0 0 0) 100%
   ) !important;
 }
 
@@ -1667,8 +1667,8 @@ h6,
 .bg-theme-grad-alt {
   background-image: linear-gradient(
     to right,
-    rgb(1, 34, 53) 0%,
-    rgb(2, 94, 147) 100%
+    rgb(1 10 14) 0%,
+    rgb(0 0 0) 100%
   ) !important;
 }
 
@@ -1737,10 +1737,10 @@ h6,
 }
 
 .bg-theme-accent-alt {
-  background-color: #c3e3f28c !important;
+  background-color: #000000 !important;
 
   &.section {
-    background-color: #def0f8 !important;
+    background-color: #010f18 !important;
   }
 }
 
@@ -2270,7 +2270,7 @@ h6,
 .nk-df-mask-f,
 .mask-f:before,
 .mask-f-bg {
-  background-image: url(../images/mask-f.svg);
+  /* background-image: url(../images/mask-f.svg); */
 }
 
 .nk-df-mask-f-footer,
@@ -2708,7 +2708,7 @@ h6,
 
 .nk-ovm {
   z-index: 1;
-  display: unset;
+  display: none;
 }
 
 .nk-ovm:before,
@@ -3652,7 +3652,7 @@ hr {
 }
 
 .background-shape {
-  background: rgba(0, 52, 86, 0.03);
+  background: rgb(0 0 0 / 55%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -3669,7 +3669,7 @@ hr {
 
 .background-shape:before,
 .background-shape:after {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(19 72 155 / 20%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -6176,7 +6176,7 @@ hr {
 }
 
 .title-dark {
-  color: #12183a;
+  color: #02d2f5;
 }
 
 .title-base {
@@ -6493,7 +6493,7 @@ a .title {
   line-height: 1.512;
   padding: 5px 0;
   position: relative;
-  color: #415076;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -10534,7 +10534,7 @@ ul.progress-info {
 .accordion-item-s3 {
   border: none !important;
   border-radius: 6px;
-  background-color: #ecf0f3 !important;
+  background-color: #030c0e !important;
   box-shadow: 0px 4px 6px 0px rgba(10, 25, 146, 0.07);
 }
 
@@ -10623,7 +10623,7 @@ ul.progress-info {
 }
 
 .accordion-title.collapsed {
-  color: #025e93;
+  color: #77bfff;
   transition: all 0.4s;
 }
 
@@ -10632,11 +10632,11 @@ ul.progress-info {
 }
 
 .tc-light .accordion-title.collapsed:hover {
-  color: #46bdf4;
+  color: #77bfff;
 }
 
 .accordion-title.collapsed:hover {
-  color: #012235;
+  color: #77bfff;
 }
 
 .accordion-title.collapsed .accordion-icon:before {
@@ -10693,7 +10693,7 @@ ul.progress-info {
 }
 
 .accordion-icon-s2 {
-  background: #f5f7fe;
+  background: #31bae2;
 }
 
 .accordion-icon-s2:after {
@@ -10971,7 +10971,7 @@ hr + .nk-block {
 }
 
 .nk-block-note-s2 {
-  background: rgba(210, 211, 255, 0.25);
+  background: rgb(67 140 193 / 61%);
 }
 
 .nk-block-note .icon {
@@ -11324,16 +11324,16 @@ hr + .nk-block {
 /** 04.04 Box */
 .card {
   padding: 20px;
-  background: #fff;
-  border: none;
+  background: #00070a;
+  border: 1px solid #2089a7;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.02);
 }
 
 .block-partners {
   .card {
-    background: #fff;
-    border: none;
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.02);
+    background: #99dad6;
+    border: 5px solid #1e6b87;
+    box-shadow: 0px 0px 12px 4px #296b69;
   }
 }
 
@@ -11359,7 +11359,7 @@ hr + .nk-block {
 }
 
 .card-lg-y {
-  box-shadow: 0px 20px 60px rgba(18, 24, 58, 0.1);
+  box-shadow: 0 10px 15px #13bdf557;
 }
 
 .card-lg-y2 {
@@ -12292,7 +12292,7 @@ hr + .nk-block {
   line-height: 0.9;
   text-transform: uppercase;
   white-space: nowrap;
-  color: #7381f5;
+  color: #08a2ff;
   transform: translate(-50%, -50%);
   opacity: 0.06;
 }
@@ -12307,7 +12307,7 @@ hr + .nk-block {
   margin-bottom: 0;
   opacity: 1;
   position: relative;
-  color: #c5e9fb;
+  color: #9effcf;
 }
 
 .section-head .title-s4.title:before {
@@ -14333,7 +14333,7 @@ hr + .nk-block {
   padding: 20px 20px 15px;
   position: relative;
   max-width: 380px;
-  background-color: #daf3ff;
+  background-color: #000000;
 }
 
 .bg-light .roadmap-step {
@@ -15701,7 +15701,8 @@ hr + .nk-block {
 }
 
 .tc-light .token-sale-box {
-  background: rgba(43, 86, 245, 0.08);
+  background: rgb(4 6 6);
+  box-shadow: 0 0px 4px #74ddff;
 }
 
 .token-sale-info {
@@ -16418,7 +16419,7 @@ hr + .nk-block {
 }
 
 .bg-theme .team-s5:before {
-  background: #000537;
+  background-color: #070d10 !important;
 }
 
 .has-bg-image .team-s5:before {
@@ -17464,7 +17465,7 @@ hr + .nk-block {
   font-size: 0.9em;
   line-height: 20px;
   display: block;
-  color: #12183a;
+  color: #73e4ff;
 }
 
 .wgs-menu-s2 .wgs-links li a {
@@ -18277,10 +18278,15 @@ hr + .nk-block {
 }
 
 .blog {
-  background: #fff;
+  background: #010506;
   border-radius: 6px;
-  box-shadow: 0 5px 45px 0 rgba(18, 24, 58, 0.08);
+  box-shadow: -1px 3px 7px 0px #1bdae57a;
   margin-bottom: 30px;
+  border: 1px solid #319ccd;
+
+  .title a {
+    color: #73e4ff;
+  }
 }
 
 .tc-light .blog {
@@ -18475,7 +18481,7 @@ hr + .nk-block {
   text-align: center;
   line-height: 20px;
   padding: 15px 5px;
-  background: #fff;
+  background: #94c2e3;
   color: rgba(65, 80, 118, 0.7);
 }
 
@@ -19585,10 +19591,11 @@ hr + .nk-block {
 .header-main {
   padding: 12px 0;
   transition: all 0.4s;
+  z-index: 25 !important;
 
   &.header-sub {
     top: 72px !important;
-    background-color: #0a3149 !important;
+    background-color: #000d14 !important;
   }
 }
 
@@ -19608,7 +19615,7 @@ hr + .nk-block {
 }
 
 .has-fixed:not(.is-dark) .header-main {
-  background: #fff;
+  background: #042537;
 }
 
 .has-fixed.is-dark .header-main {
@@ -19988,7 +19995,7 @@ hr + .nk-block {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 16.8px;
-  color: #415076;
+  color: #effbff;
   padding: 12px 0;
   display: block;
   position: relative;
@@ -20600,7 +20607,7 @@ hr + .nk-block {
   overflow-x: hidden;
   width: 100%;
   z-index: 2;
-  background-color: #fff;
+  background-color: #000000;
 }
 
 .section-sm {
@@ -21078,17 +21085,25 @@ hr + .nk-block {
   }
 }
 
-.bg-light-alt {
-  background-color: #c3e3f2 !important;
-  background-image: unset;
+.pdt-1 {
+  padding-top: 10px !important;
 }
 
-.pdt-1 {
-  padding-top: 180px !important;
+.nav-link:focus {
+  color: #02416f;
+  font-weight: bold;
+}
+
+.tab-nav li a {
+  color: #73e4ff !important;
+}
+
+.ambassador-title {
+  color: #00a1ff !important;
 }
 
 .section.branding {
-  background-color: #fff !important;
+  background-color: #000 !important;
 }
 
 /* END @iO */
