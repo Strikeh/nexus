@@ -152,22 +152,22 @@ export class TeamComponent implements AfterViewInit {
 
   private fillRelationshipMembers(): void {
     this.relationshipMembers = [
-      {
-        name: 'Sohaan',
-        image: 'sohaan2',
-        popup: 'sohaan-member',
-        position: 'Relationships Chair - No-Code & Tokenomics Support',
-        description1: `Sohaan is one of the 100 influential people in noCode
-        movement. He graduated in Game design & whilst doing
-        so he got into bitcoin mining back in 2011 & got
-        hooked on blockchain, cryptocurrency ever since.
-        Sohaan has spent a decade consulting various startups
-        across the world for UI/UX design as well as
-        advocating tokenization and gamification. His goal is
-        to foster peace & harmony amongst humanity using web
-        3.0 and DeFi.`,
-        telegram: 'https://t.me/Sohaan0077',
-      },
+      // {
+      //   name: 'Sohaan',
+      //   image: 'sohaan2',
+      //   popup: 'sohaan-member',
+      //   position: 'Relationships Chair - No-Code & Tokenomics Support',
+      //   description1: `Sohaan is one of the 100 influential people in noCode
+      //   movement. He graduated in Game design & whilst doing
+      //   so he got into bitcoin mining back in 2011 & got
+      //   hooked on blockchain, cryptocurrency ever since.
+      //   Sohaan has spent a decade consulting various startups
+      //   across the world for UI/UX design as well as
+      //   advocating tokenization and gamification. His goal is
+      //   to foster peace & harmony amongst humanity using web
+      //   3.0 and DeFi.`,
+      //   telegram: 'https://t.me/Sohaan0077',
+      // },
       // {
       //   name: 'Richard Osborne',
       //   image: 'richard2',
@@ -271,14 +271,14 @@ export class TeamComponent implements AfterViewInit {
         description1: ``,
         telegram: 'https://t.me/christophe1982',
       },
-      {
-        name: 'Tommie',
-        image: 'tommie2',
-        popup: 'tommie-member',
-        position: 'Advertising',
-        description1: ``,
-        telegram: 'https://t.me/tommievictor',
-      },
+      // {
+      //   name: 'Tommie',
+      //   image: 'tommie2',
+      //   popup: 'tommie-member',
+      //   position: 'Advertising',
+      //   description1: ``,
+      //   telegram: 'https://t.me/tommievictor',
+      // },
     ];
   }
 
@@ -366,28 +366,28 @@ export class TeamComponent implements AfterViewInit {
 
   private fillCommunicationMembers(): void {
     this.communicationMembers = [
-      {
-        name: 'Tomas Gaia',
-        image: 'silhouette2',
-        popup: 'tomas-member',
-        position: 'Communications Chair',
-        description1: ``,
-        telegram: 'https://t.me/Tomas_SWE',
-      },
-      {
-        name: 'Arielle Friedman',
-        image: 'arielle2',
-        popup: 'arielle-member',
-        position: 'Communicator',
-        description1: ``,
-      },
-      {
-        name: 'Don Karl',
-        image: 'karl2',
-        popup: 'karl-member',
-        position: 'Communicator',
-        description1: ``,
-      },
+      // {
+      //   name: 'Tomas Gaia',
+      //   image: 'silhouette2',
+      //   popup: 'tomas-member',
+      //   position: 'Communications Chair',
+      //   description1: ``,
+      //   telegram: 'https://t.me/Tomas_SWE',
+      // },
+      // {
+      //   name: 'Arielle Friedman',
+      //   image: 'arielle2',
+      //   popup: 'arielle-member',
+      //   position: 'Communicator',
+      //   description1: ``,
+      // },
+      // {
+      //   name: 'Don Karl',
+      //   image: 'karl2',
+      //   popup: 'karl-member',
+      //   position: 'Communicator',
+      //   description1: ``,
+      // },
     ];
   }
 

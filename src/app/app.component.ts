@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -12,8 +13,36 @@ export class AppComponent {
   showFooter = false;
   showHeader = true;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private readonly meta: Meta) {
     this.handleRouteEvents();
+
+    this.meta.addTags([
+      { name: 'og:locale', content: 'en-GB' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:site_name', content: 'Nexus (NXS) Website' },
+      { name: 'og:url', content: 'www.nexus.io' },
+      {
+        name: 'og:description',
+        content:
+          'Connecting a Decentralized World. Nexus is a next-generation blockchain technology that is re-building the internet from the ground up. Most innovative Technology. Quantum Resistance. Free Simple Transactions.',
+      },
+      {
+        name: 'og:image',
+        content: 'https://nexus.io/images/nexus-logo-blue.png',
+      },
+      {
+        name: 'og:image:url',
+        content: 'https://nexus.io/images/nexus-logo-blue.png',
+      },
+      {
+        name: 'og:image:secure_url',
+        content: 'https://nexus.io/images/nexus-logo-blue.png',
+      },
+      {
+        name: 'og:image:alt',
+        content: 'https://nexus.io/images/nexus-logo-blue.png',
+      },
+    ]);
   }
 
   handleRouteEvents() {

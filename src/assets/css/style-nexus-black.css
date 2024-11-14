@@ -19672,7 +19672,7 @@ hr + .nk-block {
 }
 
 .header-navbar::before {
-  background: #fff;
+  background: #000;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.4s;
@@ -19683,7 +19683,7 @@ hr + .nk-block {
 }
 
 .header-navbar-overlay {
-  background: rgba(0, 5, 55, 0.7);
+  background: rgb(2 3 6 / 70%);
   left: 100%;
   width: 0;
   z-index: -1;
@@ -20017,7 +20017,7 @@ hr + .nk-block {
 
 .menu-item a .active,
 .menu-item a:hover {
-  color: #46bdf4;
+  color: #fff !important;
 }
 
 .is-dark .menu-item a .active,
@@ -20064,13 +20064,13 @@ hr + .nk-block {
 .menu-sub a {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
-  color: #415076;
+  color: #4ff5ff;
 }
 
 .menu-mega a {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
-  color: #415076;
+  color: #4ff5ff;
 }
 
 .is-dark .menu-item a {
@@ -20354,7 +20354,7 @@ hr + .nk-block {
     position: absolute;
     min-width: 215px;
     max-width: 215px;
-    background: #fff;
+    background: #000;
     padding: 15px 10px;
     top: 100%;
     left: 0;
@@ -20382,6 +20382,7 @@ hr + .nk-block {
     opacity: 1;
     visibility: visible;
     transform: translateX(0) translateY(0);
+    background-color: #080f15;
   }
   .menu-sub .menu-sub {
     left: calc(100% - 25px);
@@ -21090,7 +21091,7 @@ hr + .nk-block {
 }
 
 .nav-link:focus {
-  color: #02416f;
+  color: #91e5ff;
   font-weight: bold;
 }
 
