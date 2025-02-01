@@ -27,6 +27,6 @@ export class BannerComponent {
   }
 
   navigateToWiki(): void {
-    (window as any).open('https://docs.nexus.io/', '_blank');
+    (window as any).open('https://nexus-wiki.org/', '_blank');
   }
 }
