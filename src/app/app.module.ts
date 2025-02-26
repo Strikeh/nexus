@@ -53,6 +53,7 @@ import { InquiryComponent } from './inquiry/inquiry.component';
 import { MetricsComponent } from './metrics/metrics.component';
 import { ResourceHubComponent } from './resources/resource-hub/resource-hub.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DevUpdatesComponent } from './resources/developer-updates/developer-updates.component';
 
 @NgModule({
   declarations: [
@@ -98,6 +99,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MetricsComponent,
     ResourceHubComponent,
     AppearDirective,
+    DevUpdatesComponent
   ],
   imports: [
     BrowserModule,

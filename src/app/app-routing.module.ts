@@ -34,6 +34,7 @@ import { GlossaryComponent } from './resources/glossary/glossary.component';
 import { FAQComponent } from './resources/faq/faq.component';
 import { MetricsComponent } from './metrics/metrics.component';
 import { ResourceHubComponent } from './resources/resource-hub/resource-hub.component';
+import { DevUpdatesComponent } from './resources/developer-updates/developer-updates.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent, pathMatch: 'full' },
@@ -65,6 +66,7 @@ const routes: Routes = [
   { path: 'privacypolicy', component: PrivacyPolicyComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'faq', component: FAQComponent },
+  { path: 'dev-updates', component: DevUpdatesComponent },
   { path: 'glossary', component: GlossaryComponent },
   { path: 'inquire', component: InquiryComponent },
   { path: 'visitors', component: MetricsComponent },

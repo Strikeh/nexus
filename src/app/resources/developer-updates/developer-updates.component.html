@@ -1,0 +1,73 @@
+<body class="nk-body body-wider bg-light">
+  <div class="nk-wrap">
+    <nexus-page-header
+      [title]="'DEVELOPER UPDATES'"
+      [titleBackground]="'DEV UPDATES'"
+      headerText="Developer Updates"
+      [isSmall]="true"
+    >
+    </nexus-page-header>
+  </div>
+
+  <section class="section bg-white" id="updates">
+    <div class="container">
+      <div class="section-head text-center wide-auto-sm">
+        <h2 class="title title-s4" title="updates">Nexus - Developer Updates</h2>
+        <p>
+            This section provides an overview of all the developer updates conducted by Colin. 
+            For each update, you will find a transcript and a recording available for download.
+        </p>
+      </div>
+      <!-- .section-head @e -->
+      <!-- Block @s -->
+      <div class="nk-block overflow-hidden">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-mb-10" *ngFor="let upd of updates">
+            <div
+              class="feature feature-inline card card-s3 flex-wrap flex-sm-nowrap"
+            >
+              <div class="feature-icon feature-icon-lg-s1 mt-0">
+                <img src="images/whitepaper.png" alt="icon" />
+              </div>
+              <div class="feature-text">
+                <h5 class="title title-md">{{ upd }}</h5>
+                <a
+                  href="#"
+                  class="btn btn-secondary btn-md"
+                  (click)="
+                    downloadFile(
+                      './assets/data/developer updates/' + upd + '/Transcript ' + upd + '.pdf'
+                    );
+                    $event.preventDefault()
+                  "
+                  >Transcript
+                  <em class="ti ti-arrow-right ps-2"></em
+                ></a>
+                <br/>
+                <br/>
+                <a
+                  href="#"
+                  class="btn btn-secondary btn-md"
+                  (click)="
+                    downloadFile(
+                      './assets/data/developer updates/' + upd + '/Recording ' + upd + '.m4a'
+                    );
+                    $event.preventDefault()
+                  "
+                  >Recording
+                  <em class="ti ti-arrow-right ps-2"></em
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .block @e -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <nexus-footer></nexus-footer>
+</body>
