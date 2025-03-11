@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-developer-updates',
@@ -9,7 +10,7 @@ import { Meta, Title } from '@angular/platform-browser';
 export class DevUpdatesComponent {
   updates: string[] = [];
 
-  constructor(private readonly meta: Meta, private readonly title: Title) {
+  constructor(private readonly meta: Meta, private readonly title: Title, private http: HttpClient) {
     this.meta.addTags([
       { name: 'description', content: 'Developer Updates' },
       { name: 'author', content: 'Christophe Verheyen' },
@@ -20,7 +21,9 @@ export class DevUpdatesComponent {
     ]);
     this.setTitle('Nexus - Developer Updates');
 
-    this.updates = ['2025-02-07', '2025-02-01', '2025-01-25', '2025-01-17', '2025-01-10'];
+    this.http.get<string[]>('assets/updates.json').subscribe((data) => {
+      this.updates = data;
+     });
   }
 
   setTitle(newTitle: string) {
