@@ -36,12 +36,12 @@ export class BuyNexusComponent implements OnInit {
     private readonly title: Title
   ) {
     this.meta.addTags([
-      { name: 'description', content: 'Buy Nexus' },
+      { name: 'description', content: 'Buy Nexus (NXS) on DEX-Trade - The premier exchange for Nexus trading with USDT pairs' },
       { name: 'author', content: 'Christophe Verheyen' },
       {
         name: 'keywords',
         content:
-          'nexus, crypto, blockchain, web3, Buy Nexus, chart, exchanges, bittrex, binance, coinstore, usdt, nxs, currency, fiat',
+          'nexus, crypto, blockchain, web3, Buy Nexus, chart, dex-trade, exchange, usdt, nxs, currency, trading, cryptocurrency',
       },
     ]);
     this.setTitle('Nexus - Buy Nexus');
@@ -108,7 +108,7 @@ export class BuyNexusComponent implements OnInit {
       new TradingView.widget({
         width: 980,
         height: 610,
-        symbol: 'BITTREX:NXSUSD',
+        symbol: 'DXTRADE:NXSUSDT', // Updated to DEX-Trade symbol
         interval: 'D',
         timezone: 'exchange',
         theme: 'light',

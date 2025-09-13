@@ -58,13 +58,13 @@ export class TeamComponent implements AfterViewInit {
 
   private fillJurorMembers(): void {
     this.jurorMembers = [
-      {
-        name: 'Arron Hill',
-        image: 'arron2',
-        popup: 'arron-juror',
-        position: 'Jury Chair',
-        description1: `I'm a manager at a solar company, so my daily job is pretty balanced between technical thinking and management. I've been watching crypto from the sideline since the earliest days of BTC. I lead a community here in AZ that Colin is a part of, and I got really interested in NXS through him about a year ago. I joined the Nexus community a few months ago b/c I felt ready to participate more actively. I have formal training to mediate conflict and I teach classes on conflict resolution to my community.`,
-      },
+      // {
+      //   name: 'Arron Hill',
+      //   image: 'arron2',
+      //   popup: 'arron-juror',
+      //   position: 'Jury Chair',
+      //   description1: `I'm a manager at a solar company, so my daily job is pretty balanced between technical thinking and management. I've been watching crypto from the sideline since the earliest days of BTC. I lead a community here in AZ that Colin is a part of, and I got really interested in NXS through him about a year ago. I joined the Nexus community a few months ago b/c I felt ready to participate more actively. I have formal training to mediate conflict and I teach classes on conflict resolution to my community.`,
+      // },
       {
         name: 'Barak Epstein (B12)',
         image: 'silhouette2',
@@ -108,15 +108,15 @@ export class TeamComponent implements AfterViewInit {
         description1: `I have been involved in Nexus since early 2017. I retired from the US Navy back in 2001 as an electronics technician. Now I teach math at a private Christian school in Las Vegas, which my two children attended. My interest is more in the technical development of Nexus, satellites, routers, etc., but I follow everything related to it and read through Telegram every day.
         I plant the seeds of Nexus by making, funding, and gifting wallets to my interested scholars as graduation presents.`,
       },
-      {
-        name: 'Frank The good and wise',
-        image: 'silhouette2',
-        popup: 'frank-juror',
-        position: 'Juror',
-        description1: `I was introduced to NEXUS and Colin at a meeting in 04-2017. We literally shared a lunch and found we had mutual thoughts and social issues. I was an attendee at 2017 Aspen conference and 2018 conference. We have a small group here in beautiful SW USA Las Vegas and a VGK Hockey fan.
+      // {
+      //   name: 'Frank The good and wise',
+      //   image: 'silhouette2',
+      //   popup: 'frank-juror',
+      //   position: 'Juror',
+      //   description1: `I was introduced to NEXUS and Colin at a meeting in 04-2017. We literally shared a lunch and found we had mutual thoughts and social issues. I was an attendee at 2017 Aspen conference and 2018 conference. We have a small group here in beautiful SW USA Las Vegas and a VGK Hockey fan.
 
-        With our group we have created and funded mini wallets as an attempt to create interest in Nexus to have a wallet on a free computer. Someday my dream is to feed the world for free . I believe in honesty, integrity, and honor and try to conduct myself as such.`,
-      },
+      //   With our group we have created and funded mini wallets as an attempt to create interest in Nexus to have a wallet on a free computer. Someday my dream is to feed the world for free . I believe in honesty, integrity, and honor and try to conduct myself as such.`,
+      // },
     ];
   }
 
