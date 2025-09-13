@@ -36,7 +36,11 @@ export class BuyNexusComponent implements OnInit {
     private readonly title: Title
   ) {
     this.meta.addTags([
-      { name: 'description', content: 'Buy Nexus (NXS) on DEX-Trade - The premier exchange for Nexus trading with USDT pairs' },
+      {
+        name: 'description',
+        content:
+          'Buy Nexus (NXS) on DEX-Trade - The premier exchange for Nexus trading with USDT pairs',
+      },
       { name: 'author', content: 'Christophe Verheyen' },
       {
         name: 'keywords',
