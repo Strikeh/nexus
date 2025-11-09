@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
+import { TawkService } from './services/tawk.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,15 @@ export class AppComponent {
   showFooter = false;
   showHeader = true;
 
-  constructor(private router: Router, private readonly meta: Meta) {
+  constructor(
+    private router: Router, 
+    private readonly meta: Meta,
+    private tawkService: TawkService
+  ) {
     this.handleRouteEvents();
+    
+    // Load Tawk.to widget
+    this.tawkService.loadTawkTo();
 
     this.meta.addTags([
       { name: 'og:locale', content: 'en-GB' },
