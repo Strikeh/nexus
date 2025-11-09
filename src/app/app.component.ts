@@ -15,12 +15,12 @@ export class AppComponent {
   showHeader = true;
 
   constructor(
-    private router: Router, 
+    private router: Router,
     private readonly meta: Meta,
     private tawkService: TawkService
   ) {
     this.handleRouteEvents();
-    
+
     // Load Tawk.to widget
     this.tawkService.loadTawkTo();
 
